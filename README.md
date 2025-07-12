@@ -30,9 +30,10 @@ Users accessing the site are redirected to login with their EPAM Entra ID accoun
 - GitHub Actions builds and pushes to production
 
 ### 2. Backend (FastAPI)
-A new FastAPI backend under `backend_swagger` replaces the Function App for local development.
+A new FastAPI backend now lives under `backend` and replaces the Function App for local development.
 
 ### Legacy Azure Function
+- The legacy Azure Function resides in `backend_old`.
 - Python Azure Function hosted in Azure App Service
 - Publishes using GitHub Actions and a publish profile
 - Processes data from Blob Storage and writes output back
