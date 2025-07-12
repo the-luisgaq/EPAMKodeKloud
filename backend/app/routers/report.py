@@ -18,12 +18,12 @@ def create_report():
 
         blob.download_blob_to_file(
             "cloudkit-inputs",
-            "KodeKloud2025Admin.xlsx",
+            "kode_kloud/root/KodeKloud2025Admin.xlsx",
             admin_path,
         )
         blob.download_blob_to_file(
             "cloudkit-inputs",
-            "activity_leaderboard.xlsx",
+            "kode_kloud/root/activity_leaderboard.xlsx",
             activity_path,
         )
 
