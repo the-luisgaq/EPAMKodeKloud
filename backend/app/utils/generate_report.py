@@ -82,5 +82,9 @@ def generate_report(admin_path, activity_path, output_excel_path, output_json_pa
     with open(output_json_path, 'w') as f:
         json.dump(json_data, f, indent=2)
 
-    blob.upload_file_to_blob("kodekloud-inputs", output_json_path.split('/')[-1], output_json_path)
+    blob.upload_file_to_blob(
+        "cloudkit-inputs",
+        output_json_path.split('/')[-1],
+        output_json_path,
+    )
     return json_data

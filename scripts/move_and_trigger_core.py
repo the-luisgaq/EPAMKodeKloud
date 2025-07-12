@@ -6,7 +6,8 @@ from azure.storage.blob import BlobServiceClient
 # Config desde GitHub Secrets o entorno
 STORAGE_CONNECTION_STRING = os.getenv("STORAGE_CONNECTION_STRING")
 CONTAINER_SOURCE = os.getenv("CONTAINER_SOURCE", "kodekloudfiles")
-CONTAINER_INPUTS = os.getenv("CONTAINER_INPUTS", "kodekloud-inputs")
+CONTAINER_INPUTS = os.getenv("CONTAINER_INPUTS", "cloudkit-inputs")
+INPUT_FOLDER = os.getenv("INPUT_FOLDER", "input")
 ARCHIVE_FOLDER = os.getenv("ARCHIVE_FOLDER", "archive")
 TRIGGER_URL = os.getenv("TRIGGER_URL")
 
@@ -29,7 +30,7 @@ def run_my_logic():
 
     logging.info("Moviendo archivos existentes en el contenedor de entrada a /archive...")
 
-    for blob in input_container.list_blobs():
+    for blob in input_container.list_blobs(name_starts_with=f"{INPUT_FOLDER}/"):
         if blob.name.endswith(".xlsx") or blob.name.endswith(".json"):
             src = input_container.get_blob_client(blob.name)
             dst = input_container.get_blob_client(f"{ARCHIVE_FOLDER}/{blob.name}")
@@ -40,7 +41,7 @@ def run_my_logic():
 
     for filename in required_files:
         src = source_container.get_blob_client(filename)
-        dst = input_container.get_blob_client(filename)
+        dst = input_container.get_blob_client(f"{INPUT_FOLDER}/{filename}")
         dst.start_copy_from_url(src.url)
         src.delete_blob()
 
