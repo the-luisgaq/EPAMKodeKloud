@@ -62,6 +62,20 @@ npm install
 npm run dev
 ```
 
+## 🐍 Running the Backend Locally
+
+The FastAPI service needs access to Azure Blob Storage. Before starting it,
+set the `AZURE_STORAGE_CONNECTION_STRING` environment variable with your
+connection string from the Azure portal. You can create a `.env` file inside the
+`backend` folder or export it directly:
+
+```bash
+export AZURE_STORAGE_CONNECTION_STRING="<your connection string>"
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --reload
+```
+
 ## 🐳 Running the Frontend with Docker
 
 You can also run the dashboard directly from a Docker container. The `frontend` directory
