@@ -25,6 +25,7 @@ jobs:
           STORAGE_CONNECTION_STRING: ${{ secrets.STORAGE_CONNECTION_STRING }}
           TRIGGER_URL: ${{ secrets.TRIGGER_URL }}
           CONTAINER_SOURCE: kodekloudfiles
-          CONTAINER_INPUTS: kodekloud-inputs
+          CONTAINER_INPUTS: cloudkit-inputs
+          INPUT_FOLDER: input
           ARCHIVE_FOLDER: archive
         run: python scripts/move_and_trigger.py

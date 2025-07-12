@@ -16,7 +16,7 @@ export default function KodeKloudDashboard({ user }) {
   document.title = "Kode Kloud License Usage";
 
   const fetchData = () => {
-    fetch('https://strepamkkeast2.blob.core.windows.net/kodekloud-inputs/kodekloud_data.json?sp=r&st=2025-06-09T15:09:14Z&se=2026-02-28T23:09:14Z&sv=2024-11-04&sr=b&sig=An7b7jFr7Uh%2FnFYqoTaILe7eqw8usBFsY79QUh%2F7r2E%3D')
+    fetch('https://stcloudkitdevcus.blob.core.windows.net/cloudkit-inputs/kodekloud_data.json?sp=r&st=2025-06-09T15:09:14Z&se=2026-02-28T23:09:14Z&sv=2024-11-04&sr=b&sig=An7b7jFr7Uh%2FnFYqoTaILe7eqw8usBFsY79QUh%2F7r2E%3D')
       .then(res => {
         if (!res.ok) throw new Error(`HTTP error ${res.status}`);
         return res.json();
