@@ -31,6 +31,7 @@ Users accessing the site are redirected to login with their EPAM Entra ID accoun
 
 ### 2. Backend (FastAPI)
 A new FastAPI backend now lives under `backend` and replaces the Function App for local development.
+The frontend expects this service at `http://backend:8000` when running with Docker, or `http://localhost:8000` during local development.
 
 ### Legacy Azure Function
 - The legacy Azure Function resides in `backend_old`.
