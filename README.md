@@ -88,6 +88,26 @@ docker run -p 8080:80 kodekloud-dashboard-frontend
 
 Then visit <http://localhost:8080> in your browser to view the app.
 
+> **Note** The NGINX config proxies API requests to `http://backend:8000`. When
+> running the frontend container on its own, add a host mapping so that the name
+> `backend` resolves to your host machine where the FastAPI service is running:
+
+```bash
+docker run -p 8080:80 \
+  --add-host backend:host-gateway \
+  kodekloud-dashboard-frontend
+```
+
+Alternatively you can run both containers together using Docker Compose.
+The repository includes a `docker-compose.yml` that builds both services and
+connects them on a shared network. Simply run:
+
+```bash
+docker compose up
+```
+
+Once the containers start, open <http://localhost:8080> in your browser.
+
 ## 🔁 Triggering the Report Generation
 
 The FastAPI report endpoint can be called with:
