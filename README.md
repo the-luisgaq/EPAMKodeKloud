@@ -31,6 +31,7 @@ Users accessing the site are redirected to login with their EPAM Entra ID accoun
 
 ### 2. Backend (FastAPI)
 A new FastAPI backend now lives under `backend` and replaces the Function App for local development.
+The frontend expects this service at `http://backend:8000` when running with Docker, or `http://localhost:8000` during local development.
 
 ### Legacy Azure Function
 - The legacy Azure Function resides in `backend_old`.
@@ -59,6 +60,20 @@ A new FastAPI backend now lives under `backend` and replaces the Function App fo
 cd frontend
 npm install
 npm run dev
+```
+
+## 🐍 Running the Backend Locally
+
+The FastAPI service needs access to Azure Blob Storage. Before starting it,
+set the `AZURE_STORAGE_CONNECTION_STRING` environment variable with your
+connection string from the Azure portal. You can create a `.env` file inside the
+`backend` folder or export it directly:
+
+```bash
+export AZURE_STORAGE_CONNECTION_STRING="<your connection string>"
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --reload
 ```
 
 ## 🐳 Running the Frontend with Docker
