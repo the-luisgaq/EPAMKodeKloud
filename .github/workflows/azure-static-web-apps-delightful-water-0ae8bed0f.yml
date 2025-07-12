@@ -1,4 +1,4 @@
-name: Deploy KodeKloud Dashboard and Azure Function
+name: Deploy KodeKloud Dashboard
 
 on:
   workflow_dispatch:
@@ -43,19 +43,3 @@ jobs:
           app-name: mxepamkodekloud
           images: epamkodekloudacr-e4apdzgpejcbh3ck.azurecr.io/kodeklouddashboard:latest
 
-  deploy_function:
-    name: ⚙️ Deploy Azure Function with Remote Build
-    runs-on: ubuntu-latest
-    needs: build_and_push_container
-
-    steps:
-      - name: ⬇️ Checkout repo
-        uses: actions/checkout@v3
-
-      - name: 🚀 Deploy Azure Function with remote build
-        uses: Azure/functions-action@v1
-        with:
-          app-name: epamkkgenerator
-          publish-profile: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }}
-          package: backend_old
-          scm-do-build-during-deployment: true
