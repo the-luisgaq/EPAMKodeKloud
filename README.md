@@ -29,7 +29,10 @@ Users accessing the site are redirected to login with their EPAM Entra ID accoun
 - Deployed to Azure Static Web Apps
 - GitHub Actions builds and pushes to production
 
-### 2. Backend (Azure Function)
+### 2. Backend (FastAPI)
+A new FastAPI backend under `backend_swagger` replaces the Function App for local development.
+
+### Legacy Azure Function
 - Python Azure Function hosted in Azure App Service
 - Publishes using GitHub Actions and a publish profile
 - Processes data from Blob Storage and writes output back
@@ -59,10 +62,9 @@ npm run dev
 
 ## 🔁 Triggering the Report Generation
 
-The Azure Function can be triggered using:
-
-```
-https://epamkkgenerator.azurewebsites.net/api/GenerateReport?code=<FUNCTION_KEY>
+The FastAPI report endpoint can be called with:
+```bash
+curl -X POST http://localhost:8000/report
 ```
 
 ## 👤 Maintainer

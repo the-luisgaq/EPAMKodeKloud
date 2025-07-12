@@ -45,5 +45,5 @@ def run_my_logic():
         src.delete_blob()
 
     logging.info("Llamando a la Azure Function para generar el reporte...")
-    resp = requests.get(TRIGGER_URL)
+    resp = requests.post(TRIGGER_URL)
     logging.info(f"Respuesta: {resp.status_code} - {resp.text}")
