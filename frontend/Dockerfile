@@ -3,11 +3,14 @@ FROM node:20 AS builder
 
 WORKDIR /app
 
+# Ensure dev dependencies like Vite are installed
+ENV NODE_ENV=development
+
 COPY package*.json ./
 RUN npm install
 
 COPY . .
-RUN npm install && npm run build
+RUN npm run build
 
 # Etapa 2: Servir con NGINX
 FROM nginx:stable-alpine
