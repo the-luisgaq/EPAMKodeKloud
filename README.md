@@ -61,6 +61,18 @@ npm install
 npm run dev
 ```
 
+## 🐳 Running the Frontend with Docker
+
+You can also run the dashboard directly from a Docker container. The `frontend` directory
+contains a `Dockerfile` that builds the React app and serves it using NGINX.
+
+```bash
+docker build -t kodekloud-dashboard-frontend frontend
+docker run -p 8080:80 kodekloud-dashboard-frontend
+```
+
+Then visit <http://localhost:8080> in your browser to view the app.
+
 ## 🔁 Triggering the Report Generation
 
 The FastAPI report endpoint can be called with:
