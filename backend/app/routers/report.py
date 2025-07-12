@@ -30,3 +30,17 @@ def create_report():
         data = generate_report.generate_report(admin_path, activity_path, output_excel_path, output_json_path)
 
     return data
+
+
+@router.get("/data")
+def get_report_data():
+    """Return the latest generated JSON report from Blob Storage."""
+    with tempfile.TemporaryDirectory() as tmpdir:
+        json_path = os.path.join(tmpdir, "kodekloud_data.json")
+        blob.download_blob_to_file(
+            "cloudkit-inputs",
+            "kode_kloud/root/kodekloud_data.json",
+            json_path,
+        )
+        with open(json_path, "r") as f:
+            return json.load(f)
