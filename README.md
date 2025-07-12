@@ -108,6 +108,10 @@ docker compose up
 
 Once the containers start, open <http://localhost:8080> in your browser.
 
+If Nginx logs show `no resolver defined to resolve backend`, ensure Docker's
+embedded DNS is used by adding `resolver 127.0.0.11;` in `frontend/nginx.conf`
+and rebuilding the frontend image.
+
 ## 🔁 Triggering the Report Generation
 
 The FastAPI report endpoint can be called with:
