@@ -12,7 +12,7 @@ This project is a real-time dashboard that tracks the usage of KodeKloud license
 - **FastAPI Backend**: Triggered via HTTP, processes the Excel files and generates a report in Excel and JSON formats.
 - **GitHub Actions**:
   - One workflow generates the JSON report by calling the FastAPI backend.
-  - Another workflow builds and deploys the frontend to Azure Static Web Apps.
+  - The previous workflow that deployed the frontend has been removed.
 - **Azure Static Web Apps**:
   - Hosts the frontend.
   - Integrates with Microsoft Entra ID for secure enterprise login.
@@ -27,7 +27,7 @@ Users accessing the site are redirected to login with their EPAM Entra ID accoun
 ### 1. Frontend
 - React + Tailwind + Vite
 - Deployed to Azure Static Web Apps
-- GitHub Actions builds and pushes to production
+- The `azure-static-web-apps-delightful-water-0ae8bed0f.yml` workflow has been removed
 
 ### 2. Backend (FastAPI)
 A FastAPI backend now lives under `backend`. It exposes Swagger API docs at `/docs` and fully replaces the old Azure Function.
@@ -38,7 +38,6 @@ The frontend expects this service at `http://backend:8000` when running with Doc
 - `AZURE_CLIENT_SECRET`
 - `TENANT_ID`
 - `AZURE_FUNCTIONAPP_PUBLISH_PROFILE`
-- `AZURE_STATIC_WEB_APPS_API_TOKEN_DELIGHTFUL_WATER_0AE8BED0F`
 
 ## 📊 Features
 
