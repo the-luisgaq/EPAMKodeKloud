@@ -5,7 +5,7 @@ from fastapi import APIRouter, HTTPException
 from ..utils.generate_report import generate_report
 from ..external_services import blob
 
-router = APIRouter(prefix="/report", tags=["report"])
+router = APIRouter(prefix="/report", tags=["KodeKloud"])
 
 
 @router.post("/")
