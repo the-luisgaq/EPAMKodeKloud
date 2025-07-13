@@ -1,0 +1,199 @@
+@use '../../assets/styles/index' as *;
+
+@mixin button-disables-styles($bg-color, $border-color) {
+    background-color: $bg-color;
+    color: var(--uui-btn-caption-disabled);
+    fill: var(--uui-btn-caption-disabled);
+    border-color: $border-color;
+}
+
+// $bg-opacity we set here because a background and caption with opacity and they sum up, so we subtract one from other to get needed result
+@mixin button-white-disables-styles($bg-opacity, $border-color) {
+    background-color: color-mix(in srgb, var(--uui-neutral-0) $bg-opacity, transparent);
+    border-color: $border-color;
+    color: color-mix(in srgb, var(--uui-neutral-0) 40% , transparent);
+    fill: color-mix(in srgb, var(--uui-neutral-0) 40% , transparent);
+
+}
+
+.root {
+    // colors
+    --uui-btn-bg: var(--uui-color-50);
+    --uui-btn-bg-hover: var(--uui-color-60);
+    --uui-btn-bg-active: var(--uui-color-70);
+    --uui-btn-bg-disabled: var(--uui-neutral-30);
+    --uui-btn-border: var(--uui-color-50);
+    --uui-btn-border-hover: var(--uui-color-60);
+    --uui-btn-border-active: var(--uui-color-70);
+    --uui-btn-border-disabled: var(--uui-neutral-30);
+    --uui-btn-caption: var(--uui-color-contrast);
+    --uui-btn-caption-disabled: var(--uui-text-disabled);
+
+    // fonts
+    --uui-btn-font: var(--uui-font);
+    --uui-btn-font-weight: var(--uui-font-weight, 600);
+
+    // sizes
+    --uui-btn-border-radius: var(--uui-border-radius);
+    --uui-btn-min-height: var(--uui-size);
+    --uui-btn-min-width: var(--uui-size);
+    --uui-btn-border-width: var(--uui-border-width);
+    --uui-btn-padding: var(--uui-horizontal-padding);
+    --uui-btn-caption-padding: calc((var(--uui-btn-min-height) - var(--uui-btn-line-height) - (var(--uui-btn-border-width) * 2)) / 2) var(--uui-horizontal-gap);
+    --uui-btn-icon-height: var(--uui-icon-size);
+    --uui-btn-line-height: var(--uui-line-height);
+    --uui-btn-font-size: var(--uui-font-size);
+
+    //
+    min-width: var(--uui-btn-min-width);
+    padding-inline-start: calc(var(--uui-btn-padding) - var(--uui-btn-border-width));
+    padding-inline-end: calc(var(--uui-btn-padding) - var(--uui-btn-border-width));
+    background-color: var(--uui-btn-bg);
+    color: var(--uui-btn-caption);
+    fill: var(--uui-btn-caption);
+    border-color: var(--uui-btn-border);
+
+    &:global(.-clickable) {
+        &:hover {
+            background-color: var(--uui-btn-bg-hover);
+            border-color: var(--uui-btn-border-hover);
+        }
+
+        &:active {
+            background-color: var(--uui-btn-bg-active);
+            border-color: var(--uui-btn-border-active);
+        }
+    }
+
+    &:global(.uui-button-box) {
+        border-style: solid;
+        justify-content: center;
+        border-radius: var(--uui-btn-border-radius);
+        min-height: var(--uui-btn-min-height);
+        border-width: var(--uui-btn-border-width);
+    }
+
+    &:focus-visible {
+        @include focus-visible-effect();
+    }
+
+    :global(.uui-caption) {
+        @include overflow-ellipsis();
+        min-width: 0;
+        text-align: center;
+        flex: 0 1 auto;
+        font-family: var(--uui-btn-font);
+        font-weight: var(--uui-btn-font-weight, normal);
+        user-select: none;
+        padding: var(--uui-btn-caption-padding);
+        line-height: var(--uui-btn-line-height);
+        font-size: var(--uui-btn-font-size);
+    }
+
+    svg {
+        height: var(--uui-btn-icon-height);
+        width: inherit;
+    }
+
+    &:is(:global(.-clickable), :hover, :active, :focus):global(.uui-disabled),
+    &:global(.uui-disabled) {
+        &:global(.uui-fill-solid) {
+            @include button-disables-styles(var(--uui-btn-bg-disabled), var(--uui-btn-border-disabled));
+        }
+
+        &:global(.uui-fill-outline) {
+            @include button-disables-styles(var(--uui-surface-main), var(--uui-btn-border-disabled));
+        }
+
+        &:global(.uui-fill-none) {
+            @include button-disables-styles(transparent, var(--uui-btn-border-disabled));
+        }
+
+        &:global(.uui-fill-ghost) {
+            @include button-disables-styles(transparent, transparent);
+        }
+    }
+
+    &:global(.uui-fill-solid) {
+        --uui-btn-bg: var(--uui-color-50);
+        --uui-btn-bg-hover: var(--uui-color-60);
+        --uui-btn-bg-active: var(--uui-color-70);
+        --uui-btn-border: var(--uui-color-50);
+        --uui-btn-border-hover: var(--uui-color-60);
+        --uui-btn-border-active: var(--uui-color-70);
+        --uui-btn-caption: var(--uui-color-contrast);
+        --uui-btn-caption-disabled: var(--uui-text-disabled);
+
+        &:global(.uui-color-white) {
+            &:active {
+                background-color: var(--uui-neutral-30);
+                border-color: var(--uui-neutral-30);
+            }
+
+            &:global(.uui-disabled) {
+                @include button-white-disables-styles(10%, transparent);
+            }
+        }
+    }
+
+    &:global(.uui-fill-outline) {
+        --uui-btn-bg: var(--uui-surface-main);
+        --uui-btn-bg-hover: var(--uui-color-10);
+        --uui-btn-bg-active: var(--uui-color-20);
+        --uui-btn-bg-disabled: transparent;
+        --uui-btn-border: var(--uui-color-50);
+        --uui-btn-border-hover: var(--uui-color-50);
+        --uui-btn-border-active: var(--uui-color-50);
+        --uui-btn-caption: var(--uui-color-50);
+        --uui-btn-caption-disabled: var(--uui-text-disabled);
+
+        &:global(.uui-color-white) {
+            --uui-btn-bg: var(--uui-color-5);
+
+            &:global(.uui-disabled) {
+                @include button-white-disables-styles(10%, color-mix(in srgb, var(--uui-neutral-0) 30%, transparent));
+            }
+        }
+    }
+
+    &:global(.uui-fill-none) {
+        --uui-btn-bg: transparent;
+        --uui-btn-bg-hover: var(--uui-color-10);
+        --uui-btn-bg-active: var(--uui-color-20);
+        --uui-btn-bg-disabled: transparent;
+        --uui-btn-border: var(--uui-color-50);
+        --uui-btn-border-hover: var(--uui-color-50);
+        --uui-btn-border-active: var(--uui-color-50);
+        --uui-btn-caption: var(--uui-color-50);
+        --uui-btn-caption-disabled: var(--uui-text-disabled);
+
+        &:global(.uui-color-white) {
+            &:global(.uui-disabled) {
+                @include button-white-disables-styles(0%, color-mix(in srgb, var(--uui-neutral-0) 30%, transparent));
+            }
+        }
+    }
+
+    &:global(.uui-fill-ghost) {
+        --uui-btn-bg: transparent;
+        --uui-btn-bg-hover: var(--uui-color-10);
+        --uui-btn-bg-active: var(--uui-color-20);
+        --uui-btn-bg-disabled: transparent;
+        --uui-btn-border: transparent;
+        --uui-btn-border-hover: var(--uui-color-10);
+        --uui-btn-border-active: var(--uui-color-20);
+        --uui-btn-border-disabled: transparent;
+        --uui-btn-caption: var(--uui-color-50);
+        --uui-btn-caption-disabled: var(--uui-text-disabled);
+
+        &:global(.uui-color-white) {
+            --uui-btn-border-hover: transparent;
+            --uui-btn-border-active: transparent;
+
+            &:global(.uui-disabled) {
+                @include button-white-disables-styles(0%, transparent);
+            }
+        }
+    }
+}
+

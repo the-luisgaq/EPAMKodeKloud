@@ -1,0 +1,26 @@
+[
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "Use to display and control a group of similar "
+      },
+      {
+        "data": {
+          "url": "/documents?category=components&id=radioInput&mode=doc&skin=UUI4_promo"
+        },
+        "type": "link",
+        "url": "/documents?category=components&id=radioInput&mode=doc&skin=UUI4_promo",
+        "children": [
+          {
+            "text": "RadioInputs"
+          }
+        ]
+      },
+      {
+        "text": "."
+      }
+    ]
+  }
+]

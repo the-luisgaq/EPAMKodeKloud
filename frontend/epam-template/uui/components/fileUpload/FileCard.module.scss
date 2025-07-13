@@ -1,0 +1,99 @@
+@use '../../assets/styles/index' as *;
+
+.root {
+    --uui-file_card-border: var(--uui-control-border);
+    --uui-file_card-border-error: var(--uui-error-50);
+    --uui-file_card-text-error: var(--uui-error-70);
+    --uui-file_card-icon-default: var(--uui-icon);
+    --uui-file_card-icon-error: var(--uui-error-70);
+    --uui-file_card-icon-doc: #2B579A;
+    --uui-file_card-icon-xls: #217346;
+    --uui-file_card-icon-pdf: #FA0F01;
+    --uui-file_card-icon-mov: #5214CC;
+    --uui-file_card-icon-img: #E67E17;
+
+    --uui-file_card-font-error: var(--uui-font);
+
+    --uui-file_card-border-radius: var(--uui-border-radius);
+    --uui-file_card-icon-size: 18px;
+
+
+    &:global(.uui-file_card) {
+        box-sizing: border-box;
+        min-height: 48px;
+        padding: 5px;
+        border: 1px solid var(--uui-file_card-border);
+        border-radius: var(--uui-file_card-border-radius);
+
+        .file-name {
+            white-space: nowrap;
+        }
+    }
+
+    &:global(.uui-loading) {
+        .default-color,
+        .doc-color,
+        .xls-color,
+        .pdf-color,
+        .movie-color,
+        .img-color {
+            fill: var(--uui-icon-disabled);
+        }
+    }
+
+    &:global(.uui-error) {
+        border: 1px solid var(--uui-file_card-border-error);
+    }
+
+    .default-color {
+        fill: var(--uui-file_card-icon-default);
+    }
+
+    .doc-color {
+        fill: var(--uui-file_card-icon-doc);
+    }
+
+    .xls-color {
+        fill: var(--uui-file_card-icon-xls);
+    }
+
+    .pdf-color {
+        fill: var(--uui-file_card-icon-pdf);
+    }
+
+    .mov-color {
+        fill: var(--uui-file_card-icon-mov);
+    }
+
+    .img-color {
+        fill: var(--uui-file_card-icon-img);
+    }
+
+    .error-block {
+        font-family: var(--uui-file_card-font-error);
+        font-weight: 400;
+        font-size: 12px;
+        color: var(--uui-file_card-text-error);
+        display: inline-flex;
+        align-items: center;
+        padding: 0;
+        cursor: pointer;
+
+        :global(.uui-icon) {
+            margin-right: 3px;
+            fill: var(--uui-file_card-icon-error);
+        }
+    }
+
+    .icons-block {
+        min-width: 18px;
+        flex-basis: 0;
+
+        :global(.uui-icon) {
+            svg {
+                height: var(--uui-file_card-icon-size);
+                width: inherit;
+            }
+        }
+    }
+}

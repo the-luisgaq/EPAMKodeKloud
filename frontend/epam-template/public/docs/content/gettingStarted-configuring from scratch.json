@@ -1,0 +1,74 @@
+[
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "We provide "
+      },
+      {
+        "data": {
+          "url": "https://www.npmjs.com/package/@epam/cra-template-uui"
+        },
+        "type": "link",
+        "url": "https://www.npmjs.com/package/@epam/cra-template-uui",
+        "children": [
+          {
+            "text": "UUI template"
+          }
+        ]
+      },
+      {
+        "text": " for "
+      },
+      {
+        "data": {
+          "url": "https://github.com/facebook/create-react-app"
+        },
+        "type": "link",
+        "url": "https://github.com/facebook/create-react-app",
+        "children": [
+          {
+            "text": "Create-React-App"
+          }
+        ]
+      },
+      {
+        "text": ". You can create a new project with the following command:"
+      }
+    ]
+  },
+  {
+    "data": {},
+    "type": "note-quote",
+    "children": [
+      {
+        "text": "npx create-react-app my-app --template @epam/uui\n\n"
+      },
+      {
+        "text": "#",
+        "box-sizing": "border-box",
+        "color": "rgb(106, 115, 125)",
+        "uui-richTextEditor-span-mark": true
+      },
+      {
+        "text": " or",
+        "box-sizing": "border-box",
+        "color": "rgb(106, 115, 125)",
+        "uui-richTextEditor-span-mark": true
+      },
+      {
+        "text": "\n\nyarn create react-app my-app --template @epam/uui"
+      }
+    ]
+  },
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "Besides default CRA features, you'll get a minimal UUI configuration, UUI services and context initialization, and a small demo app to start with."
+      }
+    ]
+  }
+]

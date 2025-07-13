@@ -1,0 +1,18 @@
+[
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "The example below uses  "
+      },
+      {
+        "text": "@epam/uui-test-utils",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " to simplify writing of tests."
+      }
+    ]
+  }
+]

@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VirtualList should be rendered correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="root uui-scroll-bars uui-shadow-top uui-shadow-bottom scrollContainer"
+    style="position: relative; overflow: hidden; width: 100%; height: 100%; display: flex;"
+  >
+    <div
+      style="position: relative; top: 0px; left: 0px; right: 0px; bottom: 0px; overflow: scroll; margin-right: 0px; margin-bottom: 0px; flex: 1 1 auto; display: flex; flex-direction: column;"
+    >
+      <div
+        class="listContainer"
+        style="min-height: NaNpx;"
+      >
+        <div
+          style="margin-top: 0px;"
+        />
+      </div>
+    </div>
+    <div
+      aria-busy="false"
+      aria-label=""
+      aria-live="polite"
+      class="container uui-blocker-container root"
+      role="status"
+    />
+    <div
+      class="uui-track-horizontal"
+      style="position: absolute; height: 6px; display: none;"
+    >
+      <div
+        class="uui-thumb-horizontal"
+      />
+    </div>
+    <div
+      class="uui-track-vertical"
+      style="position: absolute; width: 6px; display: none;"
+    >
+      <div
+        class="uui-thumb-vertical"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

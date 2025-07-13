@@ -1,0 +1,10 @@
+.sticky-header {
+    position: sticky;
+    top: 0;
+    isolation: isolate;
+    z-index: 5;
+}
+
+.code-bg {
+    --code-bg: var(--uui-surface-main);
+}

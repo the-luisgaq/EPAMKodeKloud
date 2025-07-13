@@ -1,0 +1,122 @@
+[
+  {
+    "children": [
+      {
+        "text": "In "
+      },
+      {
+        "text": "LazyDataSource",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " all data retrieving from the server via "
+      },
+      {
+        "text": "api",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " callback. This callback received following "
+      },
+      {
+        "text": "request",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " which should be passed to the server."
+      }
+    ],
+    "data": {},
+    "type": "paragraph"
+  },
+  {
+    "data": {
+      "typePath": "@epam/uui-core:LazyDataSourceApiRequest"
+    },
+    "type": "type-ref-table",
+    "children": [
+      {
+        "text": ""
+      }
+    ]
+  },
+  {
+    "type": "paragraph",
+    "children": [
+      {
+        "text": ""
+      }
+    ]
+  },
+  {
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "In case of tree data structure, "
+      },
+      {
+        "text": "api",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " callback also received "
+      },
+      {
+        "text": "context",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " as a second parameter. It's defines the context of API request."
+      }
+    ]
+  },
+  {
+    "type": "type-ref-table",
+    "children": [
+      {
+        "text": ""
+      }
+    ],
+    "data": {
+      "typePath": "@epam/uui-core:LazyDataSourceApiRequestContext"
+    }
+  },
+  {
+    "type": "paragraph",
+    "children": [
+      {
+        "text": ""
+      }
+    ]
+  },
+  {
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "Finally",
+        "color": "rgb(34, 44, 49)"
+      },
+      {
+        "text": ", "
+      },
+      {
+        "text": "api",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " callback should return a promise with the following structure:"
+      }
+    ]
+  },
+  {
+    "type": "type-ref-table",
+    "children": [
+      {
+        "text": ""
+      }
+    ],
+    "data": {
+      "typePath": "@epam/uui-core:LazyDataSourceApiResponse"
+    }
+  }
+]

@@ -1,0 +1,45 @@
+[
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "Below, you can review the "
+      },
+      {
+        "text": "LazyDataSourceProps",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " interface accepted by "
+      },
+      {
+        "text": "LazyDataSource",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": "."
+      }
+    ]
+  },
+  {
+    "data": {
+      "typePath": "@epam/uui-core:LazyDataSourceProps"
+    },
+    "type": "type-ref-table",
+    "children": [
+      {
+        "text": ""
+      }
+    ]
+  },
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": ""
+      }
+    ]
+  }
+]

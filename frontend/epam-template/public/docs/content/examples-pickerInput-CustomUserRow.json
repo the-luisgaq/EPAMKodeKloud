@@ -1,0 +1,34 @@
+[
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "By default, we render the "
+      },
+      {
+        "text": "item.name",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " field in a picker row. But you can define your own "
+      },
+      {
+        "text": "renderRow",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " method, which is suitable for your case. "
+      }
+    ]
+  },
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "In this example, we show how to render a custom user row for each person."
+      }
+    ]
+  }
+]

@@ -1,0 +1,992 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DataPickerBody should be rendered with maximum props 1`] = `
+<DocumentFragment>
+  <div
+    class="searchWrapper uui-picker_input-body-search"
+  >
+    <div
+      class=""
+      style="min-width: 0; flex-grow: 1; flex-basis: 0px;"
+    >
+      <div
+        data-autofocus-inside="true"
+      >
+        <div
+          class="container uui-input-box -clickable uui-focus root uui-size-48 uui-control-mode-form"
+          dir="auto"
+          tabindex="-1"
+        >
+          <div
+            class="container uui-icon uui-enabled"
+          >
+            <svg
+              class=""
+            />
+          </div>
+          <input
+            class="uui-input"
+            dir="ltr"
+            inputmode="search"
+            placeholder="Search"
+            tabindex="0"
+            type="search"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="root uui-flex-row uui-picker_input-body uui-size-36"
+    style="max-height: 800px;"
+    tabindex="-1"
+  >
+    <div
+      class="root uui-scroll-bars uui-shadow-top uui-shadow-bottom scrollContainer"
+      style="position: relative; overflow: hidden; width: 100%; height: 100%; display: flex;"
+    >
+      <div
+        aria-orientation="vertical"
+        style="position: relative; top: 0px; left: 0px; right: 0px; bottom: 0px; overflow: scroll; margin-right: 0px; margin-bottom: 0px; flex: 1 1 auto; display: flex; flex-direction: column;"
+        tabindex="-1"
+      >
+        <div
+          class="listContainer"
+          style="min-height: 7px;"
+        >
+          <div
+            style="margin-top: 0px;"
+          >
+            <div
+              aria-posinset="1"
+              class="pickerRow uui-picker_input-row uui-size-36 align-widgets-top"
+              role="option"
+            >
+              <div
+                class="flexCell rowContent"
+                style="min-width: 0; flex-grow: 1; flex-basis: 0px;"
+              >
+                <div
+                  class="contentWrapper"
+                >
+                  <div
+                    class="flexCell root uui-picker_input-item uui-typography"
+                    style="min-width: 0; flex-basis: auto;"
+                  >
+                    <div
+                      class="root uui-flex-row columnGap uui-size-36"
+                      style="--uui-picker_item-vertical-padding: 9px;"
+                    >
+                      <div
+                        class="flexCell"
+                        style="min-width: 0; flex-basis: auto;"
+                      >
+                        <div
+                          class="title uui-size-36"
+                        >
+                          A1
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flexSpacer"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              aria-posinset="2"
+              class="pickerRow uui-picker_input-row uui-size-36 align-widgets-top"
+              role="option"
+            >
+              <div
+                class="flexCell rowContent"
+                style="min-width: 0; flex-grow: 1; flex-basis: 0px;"
+              >
+                <div
+                  class="contentWrapper"
+                >
+                  <div
+                    class="flexCell root uui-picker_input-item uui-typography"
+                    style="min-width: 0; flex-basis: auto;"
+                  >
+                    <div
+                      class="root uui-flex-row columnGap uui-size-36"
+                      style="--uui-picker_item-vertical-padding: 9px;"
+                    >
+                      <div
+                        class="flexCell"
+                        style="min-width: 0; flex-basis: auto;"
+                      >
+                        <div
+                          class="title uui-size-36"
+                        >
+                          A1+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flexSpacer"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              aria-posinset="3"
+              class="pickerRow uui-picker_input-row uui-size-36 align-widgets-top"
+              role="option"
+            >
+              <div
+                class="flexCell rowContent"
+                style="min-width: 0; flex-grow: 1; flex-basis: 0px;"
+              >
+                <div
+                  class="contentWrapper"
+                >
+                  <div
+                    class="flexCell root uui-picker_input-item uui-typography"
+                    style="min-width: 0; flex-basis: auto;"
+                  >
+                    <div
+                      class="root uui-flex-row columnGap uui-size-36"
+                      style="--uui-picker_item-vertical-padding: 9px;"
+                    >
+                      <div
+                        class="flexCell"
+                        style="min-width: 0; flex-basis: auto;"
+                      >
+                        <div
+                          class="title uui-size-36"
+                        >
+                          A2
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flexSpacer"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              aria-posinset="4"
+              class="pickerRow uui-picker_input-row uui-size-36 align-widgets-top"
+              role="option"
+            >
+              <div
+                class="flexCell rowContent"
+                style="min-width: 0; flex-grow: 1; flex-basis: 0px;"
+              >
+                <div
+                  class="contentWrapper"
+                >
+                  <div
+                    class="flexCell root uui-picker_input-item uui-typography"
+                    style="min-width: 0; flex-basis: auto;"
+                  >
+                    <div
+                      class="root uui-flex-row columnGap uui-size-36"
+                      style="--uui-picker_item-vertical-padding: 9px;"
+                    >
+                      <div
+                        class="flexCell"
+                        style="min-width: 0; flex-basis: auto;"
+                      >
+                        <div
+                          class="title uui-size-36"
+                        >
+                          A2+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flexSpacer"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              aria-posinset="5"
+              class="pickerRow uui-picker_input-row uui-size-36 align-widgets-top"
+              role="option"
+            >
+              <div
+                class="flexCell rowContent"
+                style="min-width: 0; flex-grow: 1; flex-basis: 0px;"
+              >
+                <div
+                  class="contentWrapper"
+                >
+                  <div
+                    class="flexCell root uui-picker_input-item uui-typography"
+                    style="min-width: 0; flex-basis: auto;"
+                  >
+                    <div
+                      class="root uui-flex-row columnGap uui-size-36"
+                      style="--uui-picker_item-vertical-padding: 9px;"
+                    >
+                      <div
+                        class="flexCell"
+                        style="min-width: 0; flex-basis: auto;"
+                      >
+                        <div
+                          class="title uui-size-36"
+                        >
+                          B1
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flexSpacer"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              aria-posinset="6"
+              class="pickerRow uui-picker_input-row uui-size-36 align-widgets-top"
+              role="option"
+            >
+              <div
+                class="flexCell rowContent"
+                style="min-width: 0; flex-grow: 1; flex-basis: 0px;"
+              >
+                <div
+                  class="contentWrapper"
+                >
+                  <div
+                    class="flexCell root uui-picker_input-item uui-typography"
+                    style="min-width: 0; flex-basis: auto;"
+                  >
+                    <div
+                      class="root uui-flex-row columnGap uui-size-36"
+                      style="--uui-picker_item-vertical-padding: 9px;"
+                    >
+                      <div
+                        class="flexCell"
+                        style="min-width: 0; flex-basis: auto;"
+                      >
+                        <div
+                          class="title uui-size-36"
+                        >
+                          B1+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flexSpacer"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              aria-posinset="7"
+              class="pickerRow uui-picker_input-row uui-size-36 align-widgets-top"
+              role="option"
+            >
+              <div
+                class="flexCell rowContent"
+                style="min-width: 0; flex-grow: 1; flex-basis: 0px;"
+              >
+                <div
+                  class="contentWrapper"
+                >
+                  <div
+                    class="flexCell root uui-picker_input-item uui-typography"
+                    style="min-width: 0; flex-basis: auto;"
+                  >
+                    <div
+                      class="root uui-flex-row columnGap uui-size-36"
+                      style="--uui-picker_item-vertical-padding: 9px;"
+                    >
+                      <div
+                        class="flexCell"
+                        style="min-width: 0; flex-basis: auto;"
+                      >
+                        <div
+                          class="title uui-size-36"
+                        >
+                          B2
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flexSpacer"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              aria-posinset="8"
+              class="pickerRow uui-picker_input-row uui-size-36 align-widgets-top"
+              role="option"
+            >
+              <div
+                class="flexCell rowContent"
+                style="min-width: 0; flex-grow: 1; flex-basis: 0px;"
+              >
+                <div
+                  class="contentWrapper"
+                >
+                  <div
+                    class="flexCell root uui-picker_input-item uui-typography"
+                    style="min-width: 0; flex-basis: auto;"
+                  >
+                    <div
+                      class="root uui-flex-row columnGap uui-size-36"
+                      style="--uui-picker_item-vertical-padding: 9px;"
+                    >
+                      <div
+                        class="flexCell"
+                        style="min-width: 0; flex-basis: auto;"
+                      >
+                        <div
+                          class="title uui-size-36"
+                        >
+                          B2+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flexSpacer"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              aria-posinset="9"
+              class="pickerRow uui-picker_input-row uui-size-36 align-widgets-top"
+              role="option"
+            >
+              <div
+                class="flexCell rowContent"
+                style="min-width: 0; flex-grow: 1; flex-basis: 0px;"
+              >
+                <div
+                  class="contentWrapper"
+                >
+                  <div
+                    class="flexCell root uui-picker_input-item uui-typography"
+                    style="min-width: 0; flex-basis: auto;"
+                  >
+                    <div
+                      class="root uui-flex-row columnGap uui-size-36"
+                      style="--uui-picker_item-vertical-padding: 9px;"
+                    >
+                      <div
+                        class="flexCell"
+                        style="min-width: 0; flex-basis: auto;"
+                      >
+                        <div
+                          class="title uui-size-36"
+                        >
+                          C1
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flexSpacer"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              aria-posinset="10"
+              class="pickerRow uui-picker_input-row uui-size-36 align-widgets-top"
+              role="option"
+            >
+              <div
+                class="flexCell rowContent"
+                style="min-width: 0; flex-grow: 1; flex-basis: 0px;"
+              >
+                <div
+                  class="contentWrapper"
+                >
+                  <div
+                    class="flexCell root uui-picker_input-item uui-typography"
+                    style="min-width: 0; flex-basis: auto;"
+                  >
+                    <div
+                      class="root uui-flex-row columnGap uui-size-36"
+                      style="--uui-picker_item-vertical-padding: 9px;"
+                    >
+                      <div
+                        class="flexCell"
+                        style="min-width: 0; flex-basis: auto;"
+                      >
+                        <div
+                          class="title uui-size-36"
+                        >
+                          C1+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flexSpacer"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              aria-posinset="11"
+              class="pickerRow uui-picker_input-row uui-size-36 align-widgets-top"
+              role="option"
+            >
+              <div
+                class="flexCell rowContent"
+                style="min-width: 0; flex-grow: 1; flex-basis: 0px;"
+              >
+                <div
+                  class="contentWrapper"
+                >
+                  <div
+                    class="flexCell root uui-picker_input-item uui-typography"
+                    style="min-width: 0; flex-basis: auto;"
+                  >
+                    <div
+                      class="root uui-flex-row columnGap uui-size-36"
+                      style="--uui-picker_item-vertical-padding: 9px;"
+                    >
+                      <div
+                        class="flexCell"
+                        style="min-width: 0; flex-basis: auto;"
+                      >
+                        <div
+                          class="title uui-size-36"
+                        >
+                          C2
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flexSpacer"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        aria-busy="false"
+        aria-label=""
+        aria-live="polite"
+        class="container uui-blocker-container root"
+        role="status"
+      />
+      <div
+        class="uui-track-horizontal"
+        style="position: absolute; height: 6px; display: none;"
+      >
+        <div
+          class="uui-thumb-horizontal"
+        />
+      </div>
+      <div
+        class="uui-track-vertical"
+        style="position: absolute; width: 6px; display: none;"
+      >
+        <div
+          class="uui-thumb-vertical"
+        />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`DataPickerBody should be rendered with minimum props 1`] = `
+<DocumentFragment>
+  <div
+    class="root uui-flex-row uui-picker_input-body uui-size-36"
+    tabindex="-1"
+  >
+    <div
+      class="root uui-scroll-bars uui-shadow-top uui-shadow-bottom scrollContainer"
+      style="position: relative; overflow: hidden; width: 100%; height: 100%; display: flex;"
+    >
+      <div
+        aria-orientation="vertical"
+        style="position: relative; top: 0px; left: 0px; right: 0px; bottom: 0px; overflow: scroll; margin-right: 0px; margin-bottom: 0px; flex: 1 1 auto; display: flex; flex-direction: column;"
+        tabindex="-1"
+      >
+        <div
+          class="listContainer"
+          style="min-height: NaNpx;"
+        >
+          <div
+            style="margin-top: 0px;"
+          >
+            <div
+              aria-posinset="1"
+              class="pickerRow uui-picker_input-row uui-size-36 align-widgets-top"
+              role="option"
+            >
+              <div
+                class="flexCell rowContent"
+                style="min-width: 0; flex-grow: 1; flex-basis: 0px;"
+              >
+                <div
+                  class="contentWrapper"
+                >
+                  <div
+                    class="flexCell root uui-picker_input-item uui-typography"
+                    style="min-width: 0; flex-basis: auto;"
+                  >
+                    <div
+                      class="root uui-flex-row columnGap uui-size-36"
+                      style="--uui-picker_item-vertical-padding: 9px;"
+                    >
+                      <div
+                        class="flexCell"
+                        style="min-width: 0; flex-basis: auto;"
+                      >
+                        <div
+                          class="title uui-size-36"
+                        >
+                          A1
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flexSpacer"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              aria-posinset="2"
+              class="pickerRow uui-picker_input-row uui-size-36 align-widgets-top"
+              role="option"
+            >
+              <div
+                class="flexCell rowContent"
+                style="min-width: 0; flex-grow: 1; flex-basis: 0px;"
+              >
+                <div
+                  class="contentWrapper"
+                >
+                  <div
+                    class="flexCell root uui-picker_input-item uui-typography"
+                    style="min-width: 0; flex-basis: auto;"
+                  >
+                    <div
+                      class="root uui-flex-row columnGap uui-size-36"
+                      style="--uui-picker_item-vertical-padding: 9px;"
+                    >
+                      <div
+                        class="flexCell"
+                        style="min-width: 0; flex-basis: auto;"
+                      >
+                        <div
+                          class="title uui-size-36"
+                        >
+                          A1+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flexSpacer"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              aria-posinset="3"
+              class="pickerRow uui-picker_input-row uui-size-36 align-widgets-top"
+              role="option"
+            >
+              <div
+                class="flexCell rowContent"
+                style="min-width: 0; flex-grow: 1; flex-basis: 0px;"
+              >
+                <div
+                  class="contentWrapper"
+                >
+                  <div
+                    class="flexCell root uui-picker_input-item uui-typography"
+                    style="min-width: 0; flex-basis: auto;"
+                  >
+                    <div
+                      class="root uui-flex-row columnGap uui-size-36"
+                      style="--uui-picker_item-vertical-padding: 9px;"
+                    >
+                      <div
+                        class="flexCell"
+                        style="min-width: 0; flex-basis: auto;"
+                      >
+                        <div
+                          class="title uui-size-36"
+                        >
+                          A2
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flexSpacer"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              aria-posinset="4"
+              class="pickerRow uui-picker_input-row uui-size-36 align-widgets-top"
+              role="option"
+            >
+              <div
+                class="flexCell rowContent"
+                style="min-width: 0; flex-grow: 1; flex-basis: 0px;"
+              >
+                <div
+                  class="contentWrapper"
+                >
+                  <div
+                    class="flexCell root uui-picker_input-item uui-typography"
+                    style="min-width: 0; flex-basis: auto;"
+                  >
+                    <div
+                      class="root uui-flex-row columnGap uui-size-36"
+                      style="--uui-picker_item-vertical-padding: 9px;"
+                    >
+                      <div
+                        class="flexCell"
+                        style="min-width: 0; flex-basis: auto;"
+                      >
+                        <div
+                          class="title uui-size-36"
+                        >
+                          A2+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flexSpacer"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              aria-posinset="5"
+              class="pickerRow uui-picker_input-row uui-size-36 align-widgets-top"
+              role="option"
+            >
+              <div
+                class="flexCell rowContent"
+                style="min-width: 0; flex-grow: 1; flex-basis: 0px;"
+              >
+                <div
+                  class="contentWrapper"
+                >
+                  <div
+                    class="flexCell root uui-picker_input-item uui-typography"
+                    style="min-width: 0; flex-basis: auto;"
+                  >
+                    <div
+                      class="root uui-flex-row columnGap uui-size-36"
+                      style="--uui-picker_item-vertical-padding: 9px;"
+                    >
+                      <div
+                        class="flexCell"
+                        style="min-width: 0; flex-basis: auto;"
+                      >
+                        <div
+                          class="title uui-size-36"
+                        >
+                          B1
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flexSpacer"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              aria-posinset="6"
+              class="pickerRow uui-picker_input-row uui-size-36 align-widgets-top"
+              role="option"
+            >
+              <div
+                class="flexCell rowContent"
+                style="min-width: 0; flex-grow: 1; flex-basis: 0px;"
+              >
+                <div
+                  class="contentWrapper"
+                >
+                  <div
+                    class="flexCell root uui-picker_input-item uui-typography"
+                    style="min-width: 0; flex-basis: auto;"
+                  >
+                    <div
+                      class="root uui-flex-row columnGap uui-size-36"
+                      style="--uui-picker_item-vertical-padding: 9px;"
+                    >
+                      <div
+                        class="flexCell"
+                        style="min-width: 0; flex-basis: auto;"
+                      >
+                        <div
+                          class="title uui-size-36"
+                        >
+                          B1+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flexSpacer"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              aria-posinset="7"
+              class="pickerRow uui-picker_input-row uui-size-36 align-widgets-top"
+              role="option"
+            >
+              <div
+                class="flexCell rowContent"
+                style="min-width: 0; flex-grow: 1; flex-basis: 0px;"
+              >
+                <div
+                  class="contentWrapper"
+                >
+                  <div
+                    class="flexCell root uui-picker_input-item uui-typography"
+                    style="min-width: 0; flex-basis: auto;"
+                  >
+                    <div
+                      class="root uui-flex-row columnGap uui-size-36"
+                      style="--uui-picker_item-vertical-padding: 9px;"
+                    >
+                      <div
+                        class="flexCell"
+                        style="min-width: 0; flex-basis: auto;"
+                      >
+                        <div
+                          class="title uui-size-36"
+                        >
+                          B2
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flexSpacer"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              aria-posinset="8"
+              class="pickerRow uui-picker_input-row uui-size-36 align-widgets-top"
+              role="option"
+            >
+              <div
+                class="flexCell rowContent"
+                style="min-width: 0; flex-grow: 1; flex-basis: 0px;"
+              >
+                <div
+                  class="contentWrapper"
+                >
+                  <div
+                    class="flexCell root uui-picker_input-item uui-typography"
+                    style="min-width: 0; flex-basis: auto;"
+                  >
+                    <div
+                      class="root uui-flex-row columnGap uui-size-36"
+                      style="--uui-picker_item-vertical-padding: 9px;"
+                    >
+                      <div
+                        class="flexCell"
+                        style="min-width: 0; flex-basis: auto;"
+                      >
+                        <div
+                          class="title uui-size-36"
+                        >
+                          B2+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flexSpacer"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              aria-posinset="9"
+              class="pickerRow uui-picker_input-row uui-size-36 align-widgets-top"
+              role="option"
+            >
+              <div
+                class="flexCell rowContent"
+                style="min-width: 0; flex-grow: 1; flex-basis: 0px;"
+              >
+                <div
+                  class="contentWrapper"
+                >
+                  <div
+                    class="flexCell root uui-picker_input-item uui-typography"
+                    style="min-width: 0; flex-basis: auto;"
+                  >
+                    <div
+                      class="root uui-flex-row columnGap uui-size-36"
+                      style="--uui-picker_item-vertical-padding: 9px;"
+                    >
+                      <div
+                        class="flexCell"
+                        style="min-width: 0; flex-basis: auto;"
+                      >
+                        <div
+                          class="title uui-size-36"
+                        >
+                          C1
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flexSpacer"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              aria-posinset="10"
+              class="pickerRow uui-picker_input-row uui-size-36 align-widgets-top"
+              role="option"
+            >
+              <div
+                class="flexCell rowContent"
+                style="min-width: 0; flex-grow: 1; flex-basis: 0px;"
+              >
+                <div
+                  class="contentWrapper"
+                >
+                  <div
+                    class="flexCell root uui-picker_input-item uui-typography"
+                    style="min-width: 0; flex-basis: auto;"
+                  >
+                    <div
+                      class="root uui-flex-row columnGap uui-size-36"
+                      style="--uui-picker_item-vertical-padding: 9px;"
+                    >
+                      <div
+                        class="flexCell"
+                        style="min-width: 0; flex-basis: auto;"
+                      >
+                        <div
+                          class="title uui-size-36"
+                        >
+                          C1+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flexSpacer"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              aria-posinset="11"
+              class="pickerRow uui-picker_input-row uui-size-36 align-widgets-top"
+              role="option"
+            >
+              <div
+                class="flexCell rowContent"
+                style="min-width: 0; flex-grow: 1; flex-basis: 0px;"
+              >
+                <div
+                  class="contentWrapper"
+                >
+                  <div
+                    class="flexCell root uui-picker_input-item uui-typography"
+                    style="min-width: 0; flex-basis: auto;"
+                  >
+                    <div
+                      class="root uui-flex-row columnGap uui-size-36"
+                      style="--uui-picker_item-vertical-padding: 9px;"
+                    >
+                      <div
+                        class="flexCell"
+                        style="min-width: 0; flex-basis: auto;"
+                      >
+                        <div
+                          class="title uui-size-36"
+                        >
+                          C2
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flexSpacer"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        aria-busy="false"
+        aria-label=""
+        aria-live="polite"
+        class="container uui-blocker-container root"
+        role="status"
+      />
+      <div
+        class="uui-track-horizontal"
+        style="position: absolute; height: 6px; display: none;"
+      >
+        <div
+          class="uui-thumb-horizontal"
+        />
+      </div>
+      <div
+        class="uui-track-vertical"
+        style="position: absolute; width: 6px; display: none;"
+      >
+        <div
+          class="uui-thumb-vertical"
+        />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`DataPickerBody should be rendered without rows 1`] = `
+<DocumentFragment>
+  <div
+    class="root uui-flex-row uui-picker_input-body uui-size-36"
+    tabindex="-1"
+  >
+    <div>
+      Not found
+    </div>
+  </div>
+</DocumentFragment>
+`;

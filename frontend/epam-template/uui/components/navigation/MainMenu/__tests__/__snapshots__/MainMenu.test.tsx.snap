@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainMenu should be rendered correctly 1`] = `
+<DocumentFragment>
+  <nav
+    class="root uui-main_menu uui-mainmenu-container container"
+  >
+    <div
+      class="itemsContainer mainWrapper"
+    >
+      <div
+        class="itemsWrapper"
+      >
+        <span
+          class="uui-button-box uui-enabled root type-primary"
+          tabindex="-1"
+        />
+      </div>
+    </div>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`MainMenu should be rendered correctly 2`] = `
+<DocumentFragment>
+  <nav
+    class="root uui-main_menu uui-mainmenu-container container uui-mainmenu-transparent"
+  >
+    <div
+      class="itemsContainer mainWrapper"
+    >
+      <div
+        class="itemsWrapper"
+      >
+        <span
+          class="uui-button-box uui-enabled root type-primary"
+          tabindex="-1"
+        />
+      </div>
+    </div>
+    <div
+      class="uui-mainmenu-server-badge"
+    >
+      <div
+        class="uui-mainmenu-server-badge-label"
+        style="background: rgb(57, 183, 172);"
+      >
+        Dev
+      </div>
+    </div>
+  </nav>
+</DocumentFragment>
+`;

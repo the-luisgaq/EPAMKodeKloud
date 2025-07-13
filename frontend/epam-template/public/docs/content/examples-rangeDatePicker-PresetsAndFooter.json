@@ -1,0 +1,25 @@
+[
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "﻿You can define range presets via the "
+      },
+      {
+        "text": "presets",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " prop and a footer via the "
+      },
+      {
+        "text": "renderFooter",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " prop."
+      }
+    ]
+  }
+]

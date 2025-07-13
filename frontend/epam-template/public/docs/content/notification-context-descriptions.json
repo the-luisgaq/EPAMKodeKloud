@@ -1,0 +1,49 @@
+{
+  "object": "value",
+  "document": {
+    "object": "document",
+    "data": {},
+    "nodes": [
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "Notification Context shows the component in any corner of the screen that disappears at some time or by the user's action. ",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "note-warning",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "To make it work, you have to place the ",
+            "marks": []
+          },
+          {
+            "object": "text",
+            "text": "<Snackbar />",
+            "marks": [
+              {
+                "object": "mark",
+                "type": "uui-richTextEditor-code",
+                "data": {}
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": " component at the root of your app. This component subscribes to notification context changes and shows/hides notification components.",
+            "marks": []
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CalendarPresets should be rendered correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="uui-presets-container root"
+  >
+    <div
+      class="uui-presets-header"
+    >
+      Presets
+    </div>
+    <button
+      class="uui-button-box uui-enabled -clickable uui-link_button root uui-size-24 uui-no-left-icon uui-no-right-icon uui-color-primary"
+      tabindex="0"
+      type="button"
+    >
+      <div
+        class="uui-caption uui-link-button-weight-semibold"
+      >
+        Today
+      </div>
+    </button>
+    <button
+      class="uui-button-box uui-enabled -clickable uui-link_button root uui-size-24 uui-no-left-icon uui-no-right-icon uui-color-primary"
+      tabindex="0"
+      type="button"
+    >
+      <div
+        class="uui-caption uui-link-button-weight-semibold"
+      >
+        This Week
+      </div>
+    </button>
+    <button
+      class="uui-button-box uui-enabled -clickable uui-link_button root uui-size-24 uui-no-left-icon uui-no-right-icon uui-color-primary"
+      tabindex="0"
+      type="button"
+    >
+      <div
+        class="uui-caption uui-link-button-weight-semibold"
+      >
+        Last Week
+      </div>
+    </button>
+    <button
+      class="uui-button-box uui-enabled -clickable uui-link_button root uui-size-24 uui-no-left-icon uui-no-right-icon uui-color-primary"
+      tabindex="0"
+      type="button"
+    >
+      <div
+        class="uui-caption uui-link-button-weight-semibold"
+      >
+        This Month
+      </div>
+    </button>
+    <button
+      class="uui-button-box uui-enabled -clickable uui-link_button root uui-size-24 uui-no-left-icon uui-no-right-icon uui-color-primary"
+      tabindex="0"
+      type="button"
+    >
+      <div
+        class="uui-caption uui-link-button-weight-semibold"
+      >
+        Last Month
+      </div>
+    </button>
+    <button
+      class="uui-button-box uui-enabled -clickable uui-link_button root uui-size-24 uui-no-left-icon uui-no-right-icon uui-color-primary"
+      tabindex="0"
+      type="button"
+    >
+      <div
+        class="uui-caption uui-link-button-weight-semibold"
+      >
+        Last 3 Months
+      </div>
+    </button>
+    <button
+      class="uui-button-box uui-enabled -clickable uui-link_button root uui-size-24 uui-no-left-icon uui-no-right-icon uui-color-primary"
+      tabindex="0"
+      type="button"
+    >
+      <div
+        class="uui-caption uui-link-button-weight-semibold"
+      >
+        This Year
+      </div>
+    </button>
+    <button
+      class="uui-button-box uui-enabled -clickable uui-link_button root uui-size-24 uui-no-left-icon uui-no-right-icon uui-color-primary"
+      tabindex="0"
+      type="button"
+    >
+      <div
+        class="uui-caption uui-link-button-weight-semibold"
+      >
+        Last Year
+      </div>
+    </button>
+  </div>
+</DocumentFragment>
+`;

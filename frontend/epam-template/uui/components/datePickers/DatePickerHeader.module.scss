@@ -1,0 +1,28 @@
+.root {
+    --uui-dtp_header-padding-bottom: 6px;
+
+    &:global(.uui-datepicker-header-container) {
+        :global(.uui-datepicker-header-nav) {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: var(--uui-dtp_header-padding-bottom);
+        }
+
+        :global(.uui-datepicker-header-nav-title) {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+*[dir='rtl'] .container :global(.uui-datepicker-header-nav-icon-left), .container[dir='rtl'] :global(.uui-datepicker-header-nav-icon-left) {
+    svg {
+        transform: rotate(180deg);
+    }
+}
+
+*[dir='rtl'] .container :global(.uui-datepicker-header-nav-icon-right), .container[dir='rtl'] :global(.uui-datepicker-header-nav-icon-right) {
+    svg {
+        transform: rotate(180deg);
+    }
+}

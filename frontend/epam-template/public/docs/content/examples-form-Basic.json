@@ -1,0 +1,70 @@
+[
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "Below is a basic form example with validation."
+      }
+    ]
+  },
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "We use the "
+      },
+      {
+        "type": "link",
+        "url": "/documents?id=lenses",
+        "target": "_blank",
+        "children": [
+          {
+            "text": "Lenses"
+          }
+        ]
+      },
+      {
+        "text": " approach for form state management and "
+      },
+      {
+        "text": "Metadata",
+        "uui-richTextEditor-bold": true
+      },
+      {
+        "text": " for validation."
+      }
+    ]
+  },
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "For handling success/error results after the save action, use "
+      },
+      {
+        "text": "onSuccess",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " and "
+      },
+      {
+        "text": "onError",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " props. Do not chain promises in the "
+      },
+      {
+        "text": "onSave",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " callback because it doesn't guarantee that the form was completely saved. "
+      }
+    ]
+  }
+]

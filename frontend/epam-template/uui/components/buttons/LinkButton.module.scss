@@ -1,0 +1,109 @@
+@use  '../../assets/styles/index' as *;
+
+.root {
+    // colors
+    --uui-link_btn-text: var(--uui-color-50);
+    --uui-link_btn-text-hover: var(--uui-color-60);
+    --uui-link_btn-text-active: var(--uui-color-70);
+    --uui-link_btn-text-disabled: var(--uui-text-disabled);
+
+    // fonts
+    --uui-link-button-font: var(--uui-font);
+    --uui-link-button-font-weight-semibold: 600;
+    --uui-link-button-font-weight-regular: 400;
+
+    // sizes
+    --uui-link-button-min-height: var(--uui-size);
+    --uui-link-button-min-width: var(--uui-size);
+    --uui-link-button-gap: var(--uui-horizontal-gap);
+    --uui-link-button-caption-padding: calc((var(--uui-link-button-min-height) - var(--uui-link-button-line-height)) / 2);
+    --uui-link-button-icon-height: var(--uui-icon-size);
+    --uui-link-button-line-height: var(--uui-line-height);
+    --uui-link-button-font-size: var(--uui-font-size);
+    --uui-link-button-focus-radius: var(--uui-focus-radius);
+    //
+    min-width: var(--uui-link-button-min-width);
+
+    @include clickable-styles();
+
+    &:global(.uui-button-box) {
+        background-color: transparent;
+        color: var(--uui-link_btn-text);
+        fill: var(--uui-link_btn-text);
+        min-height: var(--uui-link-button-min-height);
+        min-width: auto;
+
+        &:global(.-clickable:not(.uui-disabled)) {
+            &:hover {
+                color: var(--uui-link_btn-text-hover);
+                fill: var(--uui-link_btn-text-hover);
+            }
+
+            &:active {
+                color: var(--uui-link_btn-text-active);
+                fill: var(--uui-link_btn-text-active);
+            }
+
+            &:focus {
+                box-shadow: none;
+            }
+
+            &:focus-visible {
+                @include focus-visible-effect(2px);
+                border-radius: var(--uui-link-button-focus-radius);
+            }
+        }
+
+        &:global(.uui-disabled) {
+            color: var(--uui-link_btn-text-disabled);
+            fill: var(--uui-link_btn-text-disabled);
+            background-color: transparent;
+
+            &:hover {
+                background-color: transparent;
+            }
+        }
+    }
+
+    :global(.uui-caption) {
+        font-family: var(--uui-link-button-font);
+        font-weight: var(--uui-link-button-font-weight, normal); // --uui-link-button-font-weight - don't delete value specified inline
+        line-height: var(--uui-link-button-line-height);
+        font-size: var(--uui-link-button-font-size);
+        padding-top: var(--uui-link-button-caption-padding);
+        padding-bottom: var(--uui-link-button-caption-padding);
+
+        &:not(:first-child) {
+            padding-inline-start: var(--uui-link-button-gap);
+        }
+
+        &:not(:last-child) {
+            padding-inline-end: var(--uui-link-button-gap);
+        }
+
+        &:global(.uui-underline-solid) {
+            text-decoration: underline;
+            text-underline-offset: 0.2em;
+        }
+
+        &:global(.uui-underline-dashed) {
+            text-decoration: underline dashed;
+            text-underline-offset: 0.2em;
+        }
+
+        &:global(.uui-link-button-weight-semibold) {
+            font-weight: var(--uui-link-button-font-weight-semibold);
+        }
+
+        &:global(.uui-link-button-weight-regular) {
+            font-weight: var(--uui-link-button-font-weight-regular);
+        }
+    }
+
+    :global(.uui-icon) {
+        svg {
+            height: var(--uui-link-button-icon-height);
+            width: inherit;
+        }
+    }
+}

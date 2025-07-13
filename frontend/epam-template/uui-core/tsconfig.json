@@ -1,0 +1,13 @@
+{
+  "extends": "../tsconfig.json",
+  "strictNullChecks": true,
+  "compilerOptions": {
+    "rootDir": ".",
+    "outDir": "./build"
+  },
+  "exclude": [
+    "**/__tests__",
+    "build",
+    "node_modules"
+  ]
+}
