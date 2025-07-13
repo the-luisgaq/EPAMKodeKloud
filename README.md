@@ -1,6 +1,6 @@
 # KodeKloud License Usage Dashboard
 
-This project is a real-time dashboard that tracks the usage of KodeKloud licenses by EPAM team members. It pulls data from Azure Blob Storage, processes it with an Azure Function, and displays the results using a React-based frontend deployed to Azure Static Web Apps.
+This project is a real-time dashboard that tracks the usage of KodeKloud licenses by EPAM team members. It pulls data from Azure Blob Storage, processes it with a FastAPI backend, and displays the results using a React-based frontend deployed to Azure Static Web Apps.
 
 ## 🌐 Architecture Overview
 
@@ -9,9 +9,9 @@ This project is a real-time dashboard that tracks the usage of KodeKloud license
 ## 🧩 Components
 
 - **Azure Blob Storage**: Stores input Excel files (`kode_kloud/root/KodeKloud2025Admin.xlsx`, `kode_kloud/root/activity_leaderboard.xlsx`) and output JSON (`kodekloud_data.json`).
-- **Azure Function App**: Triggered via HTTP, processes the Excel files and generates a report in Excel and JSON formats.
+- **FastAPI Backend**: Triggered via HTTP, processes the Excel files and generates a report in Excel and JSON formats.
 - **GitHub Actions**:
-  - One workflow generates the JSON report by calling the Azure Function.
+  - One workflow generates the JSON report by calling the FastAPI backend.
   - Another workflow builds and deploys the frontend to Azure Static Web Apps.
 - **Azure Static Web Apps**:
   - Hosts the frontend.
@@ -30,14 +30,8 @@ Users accessing the site are redirected to login with their EPAM Entra ID accoun
 - GitHub Actions builds and pushes to production
 
 ### 2. Backend (FastAPI)
-A new FastAPI backend now lives under `backend` and replaces the Function App for local development.
+A FastAPI backend now lives under `backend`. It exposes Swagger API docs at `/docs` and fully replaces the old Azure Function.
 The frontend expects this service at `http://backend:8000` when running with Docker, or `http://localhost:8000` during local development.
-
-### Legacy Azure Function
-- The legacy Azure Function resides in `backend_old`.
-- Python Azure Function hosted in Azure App Service
-- Publishes using GitHub Actions and a publish profile
-- Processes data from Blob Storage and writes output back
 
 ### 3. Secrets (in GitHub)
 - `AZURE_CLIENT_ID`
