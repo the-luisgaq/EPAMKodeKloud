@@ -1,0 +1,25 @@
+[
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "For a simple case, you need to provide a Target via the "
+      },
+      {
+        "text": "renderTarget",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " prop and dropdown body content via the "
+      },
+      {
+        "text": "renderBody",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " prop."
+      }
+    ]
+  }
+]

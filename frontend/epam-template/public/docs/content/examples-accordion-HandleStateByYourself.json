@@ -1,0 +1,32 @@
+[
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "You can handle the open/close Accordion state on your own by providing an "
+      },
+      {
+        "text": "IEditable",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " interface, which includes a "
+      },
+      {
+        "text": "value",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " and the "
+      },
+      {
+        "text": "onValueChange",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " props. By default, Accordion encapsulates this state management."
+      }
+    ]
+  }
+]

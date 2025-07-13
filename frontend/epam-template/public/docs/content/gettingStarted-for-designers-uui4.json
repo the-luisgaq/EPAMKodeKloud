@@ -1,0 +1,169 @@
+[
+  {
+    "data": {},
+    "type": "uui-richTextEditor-header-2",
+    "children": [
+      {
+        "text": "How to install design library"
+      }
+    ]
+  },
+  {
+    "data": {},
+    "type": "uui-richTextEditor-header-3",
+    "children": [
+      {
+        "text": "Figma"
+      }
+    ]
+  },
+  {
+    "data": {},
+    "type": "ordered-list",
+    "children": [
+      {
+        "data": {},
+        "type": "list-item",
+        "children": [
+          {
+            "data": {},
+            "type": "list-item-child",
+            "children": [
+              {
+                "text": ""
+              },
+              {
+                "data": {
+                  "url": "https://www.figma.com/file/3mpAy3BEZ75n5GJEZ5UV8z/UUI-Assets?node-id=137%3A2"
+                },
+                "type": "link",
+                "url": "https://www.figma.com/file/3mpAy3BEZ75n5GJEZ5UV8z/UUI-Assets?node-id=137%3A2",
+                "children": [
+                  {
+                    "text": "Open"
+                  }
+                ]
+              },
+              {
+                "text": " Assets Library"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "data": {},
+        "type": "list-item",
+        "children": [
+          {
+            "data": {},
+            "type": "list-item-child",
+            "children": [
+              {
+                "text": ""
+              },
+              {
+                "data": {
+                  "url": "https://www.figma.com/file/UyChXPLmyv5zMrOU37KdUL/UUI4-Components?node-id=280%3A85528"
+                },
+                "type": "link",
+                "url": "https://www.figma.com/file/UyChXPLmyv5zMrOU37KdUL/UUI4-Components?node-id=280%3A85528",
+                "children": [
+                  {
+                    "text": "Open"
+                  }
+                ]
+              },
+              {
+                "text": " Components Library"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "data": {},
+        "type": "list-item",
+        "children": [
+          {
+            "data": {},
+            "type": "list-item-child",
+            "children": [
+              {
+                "text": "Enable libraries in your project:"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "src": "http://static.cdn.epam.com/uploads/690afa39a93c88c4dd13758fe1d869d5/EPM-UUI/Images/Figma Install UUI4.png",
+      "imageSize": {
+        "width": 547,
+        "height": 706
+      }
+    },
+    "type": "image",
+    "url": "http://static.cdn.epam.com/uploads/690afa39a93c88c4dd13758fe1d869d5/EPM-UUI/Images/Figma Install UUI4.png",
+    "children": [
+      {
+        "text": ""
+      }
+    ],
+    "width": 547
+  },
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "Being up-to-date",
+        "uui-richTextEditor-bold": true
+      }
+    ]
+  },
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "The library updates approximately once a week. When the next update is available, Sketch notifies you by following message \"Library Updates Available\" in the right top corner. Click on the message and download the latest version."
+      }
+    ]
+  },
+  {
+    "data": {
+      "src": "http://static.cdn.epam.com/uploads/690afa39a93c88c4dd13758fe1d869d5/EPM-UUI/Images/Screenshot 2021-01-11 at 14.11.02.png",
+      "imageSize": {
+        "width": 260,
+        "height": 120
+      }
+    },
+    "type": "image",
+    "url": "http://static.cdn.epam.com/uploads/690afa39a93c88c4dd13758fe1d869d5/EPM-UUI/Images/Screenshot 2021-01-11 at 14.11.02.png",
+    "children": [
+      {
+        "text": ""
+      }
+    ],
+    "width": 260
+  },
+  {
+    "data": {
+      "src": "http://static.cdn.epam.com/uploads/690afa39a93c88c4dd13758fe1d869d5/EPM-UUI/UUI3/image2020-5-26_14-2-32.png",
+      "imageSize": {
+        "width": 469,
+        "height": 393
+      }
+    },
+    "type": "paragraph",
+    "children": [
+      {
+        "text": ""
+      }
+    ]
+  }
+]

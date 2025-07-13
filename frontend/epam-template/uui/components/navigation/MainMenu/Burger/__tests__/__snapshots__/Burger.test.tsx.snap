@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Burger should render with maximum props 1`] = `
+<DocumentFragment>
+  <div
+    class="root uui-burger uui-burger-menu container"
+  >
+    <button
+      class="uui-burger-button"
+    >
+      <div
+        class="container uui-icon uui-enabled"
+      >
+        <svg
+          class=""
+        />
+      </div>
+    </button>
+  </div>
+</DocumentFragment>
+`;

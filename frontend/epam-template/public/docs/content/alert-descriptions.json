@@ -1,0 +1,35 @@
+[
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "A simple interactive informational text message."
+      }
+    ]
+  },
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "Use alerts when you need to inform users about the result of their action or place inline notifications for the user. Place alert into (inside) page content. For overlay notifications, we recommend using the "
+      },
+      {
+        "data": {
+          "url": "https://uui.epam.com/documents?id=notificationCard&mode=doc&skin=UUI4_promo&category=components"
+        },
+        "type": "link",
+        "url": "https://uui.epam.com/documents?id=notificationCard&mode=doc&skin=UUI4_promo&category=components",
+        "children": [
+          {
+            "text": "NotificationCard"
+          }
+        ]
+      },
+      {
+        "text": " component."
+      }
+    ]
+  }
+]

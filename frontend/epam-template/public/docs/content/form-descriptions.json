@@ -1,0 +1,116 @@
+[
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "The Form component handles the state of the form. It performs such functions:"
+      }
+    ]
+  },
+  {
+    "data": {},
+    "type": "unordered-list",
+    "children": [
+      {
+        "data": {},
+        "type": "list-item",
+        "children": [
+          {
+            "data": {},
+            "type": "list-item-child",
+            "children": [
+              {
+                "text": "Declarative binding components to the form state."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "data": {},
+        "type": "list-item",
+        "children": [
+          {
+            "data": {},
+            "type": "list-item-child",
+            "children": [
+              {
+                "text": "Validation (you can choose when validation is performed: 'onchange' or 'save'; by default, 'save'.)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "data": {},
+        "type": "list-item",
+        "children": [
+          {
+            "data": {},
+            "type": "list-item-child",
+            "children": [
+              {
+                "text": "Revert/Undo/Redo actions."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "data": {},
+        "type": "list-item",
+        "children": [
+          {
+            "data": {},
+            "type": "list-item-child",
+            "children": [
+              {
+                "text": "Signaling a user that they are leaving with unsaved changes."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "data": {},
+        "type": "list-item",
+        "children": [
+          {
+            "data": {},
+            "type": "list-item-child",
+            "children": [
+              {
+                "text": "Saving the form state to localStorage."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "See the Form "
+      },
+      {
+        "data": {
+          "url": "https://uui.epam.com/demo?id=form"
+        },
+        "type": "link",
+        "url": "https://uui.epam.com/demo?id=form",
+        "children": [
+          {
+            "text": "demo﻿"
+          }
+        ]
+      },
+      {
+        "text": " to learn about the real potential of the Form Component and others."
+      }
+    ]
+  }
+]

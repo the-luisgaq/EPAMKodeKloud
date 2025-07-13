@@ -1,0 +1,45 @@
+@use  '../../../assets/styles/effects' as *;
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    height: 60px;
+    padding-left: 18px;
+    padding-right: 6px;
+    background-color: transparent;
+    border: 0 none;
+
+    :global(.uui-caption), :global(.uui-input) {
+        padding-top: 21px;
+        padding-bottom: 21px;
+        min-width: 60px;
+        line-height: 18px;
+        font-size: 18px;
+    }
+
+    &:global(.-clickable) {
+        cursor: pointer;
+
+        &:focus, &:hover {
+            background: var(--uui-main_menu-dropdown-bg);
+            outline: none;
+        }
+
+        &:active {
+            background-color: var(--uui-main_menu-dropdown-bg);
+        }
+
+        &:focus-visible {
+            @include focus-visible-effect(-2px);
+        }
+    }
+}
+
+.open {
+    background: var(--uui-main_menu-dropdown-bg);
+}
+
+.folding-arrow {
+    padding-inline-start: 6px;
+}

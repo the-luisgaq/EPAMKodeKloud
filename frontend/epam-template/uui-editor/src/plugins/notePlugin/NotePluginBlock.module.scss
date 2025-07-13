@@ -1,0 +1,32 @@
+.wrapper {
+    border: 1px solid;
+    border-left: 6px solid;
+    border-radius: var(--uui-border-radius);
+    position: relative;
+    margin: 24px 0;
+    padding: 18px 24px;
+    background: var(--uui-warning-5);
+}
+
+.icon {
+    position: absolute;
+    margin: auto;
+    left: 50%;
+    margin-left: -15px;
+    top: -30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    border-radius: 50px;
+    background: white;
+
+    svg {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.info-color {
+    fill: var(--uui-warning-50);
+}

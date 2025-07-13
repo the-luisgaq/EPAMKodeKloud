@@ -1,0 +1,173 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FiltersPanel snapshot should be rendered correctly 1`] = `
+<DocumentFragment>
+  <div
+    class=""
+    style="min-width: 0; flex-basis: auto;"
+  >
+    <div
+      class="uui-filters-panel-item-toggler root uui-input-box -clickable uui-has-value uui-size-36"
+      role="button"
+      style="max-width: 300px;"
+      tabindex="0"
+    >
+      <div
+        class="titleWrapper"
+      >
+        <div
+          class="title uui-filters-panel-item-toggler-title"
+        >
+          Status:
+        </div>
+        <div
+          class="textWrapper"
+        >
+          <div
+            class="selection uui-filters-panel-item-toggler-selection"
+          >
+            Unknown
+          </div>
+        </div>
+      </div>
+      <div
+        class="container uui-icon uui-enabled uui-icon-dropdown"
+      >
+        <svg
+          class=""
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    class=""
+    style="min-width: 0; flex-basis: auto;"
+  >
+    <div
+      class="uui-filters-panel-item-toggler root uui-input-box -clickable uui-size-36"
+      role="button"
+      style="max-width: 400px;"
+      tabindex="0"
+    >
+      <div
+        class="titleWrapper"
+      >
+        <div
+          class="title uui-filters-panel-item-toggler-title"
+        >
+          Position
+        </div>
+      </div>
+      <div
+        class="container uui-icon uui-enabled uui-icon-dropdown"
+      >
+        <svg
+          class=""
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    class=""
+    style="min-width: 0; flex-basis: auto;"
+  >
+    <div
+      class="uui-filters-panel-item-toggler root uui-input-box -clickable uui-size-36"
+      role="button"
+      style="max-width: 300px;"
+      tabindex="0"
+    >
+      <div
+        class="titleWrapper"
+      >
+        <div
+          class="title uui-filters-panel-item-toggler-title"
+        >
+          Age
+        </div>
+      </div>
+      <div
+        class="container uui-icon uui-enabled uui-icon-dropdown"
+      >
+        <svg
+          class=""
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    class=""
+    style="min-width: 0; flex-basis: auto;"
+  >
+    <div
+      class="uui-filters-panel-item-toggler root uui-input-box -clickable uui-size-36"
+      role="button"
+      style="max-width: auto;"
+      tabindex="0"
+    >
+      <div
+        class="titleWrapper"
+      >
+        <div
+          class="title uui-filters-panel-item-toggler-title"
+        >
+          Hire Date
+        </div>
+      </div>
+      <div
+        class="container uui-icon uui-enabled uui-icon-dropdown"
+      >
+        <svg
+          class=""
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    class=""
+    style="min-width: 0; flex-basis: auto;"
+  >
+    <div
+      class="uui-filters-panel-item-toggler root uui-input-box -clickable uui-size-36"
+      role="button"
+      style="max-width: auto;"
+      tabindex="0"
+    >
+      <div
+        class="titleWrapper"
+      >
+        <div
+          class="title uui-filters-panel-item-toggler-title"
+        >
+          Exit Date
+        </div>
+      </div>
+      <div
+        class="container uui-icon uui-enabled uui-icon-dropdown"
+      >
+        <svg
+          class=""
+        />
+      </div>
+    </div>
+  </div>
+  <button
+    class="uui-button-box uui-enabled -clickable container root uui-button uui-fill-ghost uui-color-primary uui-size-36 uui-filters-panel-add-button"
+    tabindex="0"
+    type="button"
+  >
+    <div
+      class="container uui-icon uui-enabled"
+    >
+      <svg
+        class=""
+      />
+    </div>
+    <div
+      class="uui-caption"
+    >
+      Add filter
+    </div>
+  </button>
+</DocumentFragment>
+`;

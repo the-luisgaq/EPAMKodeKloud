@@ -1,0 +1,34 @@
+[
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "By default,  "
+      },
+      {
+        "text": "DataPickerFooter",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " is rendered as a footer. But it is possible to pass a  "
+      },
+      {
+        "text": "renderFooter",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " method, which is suitable for some specific cases. "
+      }
+    ]
+  },
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "In this example, it is shown how to render a custom footer."
+      }
+    ]
+  }
+]

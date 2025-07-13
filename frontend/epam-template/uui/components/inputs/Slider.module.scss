@@ -1,0 +1,140 @@
+.root {
+    --uui-slider-tooltip-bg: var(--uui-color-70);
+    --uui-slider-tooltip-bg-hover: var(--uui-primary-20);
+    --uui-slider-line-bg: var(--uui-neutral-30);
+    --uui-slider-line-filled-bg: var(--uui-primary-50);
+    --uui-slider-line-active-bg: var(--uui-primary-50);
+    --uui-slider-dot-bg: var(--uui-surface-main);
+    --uui-slider-dot-bg-hover: var(--uui-primary-20);
+    --uui-slider-dot-border: var(--uui-neutral-30);
+    --uui-slider-dot-border-hover: var(--uui-primary-20);
+    --uui-slider-handle-bg: var(--uui-primary-50);
+    --uui-slider-shadow: var(--uui-shadow-level-1);
+    --uui-slider-scale-text: var(--uui-text-primary);
+
+    --uui-slider-font: var(--uui-font);
+    --uui-slider-font-weight: 400;
+
+    --uui-slider-tooltip-font-size: 14px;
+    --uui-slider-tooltip-line-height: 14px;
+    --uui-slider-tooltip-vertical-padding: 0;
+    --uui-slider-tooltip-horizontal-padding: 10px;
+    --uui-slider-scale-number-font-size: 11px;
+    --uui-slider-scale-dot-size: 7px;
+    --uui-slider-scale-height: 6px;
+
+    :global(.uui-tooltip-body) {
+        background-color: var(--uui-slider-tooltip-bg);
+        padding: var(--uui-slider-tooltip-vertical-padding) var(--uui-slider-tooltip-horizontal-padding);
+        color: white;
+        line-height: var(--uui-slider-tooltip-line-height);
+        font-size: var(--uui-slider-tooltip-font-size);
+        font-family: var(--uui-slider-font);
+        font-weight: var(--uui-slider-font-weight);
+        box-shadow: var(--uui-slider-shadow);
+    }
+
+    :global(.uui-tooltip-arrow) {
+        border: 5px solid transparent;
+    }
+
+    :global(.uui-slider-scale-number) {
+        font-size: var(--uui-slider-scale-number-font-size);
+        font-family: var(--uui-slider-font);
+        font-weight: var(--uui-slider-font-weight);
+        color: var(--uui-slider-scale-text);
+        margin-top: 10px;
+    }
+
+    :global(.uui-slider-scale-dot) {
+        width: var(--uui-slider-scale-dot-size);
+        height: var(--uui-slider-scale-dot-size);
+        border-radius: 50%;
+        top: -1px;
+    }
+
+    &:global(.uui-slider-container) {
+        height: 12px;
+
+        :global(.uui-slider) {
+            margin: 0 6px 0 6px;
+            width: 100%;
+            height: 3px;
+            border-radius: 10px;
+            background: var(--uui-slider-line-bg);
+            min-width: 100px;
+        }
+
+        :global(.uui-slider-scale) {
+            height: var(--uui-slider-scale-height);
+        }
+
+        :global(.uui-slider-handle) {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: var(--uui-slider-handle-bg);
+            cursor: pointer;
+        }
+
+        :global(.uui-slider-filled) {
+            margin: 0 6px;
+            height: 3px;
+            border-radius: 10px;
+            background-color: var(--uui-slider-line-filled-bg);
+        }
+
+        :global(.uui-slider-scale-dot) {
+            background-color: var(--uui-slider-dot-bg);
+            border: 1px var(--uui-slider-dot-border) solid;
+        }
+
+        &:hover {
+            :global(.uui-slider) {
+                background-color: var(--uui-slider-tooltip-bg-hover);
+            }
+
+            :global(.uui-slider-scale-dot):not(:global(.uui-slider-scale-filled-dot)) {
+                background-color: var(--uui-slider-dot-bg-hover);
+                border-color: var(--uui-slider-dot-border-hover);
+            }
+        }
+
+        :global(.uui-slider-scale-filled-dot) {
+            background-color: var(--uui-primary-50);
+            border-color: var(--uui-slider-line-active-bg);
+        }
+
+        &:global(.uui-active) {
+            :global(.uui-slider) {
+                background-color: var(--uui-slider-line-active-bg);
+            }
+
+            :global(.uui-slider-scale-dot):not(:global(.uui-slider-scale-filled-dot)) {
+                border-color: var(--uui-slider-line-active-bg);
+                background-color: var(--uui-slider-line-active-bg);
+            }
+        }
+
+        &:global(.uui-disabled) {
+            pointer-events: none;
+
+            :global(.uui-slider-filled) {
+                background-color: var(--uui-control-bg-disabled);
+            }
+
+            :global(.uui-slider-handle) {
+                background-color: var(--uui-control-bg-disabled);
+            }
+
+            :global(.uui-slider) {
+                background-color: var(--uui-control-bg-disabled);
+            }
+
+            :global(.uui-slider-scale-filled-dot) {
+                background-color: var(--uui-control-bg-disabled);
+                border-color: var(--uui-control-bg-disabled);
+            }
+        }
+    }
+}

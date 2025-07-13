@@ -1,0 +1,11 @@
+[
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "UUI supports different badge sizes, according to Badge height. You can change size by passing size prop."
+      }
+    ]
+  }
+]

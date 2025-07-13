@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Slider should render with maximum props 1`] = `
+<DocumentFragment>
+  <div
+    class="uui-slider-container root root uui-color-neutral"
+  >
+    <div
+      class="uui-slider"
+    />
+    <div
+      class="uui-slider-filled"
+      style="width: 0px;"
+    />
+    <div
+      class="uui-slider-scale"
+    >
+      <div
+        class="uui-slider-scale-dot"
+        style="transform: translateX(0px);"
+      />
+      <div
+        class="uui-slider-scale-number"
+        style="transform: translateX(0px);"
+      >
+        0
+      </div>
+      <div
+        class="uui-slider-scale-dot"
+        style="transform: translateX(0px);"
+      />
+      <div
+        class="uui-slider-scale-number"
+        style="transform: translateX(0px);"
+      >
+        50
+      </div>
+    </div>
+    <div
+      aria-valuemax="50"
+      aria-valuemin="0"
+      class="uui-slider-handle root uui-color-neutral"
+      role="slider"
+      style="transform: translateX(0px);"
+      tabindex="0"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Slider should render with minimum props 1`] = `
+<DocumentFragment>
+  <div
+    class="uui-slider-container root root uui-color-neutral"
+  >
+    <div
+      class="uui-slider"
+    />
+    <div
+      class="uui-slider-filled"
+      style="width: 0px;"
+    />
+    <div
+      class="uui-slider-scale"
+    >
+      <div
+        class="uui-slider-scale-dot"
+        style="transform: translateX(0px);"
+      />
+      <div
+        class="uui-slider-scale-number"
+        style="transform: translateX(0px);"
+      >
+        0
+      </div>
+      <div
+        class="uui-slider-scale-dot"
+        style="transform: translateX(0px);"
+      />
+      <div
+        class="uui-slider-scale-number"
+        style="transform: translateX(0px);"
+      >
+        50
+      </div>
+    </div>
+    <div
+      aria-valuemax="50"
+      aria-valuemin="0"
+      class="uui-slider-handle root uui-color-neutral"
+      role="slider"
+      style="transform: translateX(0px);"
+      tabindex="0"
+    />
+  </div>
+</DocumentFragment>
+`;

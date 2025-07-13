@@ -1,0 +1,40 @@
+[
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "To group RadioInputs into one separate group use a "
+      },
+      {
+        "data": {
+          "url": "/documents?category=components&id=radioGroup&mode=doc&skin=UUI4_promo"
+        },
+        "type": "link",
+        "url": "/documents?category=components&id=radioGroup&mode=doc&skin=UUI4_promo",
+        "children": [
+          {
+            "text": "RadioGroup"
+          }
+        ]
+      },
+      {
+        "text": " and set the "
+      },
+      {
+        "text": "name",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " property. To create a component with vertically or horizontally positioned RadioInputs set the property "
+      },
+      {
+        "text": "direction",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " = \"vertical\" or \"horizontal\"."
+      }
+    ]
+  }
+]

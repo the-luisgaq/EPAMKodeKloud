@@ -1,0 +1,90 @@
+.root {
+    --uui-tooltip-bg: var(--uui-color-50);
+    --uui-tooltip-border: var(--uui-tooltip-bg);
+    --uui-tooltip-text: var(--uui-color-contrast);
+    --uui-tooltip-shadow: var(--uui-shadow-level-2, 0 2px 18px 0 rgba(44, 47, 60, 0.3), 0 1px 4px 0 rgba(44, 47, 60, 0.5)); /* WebStorm Bag Report https://youtrack.jetbrains.com/issue/WEB-54442 */
+    --uui-tooltip-arrow-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+
+    --uui-tooltip-border-radius: var(--uui-border-radius);
+    --uui-tooltip-font: var(--uui-font);
+    --uui-tooltip-font-weight: 400;
+    //
+    :global(.uui-tooltip-body) {
+        padding: 5px 11px;
+        line-height: 24px;
+        font-size: 14px;
+        font-family: var(--uui-tooltip-font);
+        font-weight: var(--uui-tooltip-font-weight);
+        box-shadow: var(--uui-tooltip-shadow);
+        word-wrap: break-word;
+        border-radius: var(--uui-tooltip-border-radius);
+        border: 1px solid var(--uui-tooltip-border);
+    }
+
+    :global(.uui-popover-arrow) {
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        overflow: hidden;
+    }
+
+    :global(.uui-popover-arrow)::after {
+        content: '';
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        box-shadow: var(--uui-tooltip-arrow-shadow);
+        box-sizing: border-box;
+    }
+
+    //Colors
+    :global(.uui-tooltip-body) {
+        background-color: var(--uui-tooltip-bg);
+        color: var(--uui-tooltip-text);
+    }
+
+    &:global(.uui-tooltip-container) {
+        :global(.uui-popover-arrow[data-placement^='right'])::after,
+        :global(.uui-popover-arrow[data-placement^='left'])::after,
+        :global(.uui-popover-arrow[data-placement^='top'])::after,
+        :global(.uui-popover-arrow[data-placement^='bottom'])::after {
+            background: var(--uui-tooltip-bg);
+        }
+
+        :global(.uui-popover-arrow[data-placement^='right'])::after {
+            border-bottom: 1px solid var(--uui-tooltip-border);
+            border-left: 1px solid var(--uui-tooltip-border);
+        }
+
+        :global(.uui-popover-arrow[data-placement^='left'])::after {
+            border-top: 1px solid var(--uui-tooltip-border);
+            border-right: 1px solid var(--uui-tooltip-border);
+        }
+
+        :global(.uui-popover-arrow[data-placement^='bottom'])::after {
+            border-top: 1px solid var(--uui-tooltip-border);
+            border-left: 1px solid var(--uui-tooltip-border);
+        }
+
+        :global(.uui-popover-arrow[data-placement^='top'])::after {
+            border-bottom: 1px solid var(--uui-tooltip-border);
+            border-right: 1px solid var(--uui-tooltip-border);
+        }
+    }
+
+    &:global {
+        &.uui-color-neutral {
+            --uui-tooltip-bg: var(--uui-surface-main);
+            --uui-tooltip-text: var(--uui-text-primary);
+        }
+
+        &.uui-color-critical {
+            --uui-tooltip-bg: var(--uui-critical-60);
+        }
+
+        &.uui-color-inverted {
+            --uui-tooltip-bg: var(--uui-neutral-80);
+            --uui-tooltip-text: var(--uui-neutral-5);
+        }
+    }
+}

@@ -1,0 +1,74 @@
+@use  '../../../../assets/styles/index' as *;
+
+.root {
+    --uui-burger_btn_caption: var(--uui-neutral-5);
+    --uui-burger_btn_caption-hover: var(--uui-primary-50);
+    --uui-burger_btn_caption-active: var(--uui-primary-50);
+    --uui-burger_btn-border: var(--uui-neutral-30);
+
+    --uui-burger_btn-font: var(--uui-font);
+    --uui-burger_btn-font-weight: 400;
+
+    --uui-burger_btn-icon-size: 18px;
+    //
+    padding: 0 24px;
+    background: none;
+    border: 0;
+    outline: none;
+    font-family: var(--uui-burger_btn-font);
+    font-weight: var(--uui-burger_btn-font-weight);
+    line-height: 48px;
+    flex-shrink: 0;
+
+    &:global(.uui-enabled) {
+        color: var(--uui-burger_btn_caption);
+        fill: var(--uui-burger_btn_caption);
+
+        &:global(.-clickable) {
+            &:hover {
+                color: var(--uui-burger_btn_caption-hover);
+                fill: var(--uui-burger_btn_caption-hover);
+            }
+
+            &:focus-visible {
+                @include focus-visible-effect(-2px);
+            }
+        }
+    }
+
+    &:global(.uui-active) {
+        color: var(--uui-burger_btn_caption-active);
+        fill: var(--uui-burger_btn_caption-active);
+    }
+
+    :global(.uui-icon) {
+        padding: 0 12px;
+    }
+
+    &.button-primary {
+        font-size: 18px;
+    }
+
+    &.button-secondary {
+        font-size: 14px;
+        padding-left: 18px;
+        margin-left: 48px;
+        border-left: 1px var(--uui-burger_btn-border) solid;
+    }
+
+    &.hasIcon,
+    &.dropdown {
+        padding-left: 0;
+    }
+
+    &.hasIcon {
+        :global(.uui-icon) {
+            padding: 0 12px 0 20px;
+
+            svg {
+                height: var(--uui-burger_btn-icon-size);
+                width: inherit;
+            }
+        }
+    }
+}

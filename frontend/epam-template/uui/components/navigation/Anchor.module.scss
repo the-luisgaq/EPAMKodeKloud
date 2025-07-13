@@ -1,0 +1,8 @@
+@use  '../../assets/styles/effects' as *;
+
+.root {
+    &:global(.-clickable):focus-visible {
+        @include focus-visible-effect(2px);
+        border-radius: var(--uui-focus-radius);
+    }
+}

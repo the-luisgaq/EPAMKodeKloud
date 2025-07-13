@@ -1,0 +1,424 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rating should be rendered correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="root"
+  >
+    <div
+      aria-valuemax="5"
+      aria-valuemin="1"
+      aria-valuenow="0"
+      class="container root uui-size-18"
+      role="slider"
+      tabindex="0"
+    >
+      <div
+        class="container"
+      >
+        <div
+          class="uui-rating-empty-star-container"
+        >
+          <div
+            class="uui-rating-star"
+          >
+            <div
+              class="container uui-icon uui-enabled"
+            >
+              <svg
+                class=""
+              />
+            </div>
+          </div>
+          <div
+            class="uui-rating-star"
+          >
+            <div
+              class="container uui-icon uui-enabled"
+            >
+              <svg
+                class=""
+              />
+            </div>
+          </div>
+          <div
+            class="uui-rating-star"
+          >
+            <div
+              class="container uui-icon uui-enabled"
+            >
+              <svg
+                class=""
+              />
+            </div>
+          </div>
+          <div
+            class="uui-rating-star"
+          >
+            <div
+              class="container uui-icon uui-enabled"
+            >
+              <svg
+                class=""
+              />
+            </div>
+          </div>
+          <div
+            class="uui-rating-star"
+          >
+            <div
+              class="container uui-icon uui-enabled"
+            >
+              <svg
+                class=""
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="uui-rating-filled-star-container"
+          style="width: 0px;"
+        >
+          <div
+            class="uui-rating-star"
+          >
+            <div
+              class="container uui-icon uui-enabled"
+            >
+              <svg
+                class=""
+              />
+            </div>
+          </div>
+          <div
+            class="uui-rating-star"
+          >
+            <div
+              class="container uui-icon uui-enabled"
+            >
+              <svg
+                class=""
+              />
+            </div>
+          </div>
+          <div
+            class="uui-rating-star"
+          >
+            <div
+              class="container uui-icon uui-enabled"
+            >
+              <svg
+                class=""
+              />
+            </div>
+          </div>
+          <div
+            class="uui-rating-star"
+          >
+            <div
+              class="container uui-icon uui-enabled"
+            >
+              <svg
+                class=""
+              />
+            </div>
+          </div>
+          <div
+            class="uui-rating-star"
+          >
+            <div
+              class="container uui-icon uui-enabled"
+            >
+              <svg
+                class=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Rating should be rendered correctly with more props 1`] = `
+<DocumentFragment>
+  <div
+    class="root"
+  >
+    <div
+      aria-valuemax="5"
+      aria-valuemin="1"
+      aria-valuenow="0"
+      class="container root uui-size-24"
+      role="slider"
+      tabindex="0"
+    >
+      <div
+        class="container"
+      >
+        <div
+          class="uui-rating-empty-star-container"
+        >
+          <div
+            class="uui-rating-star"
+          >
+            <div
+              class="container uui-icon uui-enabled"
+            >
+              <svg
+                class=""
+              />
+            </div>
+          </div>
+          <div
+            class="uui-rating-star"
+          >
+            <div
+              class="container uui-icon uui-enabled"
+            >
+              <svg
+                class=""
+              />
+            </div>
+          </div>
+          <div
+            class="uui-rating-star"
+          >
+            <div
+              class="container uui-icon uui-enabled"
+            >
+              <svg
+                class=""
+              />
+            </div>
+          </div>
+          <div
+            class="uui-rating-star"
+          >
+            <div
+              class="container uui-icon uui-enabled"
+            >
+              <svg
+                class=""
+              />
+            </div>
+          </div>
+          <div
+            class="uui-rating-star"
+          >
+            <div
+              class="container uui-icon uui-enabled"
+            >
+              <svg
+                class=""
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="uui-rating-filled-star-container"
+          style="width: 0px;"
+        >
+          <div
+            class="uui-rating-star"
+          >
+            <div
+              class="container uui-icon uui-enabled"
+            >
+              <svg
+                class=""
+              />
+            </div>
+          </div>
+          <div
+            class="uui-rating-star"
+          >
+            <div
+              class="container uui-icon uui-enabled"
+            >
+              <svg
+                class=""
+              />
+            </div>
+          </div>
+          <div
+            class="uui-rating-star"
+          >
+            <div
+              class="container uui-icon uui-enabled"
+            >
+              <svg
+                class=""
+              />
+            </div>
+          </div>
+          <div
+            class="uui-rating-star"
+          >
+            <div
+              class="container uui-icon uui-enabled"
+            >
+              <svg
+                class=""
+              />
+            </div>
+          </div>
+          <div
+            class="uui-rating-star"
+          >
+            <div
+              class="container uui-icon uui-enabled"
+            >
+              <svg
+                class=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Rating should be rendered with other icon 1`] = `
+<DocumentFragment>
+  <div
+    class="root"
+  >
+    <div
+      aria-valuemax="5"
+      aria-valuemin="1"
+      aria-valuenow="0"
+      class="container root uui-size-24"
+      role="slider"
+      tabindex="0"
+    >
+      <div
+        class="container"
+      >
+        <div
+          class="uui-rating-empty-star-container"
+        >
+          <div
+            class="uui-rating-star"
+          >
+            <div
+              class="container uui-icon uui-enabled"
+            >
+              <svg
+                class=""
+              />
+            </div>
+          </div>
+          <div
+            class="uui-rating-star"
+          >
+            <div
+              class="container uui-icon uui-enabled"
+            >
+              <svg
+                class=""
+              />
+            </div>
+          </div>
+          <div
+            class="uui-rating-star"
+          >
+            <div
+              class="container uui-icon uui-enabled"
+            >
+              <svg
+                class=""
+              />
+            </div>
+          </div>
+          <div
+            class="uui-rating-star"
+          >
+            <div
+              class="container uui-icon uui-enabled"
+            >
+              <svg
+                class=""
+              />
+            </div>
+          </div>
+          <div
+            class="uui-rating-star"
+          >
+            <div
+              class="container uui-icon uui-enabled"
+            >
+              <svg
+                class=""
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="uui-rating-filled-star-container"
+          style="width: 0px;"
+        >
+          <div
+            class="uui-rating-star"
+          >
+            <div
+              class="container uui-icon uui-enabled"
+            >
+              <svg
+                class=""
+              />
+            </div>
+          </div>
+          <div
+            class="uui-rating-star"
+          >
+            <div
+              class="container uui-icon uui-enabled"
+            >
+              <svg
+                class=""
+              />
+            </div>
+          </div>
+          <div
+            class="uui-rating-star"
+          >
+            <div
+              class="container uui-icon uui-enabled"
+            >
+              <svg
+                class=""
+              />
+            </div>
+          </div>
+          <div
+            class="uui-rating-star"
+          >
+            <div
+              class="container uui-icon uui-enabled"
+            >
+              <svg
+                class=""
+              />
+            </div>
+          </div>
+          <div
+            class="uui-rating-star"
+          >
+            <div
+              class="container uui-icon uui-enabled"
+            >
+              <svg
+                class=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

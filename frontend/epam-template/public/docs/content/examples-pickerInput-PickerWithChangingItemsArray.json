@@ -1,0 +1,18 @@
+[
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "If you need to dynamically change PickerInput items, just re-create "
+      },
+      {
+        "text": "dataSource",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " with appropriate items."
+      }
+    ]
+  }
+]

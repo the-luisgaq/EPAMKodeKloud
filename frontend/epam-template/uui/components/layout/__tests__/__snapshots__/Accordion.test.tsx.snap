@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accordion should be rendered correctly 1`] = `
+<DocumentFragment>
+  <div
+    aria-expanded="false"
+    class="uui-accordion-container container root mode-block"
+  >
+    <div
+      class="uui-accordion-toggler"
+      tabindex="0"
+    >
+      <div
+        class="uui-accordion-toggle-container"
+      >
+        <div
+          class="uui-accordion-title"
+        >
+          Test title
+        </div>
+        <div
+          class="container uui-icon uui-enabled arrow"
+        >
+          <svg
+            class=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Accordion should be rendered correctly with props 1`] = `
+<DocumentFragment>
+  <div
+    aria-disabled="true"
+    aria-expanded="false"
+    class="uui-accordion-container container uui-disabled root mode-inline padding-18"
+  >
+    <div
+      class="uui-accordion-toggler uui-disabled"
+      tabindex="-1"
+    >
+      <div
+        class="uui-accordion-toggle-container"
+      >
+        <div
+          class="uui-accordion-title"
+        >
+          Test title
+        </div>
+        <div
+          class="container uui-icon uui-enabled uui-disabled arrow"
+        >
+          <svg
+            class=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

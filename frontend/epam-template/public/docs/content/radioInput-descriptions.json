@@ -1,0 +1,21 @@
+{
+  "object": "value",
+  "document": {
+    "object": "document",
+    "data": {},
+    "nodes": [
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "RadioInput let a user select only one of a limited number of choices.",
+            "marks": []
+          }
+        ]
+      }
+    ]
+  }
+}

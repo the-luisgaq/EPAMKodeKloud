@@ -1,0 +1,21 @@
+.container {
+    :global(.uui-accordion-toggle-container) {
+        display: flex;
+        align-items: center;
+    }
+
+    :global(.uui-accordion-toggler) {
+        &:focus {
+            outline: none;
+        }
+    }
+
+    :global(.uui-accordion-title) {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+.arrow {
+    margin-left: auto;
+}
