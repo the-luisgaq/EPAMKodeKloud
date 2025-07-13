@@ -2,7 +2,7 @@ import tempfile
 import os
 import json
 from fastapi import APIRouter
-from ..utils import generate_report
+from ..utils.generate_report import generate_report
 from ..external_services import blob
 
 router = APIRouter(prefix="/report", tags=["report"])
@@ -27,7 +27,7 @@ def create_report():
             activity_path,
         )
 
-        data = generate_report.generate_report(admin_path, activity_path, output_excel_path, output_json_path)
+        data = generate_report(admin_path, activity_path, output_excel_path, output_json_path)
 
     return data
 
