@@ -1,10 +1,10 @@
-import os
-from azure.storage.blob import BlobServiceClient
 from datetime import datetime
+from azure.storage.blob import BlobServiceClient
+from ..core import settings
 
 
 def get_blob_service_client():
-    connection_string = os.environ.get("AZURE_STORAGE_CONNECTION_STRING")
+    connection_string = settings.AZURE_STORAGE_CONNECTION_STRING
     if not connection_string:
         raise Exception("Missing AZURE_STORAGE_CONNECTION_STRING environment variable")
     return BlobServiceClient.from_connection_string(connection_string)
