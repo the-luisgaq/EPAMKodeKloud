@@ -113,6 +113,19 @@ The FastAPI report endpoint can be called with:
 curl -X POST http://localhost:8000/report
 ```
 
+## 🛠️ Development Guidelines
+
+- Run `pytest` inside the `backend` folder.
+- Run `npm run lint` inside the `frontend` folder.
+
+## 🆕 Recent Updates
+
+- Removed the old `backend_old` Azure Function directory.
+- Backend endpoints are now asynchronous with improved error handling.
+- Added a `settings` module powered by `pydantic-settings` for configuration.
+- Introduced unit tests for the report endpoints and helper utilities.
+- API docs tag renamed from `report` to `KodeKloud`.
+
 ## 👤 Maintainer
 
 Luis Alvarez (luis_alvarez1@epam.com)
