@@ -11,7 +11,7 @@ def test_create_report_download_error(monkeypatch):
     def raise_error(*args, **kwargs):
         raise Exception("boom")
 
-    monkeypatch.setattr("app.routers.kodekloudreport.blob.download_blob_to_file", raise_error)
+    monkeypatch.setattr("app.routers.kodekloud_report.storage.download_blob_to_file", raise_error)
 
     response = client.post("/report")
     assert response.status_code == 500
@@ -22,7 +22,7 @@ def test_get_report_data_download_error(monkeypatch):
     def raise_error(*args, **kwargs):
         raise Exception("boom")
 
-    monkeypatch.setattr("app.routers.kodekloudreport.blob.download_blob_to_file", raise_error)
+    monkeypatch.setattr("app.routers.kodekloud_report.storage.download_blob_to_file", raise_error)
 
     response = client.get("/report/data")
     assert response.status_code == 500
@@ -57,9 +57,9 @@ def test_create_report_success(monkeypatch, tmp_path):
         else:
             shutil.copy(activity_src, local_path)
 
-    monkeypatch.setattr("app.routers.kodekloudreport.blob.download_blob_to_file", fake_download)
-    monkeypatch.setattr("app.utils.generate_report.blob.download_blob_to_file", fake_download)
-    monkeypatch.setattr("app.utils.generate_report.blob.upload_file_to_blob", lambda *a, **k: None)
+    monkeypatch.setattr("app.routers.kodekloud_report.storage.download_blob_to_file", fake_download)
+    monkeypatch.setattr("app.utils.kodekloud_generate_report.storage.download_blob_to_file", fake_download)
+    monkeypatch.setattr("app.utils.kodekloud_generate_report.storage.upload_file_to_blob", lambda *a, **k: None)
 
     response = client.post("/report")
     assert response.status_code == 200
@@ -97,7 +97,7 @@ def test_get_report_data_success(monkeypatch, tmp_path):
     def fake_download(container, blob_name, local_path):
         shutil.copy(json_file, local_path)
 
-    monkeypatch.setattr("app.routers.kodekloudreport.blob.download_blob_to_file", fake_download)
+    monkeypatch.setattr("app.routers.kodekloud_report.storage.download_blob_to_file", fake_download)
 
     response = client.get("/report/data")
     assert response.status_code == 200

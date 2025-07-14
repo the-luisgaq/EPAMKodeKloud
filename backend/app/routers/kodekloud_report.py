@@ -2,8 +2,8 @@ import tempfile
 import os
 import json
 from fastapi import APIRouter, HTTPException
-from ..utils.generate_report import generate_report
-from ..external_services import blob
+from ..utils.kodekloud_generate_report import generate_report
+from ..external_services import storage
 from core import settings
 
 router = APIRouter(prefix="/report", tags=["KodeKloud"])
@@ -18,12 +18,12 @@ async def create_report():
         output_json_path = os.path.join(tmpdir, "kodekloud_data.json")
 
         try:
-            blob.download_blob_to_file(
+            storage.download_blob_to_file(
                 settings.CONTAINER_INPUTS,
                 settings.ADMIN_BLOB_PATH,
                 admin_path,
             )
-            blob.download_blob_to_file(
+            storage.download_blob_to_file(
                 settings.CONTAINER_INPUTS,
                 settings.ACTIVITY_BLOB_PATH,
                 activity_path,
@@ -42,7 +42,7 @@ async def get_report_data():
     with tempfile.TemporaryDirectory() as tmpdir:
         json_path = os.path.join(tmpdir, "kodekloud_data.json")
         try:
-            blob.download_blob_to_file(
+            storage.download_blob_to_file(
                 settings.CONTAINER_INPUTS,
                 settings.JSON_BLOB_PATH,
                 json_path,

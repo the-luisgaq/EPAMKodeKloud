@@ -9,7 +9,7 @@ import warnings
 from openpyxl import load_workbook
 from openpyxl.styles import PatternFill
 
-from ..external_services import blob
+from ..external_services import storage
 from core import settings
 
 warnings.simplefilter("ignore")
@@ -126,7 +126,7 @@ def write_json(df: pd.DataFrame, output_json_path: str) -> List[Dict[str, Any]]:
 def upload_json(local_json_path: str) -> None:
     """Upload the JSON file to Azure Blob Storage."""
 
-    blob.upload_file_to_blob(
+    storage.upload_file_to_blob(
         settings.CONTAINER_INPUTS,
         settings.JSON_BLOB_PATH,
         local_json_path,
