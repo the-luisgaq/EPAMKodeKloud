@@ -1,9 +1,9 @@
 from fastapi import FastAPI
-from app.routers import report
+from app.routers import kodekloudreport
 
 app = FastAPI(title="KodeKloud License API")
 
-app.include_router(report.router)
+app.include_router(kodekloudreport.router)
 
 
 @app.get("/")
