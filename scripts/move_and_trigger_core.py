@@ -2,14 +2,25 @@ import os
 import logging
 from azure.storage.blob import BlobServiceClient
 
-# Configuration loaded from GitHub Secrets or the environment
-AZURE_STORAGE_CONNECTION_STRING = os.getenv("AZURE_STORAGE_CONNECTION_STRING")
+# Configuration loaded from GitHub Secrets or the environment. When executed
+# from GitHub Actions, the secret is exposed as `STORAGE_CONNECTION_STRING`.
+AZURE_STORAGE_CONNECTION_STRING = os.getenv(
+    "AZURE_STORAGE_CONNECTION_STRING",
+    os.getenv("STORAGE_CONNECTION_STRING")
+)
 CONTAINER_SOURCE = os.getenv("CONTAINER_SOURCE", "cloudkit-inputs")
 CONTAINER_INPUTS = os.getenv("CONTAINER_INPUTS", "cloudkit-inputs")
 INPUT_FOLDER = os.getenv("INPUT_FOLDER", "kode_kloud/input")
 ARCHIVE_FOLDER = os.getenv("ARCHIVE_FOLDER", "kode_kloud/input/archive")
 
-blob_service_client = BlobServiceClient.from_connection_string(AZURE_STORAGE_CONNECTION_STRING)
+if not AZURE_STORAGE_CONNECTION_STRING:
+    raise RuntimeError(
+        "AZURE_STORAGE_CONNECTION_STRING is not set."
+    )
+
+blob_service_client = BlobServiceClient.from_connection_string(
+    AZURE_STORAGE_CONNECTION_STRING
+)
 
 def run_my_logic():
     logging.info("Checking required files in the source container...")

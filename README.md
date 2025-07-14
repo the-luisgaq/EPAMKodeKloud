@@ -69,6 +69,10 @@ pip install -r requirements.txt
 uvicorn main:app --reload
 ```
 
+In the GitHub Actions workflow, the same value is provided via the
+`STORAGE_CONNECTION_STRING` environment variable. The helper script looks for
+both names when connecting to Azure.
+
 ## 🐳 Running the Frontend with Docker
 
 You can also run the dashboard directly from a Docker container. The `frontend` directory
