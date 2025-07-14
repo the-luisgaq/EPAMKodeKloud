@@ -1,0 +1,23 @@
+.root {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+}
+
+.avatar-right {
+    flex-direction: row-reverse;
+}
+
+.avatar-left {
+    flex-direction: row;
+}
+
+.container {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+}
+
+.container > * {
+    margin-right: var(--overlap);
+}

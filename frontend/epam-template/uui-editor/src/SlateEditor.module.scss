@@ -1,0 +1,96 @@
+:global(.uui-typography) {
+    // We need to highlight visited links only in readonly mode
+    &:not(:global(.uui-readonly)) {
+        a:visited {
+            color: var(--uui-link);
+
+            &:hover {
+                color: var(--uui-link-hover);
+            }
+        }
+    }
+}
+
+.editor {
+    // padding: 1px; fixes marging collapse https://github.com/epam/UUI/issues/1856
+    padding: 1px 24px 0;
+    margin-top: -1px;
+    flex: 1;
+
+    // reverts https://github.com/ianstormtaylor/slate/pull/5423
+    span[data-slate-placeholder='true'] {
+        top: initial !important;
+    }
+}
+
+.container {
+    position: relative;
+    border-width: 1px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+
+    :global(.ordered-list),
+    :global(.unordered-list),
+    blockquote {
+        margin: 12px 0;
+    }
+
+    :global(.ordered-list),
+    :global(.unordered-list) {
+        ul,
+        ol {
+            margin: 3px 0;
+        }
+    }
+
+    blockquote p {
+        margin: 0;
+    }
+
+    :focus-visible {
+        outline: none;
+    }
+
+
+    &:global(.uui-control-mode-form) {
+        background-color: var(--uui-surface-main);
+        border-color: var(--uui-control-border);
+        border-style: solid;
+
+        &:hover {
+            border-color: var(--uui-control-border-hover);
+        }
+
+        &:global(.uui-focus) {
+            border-color: var(--uui-primary-50);
+        }
+
+        &:global(.uui-readonly) {
+            border-color: var(--uui-control-border);
+        }
+    }
+
+    &:global(.uui-control-mode-inline) {
+        background-color: transparent;
+        border-color: transparent;
+        border-style: solid;
+
+        &:hover {
+            border-color: var(--uui-control-border-hover);
+        }
+
+        &:global(.uui-focus) {
+            border-color: var(--uui-primary-50);
+        }
+
+        &:global(.uui-readonly) {
+            border-color: transparent;
+        }
+    }
+}
+
+
+.scrollbars {
+    height: 100%;
+}

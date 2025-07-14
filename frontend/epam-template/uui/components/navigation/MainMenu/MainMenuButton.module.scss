@@ -1,0 +1,73 @@
+@use  '../../../assets/styles/index' as *;
+
+.root {
+    --uui-main_menu-button-font: var(--uui-font);
+    --uui-main_menu-button-font-weight: 600;
+
+    --uui-main_menu-button-icon-size: 24px;
+    //
+    flex-shrink: 0;
+    color: var(--uui-main_menu-text);
+    fill: var(--uui-main_menu-icon);
+    @include clickable-styles();
+
+    :global(.uui-caption), :global(.uui-input) {
+        padding: 22px 6px;
+        line-height: 16px;
+        margin-bottom: -3px;
+        font-family: var(--uui-main_menu-button-font);
+        font-weight: var(--uui-main_menu-button-font-weight);
+    }
+
+    &:global(.uui-button-box), &:global(.uui-input-box) {
+        min-height: 60px;
+        padding-right: 6px;
+        padding-left: 6px;
+    }
+
+    :global(.uui-caption) {
+        white-space: nowrap;
+        font-size: 16px;
+    }
+
+    :global(.uui-icon) {
+        svg {
+            width: 18px;
+        }
+    }
+
+    &.type-primary {
+        :global(.uui-icon) {
+            svg {
+                height: var(--uui-main_menu-button-icon-size);
+                width: inherit;
+            }
+        }
+    }
+
+    &.type-secondary {
+        :global(.uui-icon) {
+            svg {
+                height: var(--uui-main_menu-button-icon-size);
+                width: inherit;
+            }
+        }
+    }
+
+    &:global(.-clickable) {
+        &:hover, &:focus {
+            background-color: var(--uui-main_menu-hover);
+            color: var(--uui-main_menu-text-hover);
+            fill: var(--uui-main_menu-icon-hover);
+        }
+    }
+
+    &:global(.uui-active) {
+        background-color: var(--uui-main_menu-hover);
+        border-bottom: 3px solid var(--uui-main_menu-border-active);
+        border-image: var(--uui-main_menu-border-active-gradient, none);
+        border-image-slice: 3;
+        color: var(--uui-main_menu-text-active);
+        fill: var(--uui-main_menu-icon-active);
+    }
+}

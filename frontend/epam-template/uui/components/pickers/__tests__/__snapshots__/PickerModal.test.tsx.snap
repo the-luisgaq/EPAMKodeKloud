@@ -1,0 +1,1281 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PickerModal should be rendered correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="container modalBlocker"
+    style="z-index: 1;"
+  >
+    <div
+      aria-label="Click to close a modal"
+      class="uui-modal-blocker"
+    />
+    <div
+      aria-modal="true"
+      class="uui-modal-window root modal body container"
+      role="dialog"
+      style="width: 600px; height: 700px; max-height: var(--uui-modals-max-height);"
+    >
+      <div
+        class="root modalHeader uui-modal-header"
+      >
+        <div
+          class="uui-modal-title uui-typography"
+        >
+          Please select
+        </div>
+        <div
+          class="flexSpacer"
+        />
+        <div
+          class="flexCell"
+          style="min-width: 0; flex-shrink: 0; flex-basis: auto;"
+        >
+          <button
+            aria-label="Close modal"
+            class="uui-button-box uui-enabled -clickable container uui-icon_button uui-color-neutral root"
+            tabindex="0"
+            type="button"
+          >
+            <div
+              class="container uui-icon uui-enabled"
+            >
+              <svg
+                class=""
+              />
+            </div>
+          </button>
+        </div>
+      </div>
+      <div
+        class="flexCell subHeaderWrapper"
+        style="min-width: 0; flex-basis: 0px;"
+      >
+        <div
+          class="root uui-flex-row uui-size-36 vPadding"
+          style="--uui-flex-row-v-padding: 24px;"
+        >
+          <div
+            class="container uui-input-box -clickable uui-focus root uui-size-36 uui-control-mode-form"
+            dir="auto"
+            tabindex="-1"
+          >
+            <div
+              class="container uui-icon uui-enabled"
+            >
+              <svg
+                class=""
+              />
+            </div>
+            <input
+              aria-invalid="false"
+              class="uui-input"
+              dir="ltr"
+              inputmode="search"
+              placeholder="Type text for quick search"
+              tabindex="0"
+              type="search"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="root uui-flex-row uui-picker_input-body uui-size-36"
+        tabindex="-1"
+      >
+        <div
+          class="root uui-scroll-bars uui-shadow-top uui-shadow-bottom scrollContainer"
+          style="position: relative; overflow: hidden; width: 100%; height: 100%; display: flex;"
+        >
+          <div
+            aria-orientation="vertical"
+            style="position: relative; top: 0px; left: 0px; right: 0px; bottom: 0px; overflow: scroll; margin-right: 0px; margin-bottom: 0px; flex: 1 1 auto; display: flex; flex-direction: column;"
+            tabindex="-1"
+          >
+            <div
+              class="listContainer"
+              style="min-height: 2px;"
+            >
+              <div
+                style="margin-top: 0px;"
+              >
+                <div
+                  aria-posinset="1"
+                  aria-selected="false"
+                  class="pickerRow uui-picker_input-row uui-size-36 align-widgets-top -clickable"
+                  role="option"
+                >
+                  <div
+                    class="flexCell rowContent"
+                    style="min-width: 0; flex-grow: 1; flex-basis: 0px;"
+                  >
+                    <div
+                      class="contentWrapper"
+                    >
+                      <div
+                        class="flexCell root uui-picker_input-item uui-typography"
+                        style="min-width: 0; flex-basis: auto;"
+                      >
+                        <div
+                          class="root uui-flex-row columnGap uui-size-36"
+                          style="--uui-picker_item-vertical-padding: 9px;"
+                        >
+                          <div
+                            class="flexCell"
+                            style="min-width: 0; flex-basis: auto;"
+                          >
+                            <div
+                              class="title uui-size-36"
+                            >
+                              Elementary
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="flexSpacer"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  aria-posinset="2"
+                  aria-selected="false"
+                  class="pickerRow uui-picker_input-row uui-size-36 align-widgets-top -clickable"
+                  role="option"
+                >
+                  <div
+                    class="flexCell rowContent"
+                    style="min-width: 0; flex-grow: 1; flex-basis: 0px;"
+                  >
+                    <div
+                      class="contentWrapper"
+                    >
+                      <div
+                        class="flexCell root uui-picker_input-item uui-typography"
+                        style="min-width: 0; flex-basis: auto;"
+                      >
+                        <div
+                          class="root uui-flex-row columnGap uui-size-36"
+                          style="--uui-picker_item-vertical-padding: 9px;"
+                        >
+                          <div
+                            class="flexCell"
+                            style="min-width: 0; flex-basis: auto;"
+                          >
+                            <div
+                              class="title uui-size-36"
+                            >
+                              Elementary+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="flexSpacer"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            aria-busy="false"
+            aria-label=""
+            aria-live="polite"
+            class="container uui-blocker-container root"
+            role="status"
+          />
+          <div
+            class="uui-track-horizontal"
+            style="position: absolute; height: 6px; display: none;"
+          >
+            <div
+              class="uui-thumb-horizontal"
+            />
+          </div>
+          <div
+            class="uui-track-vertical"
+            style="position: absolute; width: 6px; display: none;"
+          >
+            <div
+              class="uui-thumb-vertical"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="root modalFooter uui-modal-footer"
+      >
+        <div
+          class="flexSpacer"
+        />
+        <button
+          class="uui-button-box uui-enabled -clickable container root uui-button uui-fill-outline uui-color-secondary uui-size-36"
+          tabindex="0"
+          type="button"
+        >
+          <div
+            class="uui-caption"
+          >
+            Cancel
+          </div>
+        </button>
+        <button
+          class="uui-button-box uui-enabled -clickable container root uui-button uui-fill-solid uui-color-primary uui-size-36"
+          tabindex="0"
+          type="button"
+        >
+          <div
+            class="uui-caption"
+          >
+            Select
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`PickerModal should be rendered correctly with maximum props 1`] = `
+<DocumentFragment>
+  <div
+    class="container modalBlocker"
+    style="z-index: 1;"
+  >
+    <div
+      aria-label="Click to close a modal"
+      class="uui-modal-blocker"
+    />
+    <div
+      aria-modal="true"
+      class="uui-modal-window root modal body container"
+      role="dialog"
+      style="width: 600px; height: 700px; max-height: var(--uui-modals-max-height);"
+    >
+      <div
+        class="root modalHeader uui-modal-header"
+      >
+        <div
+          class="uui-modal-title uui-typography"
+        >
+          Please select
+        </div>
+        <div
+          class="flexSpacer"
+        />
+        <div
+          class="flexCell"
+          style="min-width: 0; flex-shrink: 0; flex-basis: auto;"
+        >
+          <button
+            aria-label="Close modal"
+            class="uui-button-box uui-enabled -clickable container uui-icon_button uui-color-neutral root"
+            tabindex="0"
+            type="button"
+          >
+            <div
+              class="container uui-icon uui-enabled"
+            >
+              <svg
+                class=""
+              />
+            </div>
+          </button>
+        </div>
+      </div>
+      <div
+        class="flexCell subHeaderWrapper"
+        style="min-width: 0; flex-basis: 0px;"
+      >
+        <div
+          class="root uui-flex-row uui-size-36 vPadding"
+          style="--uui-flex-row-v-padding: 24px;"
+        >
+          <div
+            class="container uui-input-box -clickable uui-focus root uui-size-36 uui-control-mode-form"
+            dir="auto"
+            tabindex="-1"
+          >
+            <div
+              class="container uui-icon uui-enabled"
+            >
+              <svg
+                class=""
+              />
+            </div>
+            <input
+              aria-invalid="false"
+              class="uui-input"
+              dir="ltr"
+              inputmode="search"
+              placeholder="Type text for quick search"
+              tabindex="0"
+              type="search"
+              value=""
+            />
+          </div>
+        </div>
+        <label
+          class="uui-switch container root uui-size-18 uui-color-primary switch uui-disabled"
+        >
+          <div
+            class="uui-switch-body"
+          >
+            <input
+              aria-checked="false"
+              aria-disabled="true"
+              disabled=""
+              role="switch"
+              type="checkbox"
+            />
+            <div
+              class="uui-switch-toggler"
+            />
+          </div>
+          <div
+            class="uui-input-label"
+          >
+            Show only selected
+          </div>
+        </label>
+      </div>
+      <div
+        class="root uui-flex-row uui-picker_input-body uui-size-36"
+        tabindex="-1"
+      >
+        <div
+          class="root uui-scroll-bars uui-shadow-top uui-shadow-bottom scrollContainer"
+          style="position: relative; overflow: hidden; width: 100%; height: 100%; display: flex;"
+        >
+          <div
+            aria-orientation="vertical"
+            style="position: relative; top: 0px; left: 0px; right: 0px; bottom: 0px; overflow: scroll; margin-right: 0px; margin-bottom: 0px; flex: 1 1 auto; display: flex; flex-direction: column;"
+            tabindex="-1"
+          >
+            <div
+              class="listContainer"
+              style="min-height: 11px;"
+            >
+              <div
+                style="margin-top: 0px;"
+              >
+                <div
+                  aria-checked="false"
+                  aria-posinset="1"
+                  class="pickerRow uui-picker_input-row uui-size-36 align-widgets-top -clickable"
+                  role="option"
+                >
+                  <div
+                    class="flexCell rowContent"
+                    style="min-width: 0; flex-grow: 1; flex-basis: 0px;"
+                  >
+                    <label
+                      class="container uui-checkbox-container root uui-size-18 uui-control-mode-form uui-color-primary uui-dr_addons-checkbox -clickable"
+                    >
+                      <div
+                        class="uui-checkbox"
+                      >
+                        <input
+                          aria-checked="false"
+                          tabindex="-1"
+                          type="checkbox"
+                        />
+                      </div>
+                    </label>
+                    <div
+                      class="contentWrapper"
+                    >
+                      <div
+                        class="flexCell root uui-picker_input-item uui-typography"
+                        style="min-width: 0; flex-basis: auto;"
+                      >
+                        <div
+                          class="root uui-flex-row columnGap uui-size-36"
+                          style="--uui-picker_item-vertical-padding: 9px;"
+                        >
+                          <div
+                            class="flexCell"
+                            style="min-width: 0; flex-basis: auto;"
+                          >
+                            <div
+                              class="title uui-size-36"
+                            >
+                              C2
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="flexSpacer"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-posinset="2"
+                  class="pickerRow uui-picker_input-row uui-size-36 align-widgets-top -clickable"
+                  role="option"
+                >
+                  <div
+                    class="flexCell rowContent"
+                    style="min-width: 0; flex-grow: 1; flex-basis: 0px;"
+                  >
+                    <label
+                      class="container uui-checkbox-container root uui-size-18 uui-control-mode-form uui-color-primary uui-dr_addons-checkbox -clickable"
+                    >
+                      <div
+                        class="uui-checkbox"
+                      >
+                        <input
+                          aria-checked="false"
+                          tabindex="-1"
+                          type="checkbox"
+                        />
+                      </div>
+                    </label>
+                    <div
+                      class="contentWrapper"
+                    >
+                      <div
+                        class="flexCell root uui-picker_input-item uui-typography"
+                        style="min-width: 0; flex-basis: auto;"
+                      >
+                        <div
+                          class="root uui-flex-row columnGap uui-size-36"
+                          style="--uui-picker_item-vertical-padding: 9px;"
+                        >
+                          <div
+                            class="flexCell"
+                            style="min-width: 0; flex-basis: auto;"
+                          >
+                            <div
+                              class="title uui-size-36"
+                            >
+                              C1+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="flexSpacer"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-posinset="3"
+                  class="pickerRow uui-picker_input-row uui-size-36 align-widgets-top -clickable"
+                  role="option"
+                >
+                  <div
+                    class="flexCell rowContent"
+                    style="min-width: 0; flex-grow: 1; flex-basis: 0px;"
+                  >
+                    <label
+                      class="container uui-checkbox-container root uui-size-18 uui-control-mode-form uui-color-primary uui-dr_addons-checkbox -clickable"
+                    >
+                      <div
+                        class="uui-checkbox"
+                      >
+                        <input
+                          aria-checked="false"
+                          tabindex="-1"
+                          type="checkbox"
+                        />
+                      </div>
+                    </label>
+                    <div
+                      class="contentWrapper"
+                    >
+                      <div
+                        class="flexCell root uui-picker_input-item uui-typography"
+                        style="min-width: 0; flex-basis: auto;"
+                      >
+                        <div
+                          class="root uui-flex-row columnGap uui-size-36"
+                          style="--uui-picker_item-vertical-padding: 9px;"
+                        >
+                          <div
+                            class="flexCell"
+                            style="min-width: 0; flex-basis: auto;"
+                          >
+                            <div
+                              class="title uui-size-36"
+                            >
+                              C1
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="flexSpacer"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-posinset="4"
+                  class="pickerRow uui-picker_input-row uui-size-36 align-widgets-top -clickable"
+                  role="option"
+                >
+                  <div
+                    class="flexCell rowContent"
+                    style="min-width: 0; flex-grow: 1; flex-basis: 0px;"
+                  >
+                    <label
+                      class="container uui-checkbox-container root uui-size-18 uui-control-mode-form uui-color-primary uui-dr_addons-checkbox -clickable"
+                    >
+                      <div
+                        class="uui-checkbox"
+                      >
+                        <input
+                          aria-checked="false"
+                          tabindex="-1"
+                          type="checkbox"
+                        />
+                      </div>
+                    </label>
+                    <div
+                      class="contentWrapper"
+                    >
+                      <div
+                        class="flexCell root uui-picker_input-item uui-typography"
+                        style="min-width: 0; flex-basis: auto;"
+                      >
+                        <div
+                          class="root uui-flex-row columnGap uui-size-36"
+                          style="--uui-picker_item-vertical-padding: 9px;"
+                        >
+                          <div
+                            class="flexCell"
+                            style="min-width: 0; flex-basis: auto;"
+                          >
+                            <div
+                              class="title uui-size-36"
+                            >
+                              B2+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="flexSpacer"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-posinset="5"
+                  class="pickerRow uui-picker_input-row uui-size-36 align-widgets-top -clickable"
+                  role="option"
+                >
+                  <div
+                    class="flexCell rowContent"
+                    style="min-width: 0; flex-grow: 1; flex-basis: 0px;"
+                  >
+                    <label
+                      class="container uui-checkbox-container root uui-size-18 uui-control-mode-form uui-color-primary uui-dr_addons-checkbox -clickable"
+                    >
+                      <div
+                        class="uui-checkbox"
+                      >
+                        <input
+                          aria-checked="false"
+                          tabindex="-1"
+                          type="checkbox"
+                        />
+                      </div>
+                    </label>
+                    <div
+                      class="contentWrapper"
+                    >
+                      <div
+                        class="flexCell root uui-picker_input-item uui-typography"
+                        style="min-width: 0; flex-basis: auto;"
+                      >
+                        <div
+                          class="root uui-flex-row columnGap uui-size-36"
+                          style="--uui-picker_item-vertical-padding: 9px;"
+                        >
+                          <div
+                            class="flexCell"
+                            style="min-width: 0; flex-basis: auto;"
+                          >
+                            <div
+                              class="title uui-size-36"
+                            >
+                              B2
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="flexSpacer"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-posinset="6"
+                  class="pickerRow uui-picker_input-row uui-size-36 align-widgets-top -clickable"
+                  role="option"
+                >
+                  <div
+                    class="flexCell rowContent"
+                    style="min-width: 0; flex-grow: 1; flex-basis: 0px;"
+                  >
+                    <label
+                      class="container uui-checkbox-container root uui-size-18 uui-control-mode-form uui-color-primary uui-dr_addons-checkbox -clickable"
+                    >
+                      <div
+                        class="uui-checkbox"
+                      >
+                        <input
+                          aria-checked="false"
+                          tabindex="-1"
+                          type="checkbox"
+                        />
+                      </div>
+                    </label>
+                    <div
+                      class="contentWrapper"
+                    >
+                      <div
+                        class="flexCell root uui-picker_input-item uui-typography"
+                        style="min-width: 0; flex-basis: auto;"
+                      >
+                        <div
+                          class="root uui-flex-row columnGap uui-size-36"
+                          style="--uui-picker_item-vertical-padding: 9px;"
+                        >
+                          <div
+                            class="flexCell"
+                            style="min-width: 0; flex-basis: auto;"
+                          >
+                            <div
+                              class="title uui-size-36"
+                            >
+                              B1+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="flexSpacer"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-posinset="7"
+                  class="pickerRow uui-picker_input-row uui-size-36 align-widgets-top -clickable"
+                  role="option"
+                >
+                  <div
+                    class="flexCell rowContent"
+                    style="min-width: 0; flex-grow: 1; flex-basis: 0px;"
+                  >
+                    <label
+                      class="container uui-checkbox-container root uui-size-18 uui-control-mode-form uui-color-primary uui-dr_addons-checkbox -clickable"
+                    >
+                      <div
+                        class="uui-checkbox"
+                      >
+                        <input
+                          aria-checked="false"
+                          tabindex="-1"
+                          type="checkbox"
+                        />
+                      </div>
+                    </label>
+                    <div
+                      class="contentWrapper"
+                    >
+                      <div
+                        class="flexCell root uui-picker_input-item uui-typography"
+                        style="min-width: 0; flex-basis: auto;"
+                      >
+                        <div
+                          class="root uui-flex-row columnGap uui-size-36"
+                          style="--uui-picker_item-vertical-padding: 9px;"
+                        >
+                          <div
+                            class="flexCell"
+                            style="min-width: 0; flex-basis: auto;"
+                          >
+                            <div
+                              class="title uui-size-36"
+                            >
+                              B1
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="flexSpacer"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-posinset="8"
+                  class="pickerRow uui-picker_input-row uui-size-36 align-widgets-top -clickable"
+                  role="option"
+                >
+                  <div
+                    class="flexCell rowContent"
+                    style="min-width: 0; flex-grow: 1; flex-basis: 0px;"
+                  >
+                    <label
+                      class="container uui-checkbox-container root uui-size-18 uui-control-mode-form uui-color-primary uui-dr_addons-checkbox -clickable"
+                    >
+                      <div
+                        class="uui-checkbox"
+                      >
+                        <input
+                          aria-checked="false"
+                          tabindex="-1"
+                          type="checkbox"
+                        />
+                      </div>
+                    </label>
+                    <div
+                      class="contentWrapper"
+                    >
+                      <div
+                        class="flexCell root uui-picker_input-item uui-typography"
+                        style="min-width: 0; flex-basis: auto;"
+                      >
+                        <div
+                          class="root uui-flex-row columnGap uui-size-36"
+                          style="--uui-picker_item-vertical-padding: 9px;"
+                        >
+                          <div
+                            class="flexCell"
+                            style="min-width: 0; flex-basis: auto;"
+                          >
+                            <div
+                              class="title uui-size-36"
+                            >
+                              A2+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="flexSpacer"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-posinset="9"
+                  class="pickerRow uui-picker_input-row uui-size-36 align-widgets-top -clickable"
+                  role="option"
+                >
+                  <div
+                    class="flexCell rowContent"
+                    style="min-width: 0; flex-grow: 1; flex-basis: 0px;"
+                  >
+                    <label
+                      class="container uui-checkbox-container root uui-size-18 uui-control-mode-form uui-color-primary uui-dr_addons-checkbox -clickable"
+                    >
+                      <div
+                        class="uui-checkbox"
+                      >
+                        <input
+                          aria-checked="false"
+                          tabindex="-1"
+                          type="checkbox"
+                        />
+                      </div>
+                    </label>
+                    <div
+                      class="contentWrapper"
+                    >
+                      <div
+                        class="flexCell root uui-picker_input-item uui-typography"
+                        style="min-width: 0; flex-basis: auto;"
+                      >
+                        <div
+                          class="root uui-flex-row columnGap uui-size-36"
+                          style="--uui-picker_item-vertical-padding: 9px;"
+                        >
+                          <div
+                            class="flexCell"
+                            style="min-width: 0; flex-basis: auto;"
+                          >
+                            <div
+                              class="title uui-size-36"
+                            >
+                              A2
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="flexSpacer"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-posinset="10"
+                  class="pickerRow uui-picker_input-row uui-size-36 align-widgets-top -clickable"
+                  role="option"
+                >
+                  <div
+                    class="flexCell rowContent"
+                    style="min-width: 0; flex-grow: 1; flex-basis: 0px;"
+                  >
+                    <label
+                      class="container uui-checkbox-container root uui-size-18 uui-control-mode-form uui-color-primary uui-dr_addons-checkbox -clickable"
+                    >
+                      <div
+                        class="uui-checkbox"
+                      >
+                        <input
+                          aria-checked="false"
+                          tabindex="-1"
+                          type="checkbox"
+                        />
+                      </div>
+                    </label>
+                    <div
+                      class="contentWrapper"
+                    >
+                      <div
+                        class="flexCell root uui-picker_input-item uui-typography"
+                        style="min-width: 0; flex-basis: auto;"
+                      >
+                        <div
+                          class="root uui-flex-row columnGap uui-size-36"
+                          style="--uui-picker_item-vertical-padding: 9px;"
+                        >
+                          <div
+                            class="flexCell"
+                            style="min-width: 0; flex-basis: auto;"
+                          >
+                            <div
+                              class="title uui-size-36"
+                            >
+                              A1+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="flexSpacer"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-posinset="11"
+                  class="pickerRow uui-picker_input-row uui-size-36 align-widgets-top -clickable"
+                  role="option"
+                >
+                  <div
+                    class="flexCell rowContent"
+                    style="min-width: 0; flex-grow: 1; flex-basis: 0px;"
+                  >
+                    <label
+                      class="container uui-checkbox-container root uui-size-18 uui-control-mode-form uui-color-primary uui-dr_addons-checkbox -clickable"
+                    >
+                      <div
+                        class="uui-checkbox"
+                      >
+                        <input
+                          aria-checked="false"
+                          tabindex="-1"
+                          type="checkbox"
+                        />
+                      </div>
+                    </label>
+                    <div
+                      class="contentWrapper"
+                    >
+                      <div
+                        class="flexCell root uui-picker_input-item uui-typography"
+                        style="min-width: 0; flex-basis: auto;"
+                      >
+                        <div
+                          class="root uui-flex-row columnGap uui-size-36"
+                          style="--uui-picker_item-vertical-padding: 9px;"
+                        >
+                          <div
+                            class="flexCell"
+                            style="min-width: 0; flex-basis: auto;"
+                          >
+                            <div
+                              class="title uui-size-36"
+                            >
+                              A1
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="flexSpacer"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            aria-busy="false"
+            aria-label=""
+            aria-live="polite"
+            class="container uui-blocker-container root"
+            role="status"
+          />
+          <div
+            class="uui-track-horizontal"
+            style="position: absolute; height: 6px; display: none;"
+          >
+            <div
+              class="uui-thumb-horizontal"
+            />
+          </div>
+          <div
+            class="uui-track-vertical"
+            style="position: absolute; width: 6px; display: none;"
+          >
+            <div
+              class="uui-thumb-vertical"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="root modalFooter uui-modal-footer"
+      >
+        <button
+          aria-disabled="false"
+          class="uui-button-box uui-enabled -clickable uui-link_button root uui-size-36 uui-no-left-icon uui-no-right-icon uui-color-primary"
+          tabindex="0"
+          type="button"
+        >
+          <div
+            class="uui-caption uui-link-button-weight-semibold"
+          >
+            SELECT ALL
+          </div>
+        </button>
+        <div
+          class="flexSpacer"
+        />
+        <button
+          class="uui-button-box uui-enabled -clickable container root uui-button uui-fill-outline uui-color-secondary uui-size-36"
+          tabindex="0"
+          type="button"
+        >
+          <div
+            class="uui-caption"
+          >
+            Cancel
+          </div>
+        </button>
+        <button
+          class="uui-button-box uui-enabled -clickable container root uui-button uui-fill-solid uui-color-primary uui-size-36"
+          tabindex="0"
+          type="button"
+        >
+          <div
+            class="uui-caption"
+          >
+            Select
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`PickerModal should open body 1`] = `
+<body
+  style="overflow: hidden;"
+>
+  <div>
+    <button
+      class="uui-button-box uui-enabled -clickable container"
+      tabindex="0"
+      type="button"
+    />
+    <div
+      class="container modalBlocker"
+      style="z-index: 2000;"
+    >
+      <div
+        aria-label="Click to close a modal"
+        class="uui-modal-blocker"
+      />
+      <div
+        aria-modal="true"
+        class="uui-modal-window root modal body container"
+        role="dialog"
+        style="width: 600px; height: 700px; max-height: var(--uui-modals-max-height);"
+      >
+        <div
+          class="root modalHeader uui-modal-header"
+        >
+          <div
+            class="uui-modal-title uui-typography"
+          >
+            Please select
+          </div>
+          <div
+            class="flexSpacer"
+          />
+          <div
+            class="flexCell"
+            style="min-width: 0; flex-shrink: 0; flex-basis: auto;"
+          >
+            <button
+              aria-label="Close modal"
+              class="uui-button-box uui-enabled -clickable container uui-icon_button uui-color-neutral root"
+              tabindex="0"
+              type="button"
+            >
+              <div
+                class="container uui-icon uui-enabled"
+              >
+                <svg
+                  class=""
+                />
+              </div>
+            </button>
+          </div>
+        </div>
+        <div
+          class="flexCell subHeaderWrapper"
+          style="min-width: 0; flex-basis: 0px;"
+        >
+          <div
+            class="root uui-flex-row uui-size-36 vPadding"
+            style="--uui-flex-row-v-padding: 24px;"
+          >
+            <div
+              class="container uui-input-box -clickable uui-focus root uui-size-36 uui-control-mode-form"
+              dir="auto"
+              tabindex="-1"
+            >
+              <div
+                class="container uui-icon uui-enabled"
+              >
+                <svg
+                  class=""
+                />
+              </div>
+              <input
+                aria-invalid="false"
+                class="uui-input"
+                dir="ltr"
+                inputmode="search"
+                placeholder="Type text for quick search"
+                tabindex="0"
+                type="search"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="root uui-flex-row uui-picker_input-body uui-size-36"
+          tabindex="-1"
+        >
+          <div
+            class="root uui-scroll-bars uui-shadow-top uui-shadow-bottom scrollContainer"
+            style="position: relative; overflow: hidden; width: 100%; height: 100%; display: flex;"
+          >
+            <div
+              aria-orientation="vertical"
+              style="position: relative; top: 0px; left: 0px; right: 0px; bottom: 0px; overflow: scroll; margin-right: 0px; margin-bottom: 0px; flex: 1 1 auto; display: flex; flex-direction: column;"
+              tabindex="-1"
+            >
+              <div
+                class="listContainer"
+                style="min-height: 2px;"
+              >
+                <div
+                  style="margin-top: 0px;"
+                >
+                  <div
+                    aria-posinset="1"
+                    aria-selected="false"
+                    class="pickerRow uui-picker_input-row uui-size-36 align-widgets-top -clickable"
+                    role="option"
+                  >
+                    <div
+                      class="flexCell rowContent"
+                      style="min-width: 0; flex-grow: 1; flex-basis: 0px;"
+                    >
+                      <div
+                        class="contentWrapper"
+                      >
+                        <div
+                          class="flexCell root uui-picker_input-item uui-typography"
+                          style="min-width: 0; flex-basis: auto;"
+                        >
+                          <div
+                            class="root uui-flex-row columnGap uui-size-36"
+                            style="--uui-picker_item-vertical-padding: 9px;"
+                          >
+                            <div
+                              class="flexCell"
+                              style="min-width: 0; flex-basis: auto;"
+                            >
+                              <div
+                                class="title uui-size-36"
+                              >
+                                Elementary
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="flexSpacer"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    aria-posinset="2"
+                    aria-selected="false"
+                    class="pickerRow uui-picker_input-row uui-size-36 align-widgets-top -clickable"
+                    role="option"
+                  >
+                    <div
+                      class="flexCell rowContent"
+                      style="min-width: 0; flex-grow: 1; flex-basis: 0px;"
+                    >
+                      <div
+                        class="contentWrapper"
+                      >
+                        <div
+                          class="flexCell root uui-picker_input-item uui-typography"
+                          style="min-width: 0; flex-basis: auto;"
+                        >
+                          <div
+                            class="root uui-flex-row columnGap uui-size-36"
+                            style="--uui-picker_item-vertical-padding: 9px;"
+                          >
+                            <div
+                              class="flexCell"
+                              style="min-width: 0; flex-basis: auto;"
+                            >
+                              <div
+                                class="title uui-size-36"
+                              >
+                                Elementary+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="flexSpacer"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              aria-busy="false"
+              aria-label=""
+              aria-live="polite"
+              class="container uui-blocker-container root"
+              role="status"
+            >
+              <div
+                class="uui-blocker uui-blocker-exit uui-blocker-exit-active"
+              >
+                <div
+                  class="container uui-spinner-container root uui-spinner"
+                >
+                  <div
+                    class="uui-spinner-animation"
+                  >
+                    <div
+                      class="uui-spinner-dot uui-spinner-dot-1"
+                    />
+                    <div
+                      class="uui-spinner-dot uui-spinner-dot-2"
+                    />
+                    <div
+                      class="uui-spinner-dot uui-spinner-dot-3"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="uui-track-horizontal"
+              style="position: absolute; height: 6px; display: none;"
+            >
+              <div
+                class="uui-thumb-horizontal"
+              />
+            </div>
+            <div
+              class="uui-track-vertical"
+              style="position: absolute; width: 6px; display: none;"
+            >
+              <div
+                class="uui-thumb-vertical"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="root modalFooter uui-modal-footer"
+        >
+          <div
+            class="flexSpacer"
+          />
+          <button
+            class="uui-button-box uui-enabled -clickable container root uui-button uui-fill-outline uui-color-secondary uui-size-36"
+            tabindex="0"
+            type="button"
+          >
+            <div
+              class="uui-caption"
+            >
+              Cancel
+            </div>
+          </button>
+          <button
+            class="uui-button-box uui-enabled -clickable container root uui-button uui-fill-solid uui-color-primary uui-size-36"
+            tabindex="0"
+            type="button"
+          >
+            <div
+              class="uui-caption"
+            >
+              Select
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

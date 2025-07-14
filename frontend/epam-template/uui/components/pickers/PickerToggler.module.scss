@@ -1,0 +1,235 @@
+@use  '../../assets/styles/index' as *;
+
+.root {
+    --uui-picker_toggler-bg: var(--uui-control-bg);
+    --uui-picker_toggler-border: var(--uui-control-border);
+    --uui-picker_toggler-border-hover: var(--uui-control-border-hover);
+    --uui-picker_toggler-border-active: var(--uui-control-border-focus);
+    --uui-picker_toggler-border-error: var(--uui-error-50);
+    --uui-picker_toggler-placeholder: var(--uui-control-placeholder);
+    --uui-picker_toggler-placeholder-disabled: var(--uui-control-placeholder-disabled);
+    --uui-picker_toggler-placeholder-readonly: var(--uui-control-placeholder-disabled);
+    --uui-picker_toggler-text: var(--uui-control-text);
+    --uui-picker_toggler-text-disabled: var(--uui-control-text-disabled);
+    --uui-picker_toggler-icon: var(--uui-control-icon);
+    --uui-picker_toggler-icon-disabled: var(--uui-control-icon-disabled);
+    --uui-picker_toggler-icon-clickable: var(--uui-icon);
+    --uui-picker_toggler-icon-clickable-hover: var(--uui-icon-hover);
+
+    // font
+    --uui-picker_toggler-font: var(--uui-font);
+    --uui-picker_toggler-font-weight: 400;
+
+    // size
+    --uui-picker_toggler-border-radius: var(--uui-border-radius);
+    --uui-picker_toggler-min-height: var(--uui-size);
+    --uui-picker_toggler-min-width: var(--uui-size);
+    --uui-picker_toggler-border-width: var(--uui-border-width);
+    --uui-picker_toggler-horizontal-padding: var(--uui-horizontal-padding);
+    --uui-picker_toggler-vertical-padding: var(--uui-vertical-padding);
+    --uui-picker_toggler-inner-padding: var(--uui-horizontal-gap);
+    --uui-picker_toggler-icon-height: var(--uui-icon-size);
+    --uui-picker_toggler-line-height: var(--uui-line-height);
+    --uui-picker_toggler-font-size: var(--uui-font-size);
+    --uui-picker_toggler-horizontal-gap: 3px;
+    --uui-picker_toggler-vertical-gap: 2px;
+    --uui-picker_toggler-multiline-gaps: var(--uui-picker_toggler-vertical-gap) var(--uui-picker_toggler-horizontal-gap);
+    //
+    padding: calc(var(--uui-picker_toggler-vertical-padding) - var(--uui-picker_toggler-border-width)) calc(var(--uui-picker_toggler-horizontal-padding) - var(--uui-picker_toggler-border-width));
+    width: 100%;
+    min-width: var(--uui-picker_toggler-min-width);
+    box-sizing: border-box;
+    border-style: solid;
+    border-radius: var(--uui-picker_toggler-border-radius);
+
+    &:global(.uui-input-box) {
+        min-height: var(--uui-picker_toggler-min-height);
+        border-width: var(--uui-picker_toggler-border-width);
+    }
+
+    div:first-child {
+        gap: var(--uui-picker_toggler-multiline-gaps);
+
+        :global(.uui-icon):first-child {
+            padding-inline-end: var(--uui-picker_toggler-horizontal-gap);
+        }
+    }
+
+    :global(.uui-input) {
+        line-height: var(--uui-picker_toggler-line-height);
+        font-size: var(--uui-picker_toggler-font-size);
+        padding-left: var(--uui-picker_toggler-inner-padding);
+        padding-right: var(--uui-picker_toggler-inner-padding);
+        padding-top: calc((var(--uui-picker_toggler-min-height) - var(--uui-picker_toggler-line-height) - (var(--uui-picker_toggler-vertical-padding) * 2)) / 2);
+        padding-bottom: calc((var(--uui-picker_toggler-min-height) - var(--uui-picker_toggler-line-height) - (var(--uui-picker_toggler-vertical-padding) * 2)) / 2);
+        font-family: var(--uui-picker_toggler-font);
+        font-weight: var(--uui-picker_toggler-font-weight, normal);
+        color: var(--uui-picker_toggler-text);
+
+        &::placeholder {
+            color: var(--uui-picker_toggler-placeholder);
+        }
+
+        &::-moz-placeholder {
+            opacity: 1;
+        }
+
+        &:not(:first-child) {
+            padding-left: calc(var(--uui-picker_toggler-inner-padding) - 3px);
+        }
+
+        &:not(:last-child) {
+            padding-right: calc(var(--uui-picker_toggler-inner-padding) - 3px);
+        }
+    }
+
+    :global(.uui-caption) {
+        @include overflow-ellipsis();
+        font-family: var(--uui-picker_toggler-font);
+        font-weight: var(--uui-picker_toggler-font-weight, normal);
+        align-self: center;
+        white-space: nowrap;
+    }
+
+    :global(.uui-placeholder) {
+        color: var(--uui-picker_toggler-text);
+
+        &::placeholder {
+            color: var(--uui-picker_toggler-text);
+        }
+
+        &::-moz-placeholder {
+            opacity: 1;
+        }
+    }
+
+    :global(.uui-icon-cancel) {
+        margin-left: var(--uui-picker_toggler-inner-padding);
+    }
+
+    :global(.uui-icon) {
+        svg {
+            height: var(--uui-picker_toggler-icon-height);
+            width: inherit;
+        }
+    }
+
+    &:global(.uui-control-mode-form) {
+        background-color: var(--uui-picker_toggler-bg);
+        border-color: var(--uui-picker_toggler-border);
+        fill: var(--uui-picker_toggler-icon);
+
+        :global(.uui-icon):global(.-clickable), :global(.uui-icon-dropdown) {
+            &:global(.uui-enabled) {
+                fill: var(--uui-picker_toggler-icon-clickable);
+
+                &:hover {
+                    fill: var(--uui-picker_toggler-icon-clickable-hover);
+                }
+            }
+
+            &:global(.uui-disabled) {
+                fill: var(--uui-picker_toggler-icon-disabled);
+            }
+        }
+
+        &:hover {
+            border-color: var(--uui-picker_toggler-border-hover);
+        }
+
+        &:global(.uui-focus) {
+            border-color: var(--uui-picker_toggler-border-active);
+            outline: none;
+        }
+    }
+
+    &:global(.uui-control-mode-cell) {
+        background-color: transparent !important;
+        border-color: transparent;
+        border-radius: 0;
+        fill: var(--uui-picker_toggler-icon);
+
+        :global(.uui-picker_toggler-actions) :global(.uui-icon),
+        :global(.uui-button-box) :global(.uui-icon):global(.-clickable) {
+            cursor: pointer;
+
+            &:global(.uui-enabled) {
+                fill: transparent;
+            }
+
+            &:global(.uui-disabled) {
+                fill: transparent;
+            }
+        }
+
+        &:hover, &:global(.uui-focus) {
+            :global(.uui-icon):global(.-clickable), :global(.uui-icon-dropdown) {
+                &:global(.uui-enabled) {
+                    fill: var(--uui-picker_toggler-icon-clickable);
+
+                    &:hover {
+                        fill: var(--uui-picker_toggler-icon-clickable-hover);
+                    }
+                }
+
+                &:global(.uui-disabled) {
+                    fill: transparent;
+                }
+            }
+        }
+
+        &:global(.uui-focus) {
+            outline: none;
+        }
+    }
+
+    &:global(.uui-control-mode-inline) {
+        background-color: initial;
+        border-color: transparent;
+        fill: var(--uui-picker_toggler-icon-clickable);
+
+        &:hover {
+            border-color: var(--uui-picker_toggler-border-hover);
+        }
+
+        &:global(.uui-focus) {
+            border-color: var(--uui-picker_toggler-border-active);
+            outline: none;
+        }
+    }
+
+    &:global(.uui-invalid) {
+        &:global(.uui-control-mode-form), &:global(.uui-control-mode-inline) {
+            border-color: var(--uui-picker_toggler-border-error);
+        }
+    }
+
+    &:global(.uui-readonly) {
+        @include readonly-input();
+
+        :global(.uui-placeholder) {
+            &:global(.uui-input) {
+                &::placeholder {
+                    color: var(--uui-picker_toggler-text); // we store selected value in placeholder, so it should have the same style as input value if .uui-placeholder is set
+                }
+            }
+        }
+
+        :global(.uui-icon-dropdown), :global(.uui-icon-cancel) {
+            visibility: hidden;
+        }
+    }
+
+    &:global(.uui-disabled) {
+        fill: var(--uui-picker_toggler-icon-disabled);
+        @include disabled-input();
+
+        :global(.uui-input) {
+            cursor: default;
+        }
+
+        :global(.uui-icon-dropdown), :global(.uui-icon-cancel) {
+            visibility: hidden;
+        }
+    }
+}

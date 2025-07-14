@@ -1,0 +1,25 @@
+[
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "Single-select: checked element is controlled by the "
+      },
+      {
+        "text": "selectedId",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " property at the "
+      },
+      {
+        "text": "DataSourceState",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " "
+      }
+    ]
+  }
+]

@@ -1,0 +1,155 @@
+@use  '../../assets/styles/index.scss' as *;
+
+.root {
+    --uui-checkbox-border: var(--uui-control-border);
+    --uui-checkbox-border-hover: var(--uui-color-60);
+    --uui-checkbox-border-disabled: var(--uui-control-border-disabled);
+    --uui-checkbox-border-checked: var(--uui-color-50);
+    --uui-checkbox-border-checked-disabled: var(--uui-color-20);
+    --uui-checkbox-bg: var(--uui-control-bg);
+    --uui-checkbox-bg-checked: var(--uui-color-50);
+    --uui-checkbox-bg-disabled: var(--uui-control-bg-disabled);
+    --uui-checkbox-bg-checked-hover: var(--uui-color-60);
+    --uui-checkbox-bg-checked-disabled: var(--uui-color-20);
+    --uui-checkbox-error: var(--uui-error-50);
+    --uui-checkbox-fill: var(--uui-color-contrast);
+    --uui-checkbox-label: var(--uui-text-primary);
+    --uui-checkbox-label-disabled: var(--uui-text-disabled);
+    --uui-checkbox-label-readonly: var(--uui-text-primary);
+
+    // font
+    --uui-checkbox-font: var(--uui-font);
+    --uui-checkbox-font-weight: 400;
+
+    // size
+    --uui-checkbox-min-height: var(--uui-size);
+    --uui-checkbox-min-width: var(--uui-size);
+    --uui-checkbox-border-radius: var(--uui-border-radius);
+    --uui-checkbox-border-width: var(--uui-border-width);
+    --uui-checkbox-horizontal-gap: var(--uui-horizontal-gap);
+    --uui-checkbox-line-height: var(--uui-line-height);
+    --uui-checkbox-font-size: var(--uui-font-size);
+    //
+    column-gap: var(--uui-checkbox-horizontal-gap);
+
+    :global(.uui-checkbox) {
+        background-color: var(--uui-checkbox-bg);
+        border: var(--uui-checkbox-border-width) solid var(--uui-checkbox-border);
+        border-radius: var(--uui-checkbox-border-radius);
+        position: relative;
+        box-sizing: border-box;
+        height: var(--uui-checkbox-min-height);
+        width: var(--uui-checkbox-min-width);
+
+        :global(.uui-icon) {
+            position: absolute;
+            top: calc(0px - var(--uui-checkbox-border-width));
+            left: calc(0px - var(--uui-checkbox-border-width));
+
+            svg {
+                height: var(--uui-checkbox-min-height);
+                width: var(--uui-checkbox-min-width);
+            }
+        }
+
+        :global(input[type='checkbox']):focus-visible {
+            @include focus-visible-effect();
+            position: absolute;
+            width: inherit;
+            height: inherit;
+        }
+    }
+
+    :global(.uui-input-label) {
+        color: var(--uui-checkbox-label);
+        font-family: var(--uui-checkbox-font);
+        font-size: var(--uui-checkbox-font-size);
+        font-weight: var(--uui-checkbox-font-weight);
+        line-height: var(--uui-checkbox-line-height);
+        flex-grow: 1;
+    }
+
+    :global(.uui-checked) {
+        background-color: var(--uui-checkbox-bg-checked);
+        border-color: var(--uui-checkbox-border-checked);
+        fill: var(--uui-checkbox-fill);
+    }
+
+    &:hover, &:active, &:focus-within {
+        :global(.uui-checkbox) {
+            border-color: var(--uui-checkbox-border-hover);
+        }
+
+        :global(.uui-checked) {
+            background-color: var(--uui-checkbox-bg-checked-hover);
+        }
+    }
+
+    &:global(.uui-disabled),
+    &:global(.uui-readonly) {
+        cursor: default;
+
+        :global(.uui-checkbox) {
+            cursor: default;
+            background-color: var(--uui-checkbox-bg-disabled);
+            border-color: var(--uui-checkbox-border-disabled);
+        }
+
+        &:hover, &:global(.uui-checked), &:focus-within {
+            &:global(.uui-checkbox) {
+                border-color: var(--uui-checkbox-border-checked-disabled);
+            }
+
+            &:global(.uui-icon) {
+                background-color: var(--uui-checkbox-bg-checked-disabled);
+                border-color: var(--uui-checkbox-border-checked-disabled);
+            }
+        }
+
+        :global(.uui-input-label) {
+            color: var(--uui-checkbox-label-disabled);
+        }
+
+        :global(.uui-checked) {
+            background-color: var(--uui-checkbox-bg-checked-disabled);
+            border-color: var(--uui-checkbox-border-checked-disabled);
+        }
+    }
+
+    &:global(.uui-readonly) {
+        :global(.uui-input-label) {
+            color: var(--uui-checkbox-label-readonly);
+        }
+    }
+
+    &:global(.uui-invalid) {
+        :global(.uui-checkbox) {
+            border-color: var(--uui-checkbox-error);
+            fill: var(--uui-checkbox-error);
+
+            &:hover, &:active, &:focus-within {
+                border-color: var(--uui-checkbox-error);
+                fill: var(--uui-checkbox-error);
+            }
+
+            &:global(.uui-checked) {
+                fill: var(--uui-checkbox-fill);
+                background-color: var(--uui-checkbox-error);
+                border-color: var(--uui-checkbox-error);
+
+                &:hover, &:active, &:focus-within {
+                    background-color: var(--uui-checkbox-error);
+                    border-color: var(--uui-checkbox-error);
+                }
+            }
+        }
+
+        :global(.uui-input-label) {
+            color: var(--uui-checkbox-error);
+        }
+    }
+
+    &:global(.uui-control-mode-cell) {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,14 @@
+.root {
+    display: flex;
+    padding: 4px;
+
+    &:not(.preview) {
+        margin: 24px;
+        padding: 12px;
+    }
+
+    &.preview {
+        height: 100%;
+    }
+}
+

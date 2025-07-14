@@ -1,0 +1,29 @@
+[
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "It is worth paying attention to the "
+      },
+      {
+        "text": "AsyncDataSourceProps",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " in detail to understand the way it can be used/configured. "
+      }
+    ]
+  },
+  {
+    "data": {
+      "typePath": "@epam/uui-core:AsyncDataSourceProps"
+    },
+    "type": "type-ref-table",
+    "children": [
+      {
+        "text": ""
+      }
+    ]
+  }
+]

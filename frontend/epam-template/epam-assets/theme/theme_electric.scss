@@ -1,0 +1,8 @@
+@use 'variables/6px_grid' as *;
+@use 'variables/electric' as *;
+@use '../scss/electric/font-faces';
+
+.uui-theme-electric {
+    @include electric-variables();
+    @include uui-6px-grid();
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "Let’s see the basic SliderRating usage.",
+        "font-size": "12pt",
+        "font-family": null,
+        "background-color": null,
+        "font-weight": "400",
+        "font-style": null,
+        "font-variant": "normal",
+        "text-decoration": "none",
+        "vertical-align": "baseline",
+        "white-space": "pre-wrap",
+        "": null,
+        "uui-richTextEditor-span-mark": true
+      }
+    ]
+  },
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "By passing the "
+      },
+      {
+        "text": "renderTooltip",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " property, you can provide your own tooltip render."
+      }
+    ]
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "type": "paragraph",
+    "data": {},
+    "children": [
+      {
+        "text": "UUI supports different TextInput sizes, according to TextInput height. You can change the size by passing the "
+      },
+      {
+        "text": "size",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " prop."
+      }
+    ]
+  }
+]

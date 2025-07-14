@@ -1,0 +1,180 @@
+@use 'sass:math';
+@use '../../assets/styles/index' as *;
+
+// TODO: need to revamp
+
+@mixin fillColor($fill, $color: null) {
+    @if ($color) {
+        color: $color;
+        fill: $fill;
+    } @else {
+        color: $fill;
+        fill: $fill;
+    }
+}
+
+@mixin withActive {
+    &:global(.uui-active) {
+        @include fillColor(var(--uui-primary-50));
+
+        &:hover,
+        &:focus {
+            @include fillColor(var(--uui-primary-50) !important);
+        }
+
+        .icon-check {
+            @include fillColor(var(--uui-primary-50));
+        }
+    }
+}
+
+@mixin itemRoot {
+    padding: 9px 12px;
+    line-height: 18px;
+    font-size: 14px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 36px;
+    font-family: var(--uui-dropdown_menu-item-font);
+    font-weight: var(--uui-dropdown_menu-item-font-weight);
+
+    &:focus {
+        outline: none;
+    }
+}
+
+:global(.uui-dropdownMenu-body) {
+    --uui-dropdown_menu-bg: var(--uui-surface-main);
+    --uui-dropdown_menu-shadow: var(--uui-shadow-level-2);
+    --uui-dropdown_menu-splitter: var(--uui-divider-light);
+    --uui-dropdown_menu-item-hover: var(--uui-surface-higher);
+    --uui-dropdown_menu-item-active: var(--uui-surface-higher);
+    --uui-dropdown_menu-item-text: var(--uui-text-primary);
+    --uui-dropdown-selected_mark: var(--uui-info-50);
+
+    --uui-dropdown_menu-body-font: var(--uui-font);
+    --uui-dropdown_menu-body-font-weight: 400;
+    --uui-dropdown_menu-item-font: var(--uui-font);
+    --uui-dropdown_menu-item-font-weight: 400;
+    //
+    @include fillColor(var(--uui-icon), var(--uui-text-primary));
+    font-family: var(--uui-dropdown_menu-body-font);
+    font-weight: var(--uui-dropdown_menu-body-font-weight);
+    font-size: 14px;
+    padding: 6px 0;
+    background-color: var(--uui-dropdown_menu-bg);
+    box-shadow: var(--uui-shadow-level-1);
+    border-radius: var(--uui-dropdown_container-border-radius);
+}
+
+.submenu-root-item-rtl {
+    .icon-after {
+        transform: rotate(90deg);
+    }
+}
+
+.submenu-root-item {
+    .icon-after {
+        transform: rotate(-90deg);
+    }
+}
+
+.icon-check {
+    @include fillColor(transparent);
+}
+
+.splitter-root {
+    display: flex;
+    width: 100%;
+
+    .splitter {
+        width: 100%;
+        border: 0;
+        border-top: 1px solid var(--uui-dropdown_menu-splitter);
+        height: 0;
+    }
+}
+
+.header-root {
+    cursor: default;
+    height: auto;
+    font-size: 12px;
+    padding: 3px 12px;
+    @include fillColor(var(--uui-text-secondary));
+    @include itemRoot;
+}
+
+.item-root {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    @include fillColor(var(--uui-icon), var(--uui-text-primary));
+    @include itemRoot;
+    @include withActive;
+
+    .icon {
+        justify-content: flex-start;
+        flex-shrink: 0;
+        @include withActive;
+
+        svg {
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    &.link {
+        display: flex;
+        align-items: center;
+        @include withActive;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &:global(.-clickable:not(.uui-disabled)) {
+        &:hover {
+            background-color: var(--uui-dropdown_menu-item-hover);
+            fill: var(--uui-icon-active);
+            cursor: pointer;
+        }
+
+        &:focus-visible {
+            @include focus-visible-effect(-2px);
+        }
+    }
+
+    &:global(.uui-disabled) {
+        pointer-events: none;
+        @include fillColor(var(--uui-text-disabled)); // TODO: need possibility to override - in dark theme neutral 40
+
+        &:hover,
+        &:focus {
+            background-color: transparent;
+            cursor: default;
+        }
+    }
+
+    &:global(.uui-opened) {
+        background-color: var(--uui-dropdown_menu-item-active);
+        fill: var(--uui-text-primary);
+    }
+
+    & > *:not(:last-child) {
+        margin-inline: 0 7px;
+    }
+}
+
+.indent {
+    padding-left: 24px;
+}
+
+.selected-mark {
+    fill: var(--uui-dropdown-selected_mark);
+
+    & > svg {
+        width: 18px;
+        height: 18px;
+    }
+}

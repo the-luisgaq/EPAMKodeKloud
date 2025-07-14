@@ -1,0 +1,34 @@
+.root {
+    --uui-panel-bg: transparent;
+    --uui-panel-shadow: var(--uui-shadow-level-1);
+
+    --uui-panel-border-radius: var(--uui-border-radius);
+    //
+    overflow: hidden;
+    border-radius: var(--uui-panel-border-radius);
+    background-color: var(--uui-panel-bg);
+
+    &.margin-24 {
+        margin: 24px;
+    }
+
+    &.padding-12 {
+        padding: 12px;
+    }
+
+    &.padding-24 {
+        padding: 24px;
+    }
+
+    &.shadow {
+        box-shadow: var(--uui-panel-shadow);
+    }
+
+    &:global(.-clickable):hover {
+        cursor: pointer;
+    }
+
+    &.uui-surface-main {
+        --uui-panel-bg: var(--uui-surface-main);
+    }
+}

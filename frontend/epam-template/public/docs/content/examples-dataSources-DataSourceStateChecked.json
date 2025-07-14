@@ -1,0 +1,22 @@
+[
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "Multi-select: checked elements are controlled by the "
+      },
+      {
+        "text": "checked",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " property at the "
+      },
+      {
+        "text": "DataSourceState",
+        "uui-richTextEditor-code": true
+      }
+    ]
+  }
+]

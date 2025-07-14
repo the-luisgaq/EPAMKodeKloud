@@ -1,0 +1,24 @@
+.column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    padding: 6px;
+}
+
+.whiteColumn {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    padding: 6px;
+    background-color: var(--uui-info-60);
+}
+
+.size {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    & > button {
+        height: min-content;
+    }
+}

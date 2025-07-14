@@ -1,0 +1,55 @@
+[
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "To use UUI services, you need to wrap your application into the "
+      },
+      {
+        "text": "UuiContext.Provider",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " React context, which passes the services to the application, so that they can be accessed."
+      }
+    ]
+  },
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "This React context is also required for the proper work of several components. E.g.: "
+      },
+      {
+        "text": "Button",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " requires routing context to make SPA redirects.  "
+      },
+      {
+        "text": "Dropdown",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " and "
+      },
+      {
+        "text": "ModalWindow",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " need "
+      },
+      {
+        "text": "LayoutContext",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " to get appropriate layer z-index."
+      }
+    ]
+  }
+]

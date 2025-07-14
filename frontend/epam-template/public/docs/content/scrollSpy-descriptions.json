@@ -1,0 +1,110 @@
+[
+  {
+    "type": "paragraph",
+    "data": {},
+    "children": [
+      {
+        "text": "Scroll Spy is a UI element helping to define and control anchors on your page. "
+      },
+      {
+        "text": "Some common cases where",
+        "font-size": "12pt",
+        "font-family": null,
+        "background-color": null,
+        "font-weight": "400",
+        "font-style": null,
+        "font-variant": "normal",
+        "text-decoration": "none",
+        "vertical-align": "baseline",
+        "white-space": "pre-wrap",
+        "": null,
+        "uui-richTextEditor-span-mark": true
+      },
+      {
+        "text": " "
+      },
+      {
+        "text": "a",
+        "font-size": "12pt",
+        "font-family": null,
+        "background-color": null,
+        "font-weight": "400",
+        "font-style": null,
+        "font-variant": "normal",
+        "text-decoration": "none",
+        "vertical-align": "baseline",
+        "white-space": "pre-wrap",
+        "": null,
+        "uui-richTextEditor-span-mark": true
+      },
+      {
+        "text": " "
+      },
+      {
+        "text": "scroll spy can be applied:",
+        "font-size": "12pt",
+        "font-family": null,
+        "background-color": null,
+        "font-weight": "400",
+        "font-style": null,
+        "font-variant": "normal",
+        "text-decoration": "none",
+        "vertical-align": "baseline",
+        "white-space": "pre-wrap",
+        "": null,
+        "uui-richTextEditor-span-mark": true
+      }
+    ]
+  },
+  {
+    "type": "unordered-list",
+    "data": {},
+    "children": [
+      {
+        "type": "list-item",
+        "data": {},
+        "children": [
+          {
+            "type": "list-item-child",
+            "data": {},
+            "children": [
+              {
+                "text": "Navigation menu."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "list-item",
+        "data": {},
+        "children": [
+          {
+            "type": "list-item-child",
+            "data": {},
+            "children": [
+              {
+                "text": "Pages that preserve the last viewed place and recover it when the user returns to the page."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "list-item",
+        "data": {},
+        "children": [
+          {
+            "type": "list-item-child",
+            "data": {},
+            "children": [
+              {
+                "text": "Sidebar navigation, showing currently viewed section."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

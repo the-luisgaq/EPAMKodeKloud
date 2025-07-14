@@ -1,0 +1,39 @@
+[
+  {
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "You can define "
+      },
+      {
+        "text": "TextArea",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " height using "
+      },
+      {
+        "text": "rows",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " prop. "
+      }
+    ]
+  },
+  {
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "In case if you need height adjusted to the content, use "
+      },
+      {
+        "text": "autoSize={ true }",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " prop."
+      }
+    ]
+  }
+]

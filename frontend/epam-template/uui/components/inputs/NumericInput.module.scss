@@ -1,0 +1,64 @@
+@use  '../../assets/styles/index.scss' as *;
+
+.root {
+    --uui-numeric_input-icon-clickable: var(--uui-icon);
+    --uui-numeric_input-icon-clickable-hover: var(--uui-icon-hover);
+
+    //
+    &:global(.uui-input-box) {
+        padding-inline-end: calc(var(--uui-horizontal-padding) - var(--uui-border-width));
+        min-width: 40px;
+
+        :global(.uui-numeric-input-up-button) {
+            transform: rotate(180deg);
+
+            &:hover {
+                svg {
+                    fill: var(--uui-numeric_input-icon-clickable-hover);
+                }
+            }
+        }
+
+        :global(.uui-numeric-input-down-button) {
+            &:hover {
+                svg {
+                    fill: var(--uui-numeric_input-icon-clickable-hover);
+                }
+            }
+        }
+
+        :global(.uui-input.uui-value-in-placeholder) {
+            &::placeholder {
+                color: inherit;
+            }
+        }
+
+        :global(.uui-icon) svg {
+            margin-top: -2px;
+        }
+
+        :global(.uui-numeric-input-button-group) {
+            > * {
+                height: calc((var(--uui-size) - (var(--uui-border-width) * 2)) / 2);
+            }
+        }
+    }
+
+    &:global(.uui-disabled) {
+        :global(.uui-numeric-input-button-group) {
+            > *:hover, > *:focus {
+                cursor: default;
+                background-color: transparent;
+            }
+        }
+    }
+
+    &:global(.uui-readonly) {
+        :global(.uui-input.uui-value-in-placeholder) {
+            &::placeholder {
+                -webkit-text-fill-color: var(--uui-text_input-text);
+                color: var(--uui-text_input-text);
+            }
+        }
+    }
+}

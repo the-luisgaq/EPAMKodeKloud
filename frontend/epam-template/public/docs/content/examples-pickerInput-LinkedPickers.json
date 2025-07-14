@@ -1,0 +1,43 @@
+[
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "If you have a case where the result of one picker depends on the second picker's value, use the "
+      },
+      {
+        "text": "filter",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " prop, which will filter list according to this value."
+      }
+    ]
+  },
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "If you use ArrayDataSource, you need to filter your items array by yourself and create DataSource one more time with new items. See the "
+      },
+      {
+        "data": {
+          "url": "/documents?category=components&id=pickerInput&mode=doc&skin=UUI4_promo#picker_with_changed_array_of_items"
+        },
+        "type": "link",
+        "url": "/documents?category=components&id=pickerInput&mode=doc&skin=UUI4_promo#picker_with_changed_array_of_items",
+        "children": [
+          {
+            "text": "Picker with changed array of items",
+            "uui-richTextEditor-italic": true
+          }
+        ]
+      },
+      {
+        "text": " example above."
+      }
+    ]
+  }
+]

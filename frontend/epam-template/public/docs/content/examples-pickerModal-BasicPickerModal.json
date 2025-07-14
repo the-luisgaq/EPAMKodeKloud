@@ -1,0 +1,73 @@
+[
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "Below, you can see basic PickerModal usage with ",
+        "font-size": "12pt",
+        "font-family": null,
+        "background-color": null,
+        "font-weight": "400",
+        "font-style": null,
+        "font-variant": "normal",
+        "text-decoration": "none",
+        "vertical-align": "baseline",
+        "white-space": "pre-wrap",
+        "": null,
+        "uui-richTextEditor-span-mark": true
+      },
+      {
+        "type": "link",
+        "url": "/documents?id=dataSources-array-dataSource",
+        "target": "_blank",
+        "children": [
+          {
+            "font-size": "12pt",
+            "font-family": null,
+            "background-color": null,
+            "font-weight": "400",
+            "font-style": null,
+            "font-variant": "normal",
+            "text-decoration": "none",
+            "vertical-align": "baseline",
+            "white-space": "pre-wrap",
+            "": null,
+            "uui-richTextEditor-span-mark": true,
+            "text": "ArrayDataSource"
+          }
+        ]
+      },
+      {
+        "font-size": "12pt",
+        "font-family": null,
+        "background-color": null,
+        "font-weight": "400",
+        "font-style": null,
+        "font-variant": "normal",
+        "text-decoration": "none",
+        "vertical-align": "baseline",
+        "white-space": "pre-wrap",
+        "": null,
+        "uui-richTextEditor-span-mark": true,
+        "text": "."
+      }
+    ]
+  },
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "If you want a single or multi select, pass the "
+      },
+      {
+        "text": "selectionMode: 'single' | 'multi",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " prop."
+      }
+    ]
+  }
+]

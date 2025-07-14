@@ -1,0 +1,30 @@
+[
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "Below, you can review the ",
+        "color": "rgb(55, 65, 81)"
+      },
+      {
+        "text": "AsyncDataSourceProps",
+        "color": "rgb(48, 50, 64)",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "color": "rgb(55, 65, 81)",
+        "text": " interface accepted by "
+      },
+      {
+        "color": "rgb(55, 65, 81)",
+        "text": "AsyncDataSource",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "color": "rgb(55, 65, 81)",
+        "text": "."
+      }
+    ]
+  }
+]

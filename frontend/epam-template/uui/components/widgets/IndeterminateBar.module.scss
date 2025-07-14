@@ -1,0 +1,42 @@
+.root {
+    --uui-indeterminate_bar-bg: var(--uui-secondary-20);
+    --uui-indeterminate_bar-progress-bg: var(--uui-primary-50);
+    --uui-indeterminate_bar-border-radius: var(--uui-border-radius);
+    //
+    position: relative;
+    background-color: var(--uui-indeterminate_bar-bg);
+    border-radius: var(--uui-indeterminate_bar-border-radius);
+    overflow: hidden;
+
+    .progress-bar {
+        background-color: var(--uui-indeterminate_bar-progress-bg);
+        width: 33%;
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        animation: progressBar-indeterminate 2s linear 0.15s infinite;
+    }
+}
+
+
+@keyframes progressBar-indeterminate {
+    0% {
+        left: -33%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+.size-12 {
+    height: 12px;
+}
+
+.size-18 {
+    height: 18px;
+}
+
+.size-24 {
+    height: 24px;
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "Lock context provides functionality to solve problems when you need to take control(lock) and perform some action when something is trying to get control (lock) for itself. "
+      }
+    ]
+  },
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "In UUI, the Lock context is widely used with forms for cases when a user tries to leave the form with unsaved changes or triggers some action that depends on saved form results and is required to save the form before this action is invoked(in lock context terminology - tried to acquire the lock)."
+      }
+    ]
+  },
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "Also, Lock Context subscribes to any router change and tries to release the current lock before this change."
+      }
+    ]
+  },
+  {
+    "data": {},
+    "type": "uui-richTextEditor-header-2",
+    "children": [
+      {
+        "text": "API"
+      }
+    ]
+  },
+  {
+    "type": "type-ref-table",
+    "children": [
+      {
+        "text": "",
+        "outline": "0px",
+        "": null,
+        "uui-richTextEditor-span-mark": true
+      }
+    ],
+    "data": {
+      "typePath": "@epam/uui-core:ILockContext"
+    }
+  }
+]

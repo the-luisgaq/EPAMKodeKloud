@@ -1,0 +1,60 @@
+@use '~@epam/promo/assets/styles/index' as *;
+
+.code {
+    --code-bg: var(--uui-surface-higher);
+    font-size: 14px;
+    line-height: 18px;
+    padding: 24px;
+    margin: 0;
+    background-color: var(--code-bg);
+    border-top: 1px solid var(--uui-divider);
+    font-family: monospace;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow: auto;
+
+    &.compact {
+        padding: 9px 0;
+        border: 0;
+    }
+
+    &.isHidden {
+        height: 0;
+        padding: 0;
+        overflow: hidden;
+        border-top: 0;
+    }
+
+    /* Highly opinionated - make comments stand out and more readable // YakovZh */
+    :global {
+        .token {
+            &.comment {
+                color: var(--uui-text-secondary);
+                font-family: var(--uui-font);
+                font-size: 14px;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    height: 18px;
+                    width: 12px;
+                    background: var(--code-bg);
+                    opacity: 0.7;
+                }
+            }
+
+            &.operator {
+                color: var(--uui-warning-70);
+                background: var(--code-bg);
+            }
+
+            &.punctuation {
+                color: var(--uui-text-tertiary);
+            }
+        }
+    }
+
+}

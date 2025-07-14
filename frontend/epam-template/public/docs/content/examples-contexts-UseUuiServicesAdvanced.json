@@ -1,0 +1,54 @@
+[
+  {
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "This example shows some advanced configuration options, like:"
+      }
+    ]
+  },
+  {
+    "type": "unordered-list",
+    "children": [
+      {
+        "type": "list-item",
+        "children": [
+          {
+            "type": "list-item-child",
+            "children": [
+              {
+                "text": "App context loading"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "list-item",
+        "children": [
+          {
+            "type": "list-item-child",
+            "children": [
+              {
+                "text": "Analytics events subscription"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "list-item",
+        "children": [
+          {
+            "type": "list-item-child",
+            "children": [
+              {
+                "text": "API definition"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
