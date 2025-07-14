@@ -1,0 +1,80 @@
+[
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "LazyDataSource",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " supports two ways of searching items: tree and flatten search."
+      }
+    ]
+  },
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "It is recommended to use `flatten` search in most cases, by passing "
+      },
+      {
+        "text": "flattenSearchResults: true",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": "  as the datasource property."
+      }
+    ]
+  },
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "While it might look counterintuitive, there are several benefits of this approach. See more details "
+      },
+      {
+        "data": {
+          "url": "https://github.com/epam/UUI/issues/8"
+        },
+        "type": "link",
+        "url": "https://github.com/epam/UUI/issues/8",
+        "children": [
+          {
+            "text": "here"
+          }
+        ]
+      },
+      {
+        "text": ". "
+      }
+    ]
+  },
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "If you opt to display search results as a tree, pay attention that you need to build a specific API, which returns parents who have children matching search. We recommend prefetching children for each parent in this case. Consult the example below, and our demo API implementation, on how to implement this pattern."
+      }
+    ]
+  },
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "For the purpose of displaying the path to the found item, it is required to pass "
+      },
+      {
+        "text": "renderRow",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " with subtitle."
+      }
+    ]
+  }
+]

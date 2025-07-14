@@ -1,0 +1,12 @@
+@use  '../../../assets/styles/index' as *;
+
+.sorting-panel-container {
+    padding: var(--uui-grid-unit) 0;
+    border-bottom: 1px solid var(--uui-divider);
+    border-radius: 0;
+    box-shadow: none;
+
+    @media screen and (max-width: 720px) {
+        padding: 0;
+    }
+}

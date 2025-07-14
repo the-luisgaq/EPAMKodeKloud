@@ -1,0 +1,24 @@
+[
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "You can achieve a lazy loading pattern, bypassing "
+      },
+      {
+        "type": "link",
+        "url": "/documents?id=dataSources-lazy-dataSource",
+        "target": "_blank",
+        "children": [
+          {
+            "text": "LazyDataSource"
+          }
+        ]
+      },
+      {
+        "text": " to PickerModal."
+      }
+    ]
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "object": "value",
+  "document": {
+    "object": "document",
+    "data": {},
+    "nodes": [
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "You can disable selection for some days via ",
+            "marks": []
+          },
+          {
+            "object": "text",
+            "text": "filter",
+            "marks": [
+              {
+                "object": "mark",
+                "type": "uui-richTextEditor-code",
+                "data": {}
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": " prop. This callback is invoked for each day in the picker, return ",
+            "marks": []
+          },
+          {
+            "object": "text",
+            "text": "false",
+            "marks": [
+              {
+                "object": "mark",
+                "type": "uui-richTextEditor-code",
+                "data": {}
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": " if you want to disable a day.",
+            "marks": []
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+@use '../../assets/styles/index' as *;
+
+.root {
+    --uui-dt-cell-size: var(--uui-size);
+    --uui-dt-cell-padding: var(--uui-dt-padding);
+    --uui-dt-cell-padding-edge: var(--uui-dt-padding-edge);
+    //
+    padding-inline-start: var(--uui-dt-cell-padding-start);
+    padding-inline-end: var(--uui-dt-cell-padding-end);
+
+    &.wrapper {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &:global(.data-table-cell).align-widgets-top {
+        div:global(.uui-checkbox) {
+            margin-top: calc(var(--uui-dt-cell-size) / 2 - var(--uui-size) / 2);
+        }
+    }
+
+    &.align-widgets-center :global(.uui-checkbox-container) {
+        align-self: center;
+    }
+
+    &:global(.uui-invalid) {
+        background-color: var(--uui-dt-cell-bg-invalid);
+    }
+}
+
+:global(.uui-dt-vertical-cell-border) {
+    border-inline-start-color: var(--uui-dt-border);
+    border-inline-end-color: var(--uui-dt-border);
+}

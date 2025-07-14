@@ -1,0 +1,1205 @@
+[
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "General approach for testing UUI components is described on this page. "
+      }
+    ]
+  },
+  {
+    "data": {},
+    "type": "uui-richTextEditor-header-3",
+    "children": [
+      {
+        "text": "Testing pyramid"
+      }
+    ]
+  },
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "The table below shows what are the different kinds of tests we have in UUI."
+      }
+    ]
+  },
+  {
+    "data": {},
+    "type": "table",
+    "children": [
+      {
+        "data": {},
+        "type": "table_row",
+        "children": [
+          {
+            "type": "table_header_cell",
+            "children": [
+              {
+                "data": {},
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Level"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "table_header_cell",
+            "children": [
+              {
+                "data": {},
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Title"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "table_header_cell",
+            "children": [
+              {
+                "data": {},
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "What is tested"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "table_header_cell",
+            "children": [
+              {
+                "data": {},
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Tools"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "data": {},
+        "type": "table_row",
+        "children": [
+          {
+            "type": "table_cell",
+            "children": [
+              {
+                "data": {},
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "1",
+                    "uui-richTextEditor-bold": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "table_cell",
+            "children": [
+              {
+                "data": {},
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Unit",
+                    "uui-richTextEditor-bold": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "table_cell",
+            "children": [
+              {
+                "data": {},
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Pure functions"
+                  }
+                ]
+              },
+              {
+                "data": {},
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Helpers"
+                  }
+                ]
+              },
+              {
+                "data": {},
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Utilities"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "table_cell",
+            "children": [
+              {
+                "data": {},
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Jest",
+                    "uui-richTextEditor-code": true
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "data": {},
+        "type": "table_row",
+        "children": [
+          {
+            "type": "table_cell",
+            "children": [
+              {
+                "data": {},
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "2",
+                    "uui-richTextEditor-bold": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "table_cell",
+            "children": [
+              {
+                "data": {},
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Integration (*)",
+                    "uui-richTextEditor-bold": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "table_cell",
+            "children": [
+              {
+                "data": {},
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "React component\r"
+                  }
+                ]
+              },
+              {
+                "data": {},
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Reusable React hook"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "table_cell",
+            "children": [
+              {
+                "data": {},
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Jest + jsdom",
+                    "uui-richTextEditor-code": true
+                  }
+                ]
+              },
+              {
+                "data": {},
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "@epam/uui-test-utils",
+                    "uui-richTextEditor-code": true
+                  },
+                  {
+                    "text": " (it internally uses @testing-library/react, react-test-renderer, @testing-library/user-event)\r"
+                  }
+                ]
+              },
+              {
+                "data": {},
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "@testing-library/jest-dom",
+                    "uui-richTextEditor-code": true
+                  },
+                  {
+                    "text": " (custom jest matchers)\r"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "data": {},
+        "type": "table_row",
+        "children": [
+          {
+            "type": "table_cell",
+            "children": [
+              {
+                "data": {},
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "3",
+                    "uui-richTextEditor-bold": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "table_cell",
+            "children": [
+              {
+                "data": {},
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "E2E (**)",
+                    "uui-richTextEditor-bold": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "table_cell",
+            "children": [
+              {
+                "data": {},
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Real page with one or several components"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "table_cell",
+            "children": [
+              {
+                "data": {},
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "The majority of our components are covered by screenshot tests.  "
+                  },
+                  {
+                    "text": "Playwright",
+                    "uui-richTextEditor-code": true
+                  },
+                  {
+                    "text": " library is used for such tests."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "data": {},
+        "type": "table_row",
+        "children": [
+          {
+            "type": "table_cell",
+            "colSpan": 4,
+            "rowSpan": 1,
+            "children": [
+              {
+                "data": {},
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "(*)",
+                    "font-family": null,
+                    "font-size": "16px",
+                    "font-style": null,
+                    "font-variant-ligatures": "normal",
+                    "font-variant-caps": "normal",
+                    "font-weight": "400",
+                    "letter-spacing": "normal",
+                    "orphans": "2",
+                    "text-align": "start",
+                    "text-indent": "0px",
+                    "text-transform": "none",
+                    "white-space": "pre-wrap",
+                    "widows": "2",
+                    "word-spacing": "0px",
+                    "-webkit-text-stroke-width": "0px",
+                    "background-color": null,
+                    "text-decoration-thickness": "initial",
+                    "text-decoration-style": "initial",
+                    "text-decoration-color": "initial",
+                    "display": "inline !important",
+                    "float": "none",
+                    "": null,
+                    "uui-richTextEditor-span-mark": true,
+                    "uui-richTextEditor-bold": true
+                  },
+                  {
+                    "text": " with React components, the distinction between a “unit” and “integration” test can be blurry. For simplicity, we consider that any test of React component is integration one.",
+                    "font-family": null,
+                    "font-size": "16px",
+                    "font-style": null,
+                    "font-variant-ligatures": "normal",
+                    "font-variant-caps": "normal",
+                    "font-weight": "400",
+                    "letter-spacing": "normal",
+                    "orphans": "2",
+                    "text-align": "start",
+                    "text-indent": "0px",
+                    "text-transform": "none",
+                    "white-space": "pre-wrap",
+                    "widows": "2",
+                    "word-spacing": "0px",
+                    "-webkit-text-stroke-width": "0px",
+                    "background-color": null,
+                    "text-decoration-thickness": "initial",
+                    "text-decoration-style": "initial",
+                    "text-decoration-color": "initial",
+                    "display": "inline !important",
+                    "float": "none",
+                    "": null,
+                    "uui-richTextEditor-span-mark": true
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "data": {},
+        "type": "table_row",
+        "children": [
+          {
+            "type": "table_cell",
+            "colSpan": 4,
+            "rowSpan": 1,
+            "children": [
+              {
+                "data": {},
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "(**)",
+                    "font-family": null,
+                    "font-size": "16px",
+                    "font-style": null,
+                    "font-variant-ligatures": "normal",
+                    "font-variant-caps": "normal",
+                    "font-weight": "400",
+                    "letter-spacing": "normal",
+                    "orphans": "2",
+                    "text-align": "start",
+                    "text-indent": "0px",
+                    "text-transform": "none",
+                    "white-space": "pre-wrap",
+                    "widows": "2",
+                    "word-spacing": "0px",
+                    "-webkit-text-stroke-width": "0px",
+                    "background-color": null,
+                    "text-decoration-thickness": "initial",
+                    "text-decoration-style": "initial",
+                    "text-decoration-color": "initial",
+                    "display": "inline !important",
+                    "float": "none",
+                    "": null,
+                    "uui-richTextEditor-span-mark": true,
+                    "uui-richTextEditor-bold": true
+                  },
+                  {
+                    "text": " such tests require real browser, real API endpoints, layout, navigation, etc.",
+                    "font-family": null,
+                    "font-size": "16px",
+                    "font-style": null,
+                    "font-variant-ligatures": "normal",
+                    "font-variant-caps": "normal",
+                    "font-weight": "400",
+                    "letter-spacing": "normal",
+                    "orphans": "2",
+                    "text-align": "start",
+                    "text-indent": "0px",
+                    "text-transform": "none",
+                    "white-space": "pre-wrap",
+                    "widows": "2",
+                    "word-spacing": "0px",
+                    "-webkit-text-stroke-width": "0px",
+                    "background-color": null,
+                    "text-decoration-thickness": "initial",
+                    "text-decoration-style": "initial",
+                    "text-decoration-color": "initial",
+                    "display": "inline !important",
+                    "float": "none",
+                    "": null,
+                    "uui-richTextEditor-span-mark": true
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "colSizes": [
+      88.60000610351562,
+      160.79995727539062,
+      241.5999755859375,
+      411
+    ]
+  },
+  {
+    "data": {},
+    "type": "uui-richTextEditor-header-3",
+    "children": [
+      {
+        "text": ""
+      },
+      {
+        "data": {
+          "url": "https://github.com/epam/UUI/blob/96bab30480c195b008ef502de2796ebc2e261ad7/uui-build/jest/unit-testing-guide.md#guiding-principles"
+        },
+        "type": "link",
+        "url": "https://github.com/epam/UUI/blob/96bab30480c195b008ef502de2796ebc2e261ad7/uui-build/jest/unit-testing-guide.md#guiding-principles",
+        "children": [
+          {
+            "text": ""
+          }
+        ]
+      },
+      {
+        "text": "Guiding principles"
+      }
+    ]
+  },
+  {
+    "data": {},
+    "type": "ordered-list",
+    "children": [
+      {
+        "data": {},
+        "type": "list-item",
+        "children": [
+          {
+            "data": {},
+            "type": "list-item-child",
+            "children": [
+              {
+                "text": "Write code which is "
+              },
+              {
+                "text": "testable",
+                "uui-richTextEditor-code": true
+              },
+              {
+                "text": ". Don't try to cover untestable code by unit tests - make it testable first."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "data": {},
+        "type": "list-item",
+        "children": [
+          {
+            "data": {},
+            "type": "list-item-child",
+            "children": [
+              {
+                "text": "Minimize usage of mocks. Reason: with too many mocks, the test no longer resembles the way how component is used."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "data": {},
+        "type": "list-item",
+        "children": [
+          {
+            "data": {},
+            "type": "list-item-child",
+            "children": [
+              {
+                "text": "Don't overuse snapshots. It may be helpful only for single components (it's not recommended for composite components)."
+              }
+            ]
+          },
+          {
+            "data": {},
+            "type": "unordered-list",
+            "children": [
+              {
+                "data": {},
+                "type": "list-item",
+                "children": [
+                  {
+                    "data": {},
+                    "type": "list-item-child",
+                    "children": [
+                      {
+                        "text": "Snapshot "
+                      },
+                      {
+                        "text": "is a",
+                        "uui-richTextEditor-code": true
+                      },
+                      {
+                        "text": " tool which notifies that"
+                      },
+                      {
+                        "text": " ",
+                        "uui-richTextEditor-span-mark": true
+                      },
+                      {
+                        "text": "something",
+                        "uui-richTextEditor-code": true
+                      },
+                      {
+                        "text": " was",
+                        "uui-richTextEditor-span-mark": true
+                      },
+                      {
+                        "text": " changed without saying whether it's expected change or not."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "data": {},
+                "type": "list-item",
+                "children": [
+                  {
+                    "data": {},
+                    "type": "list-item-child",
+                    "children": [
+                      {
+                        "text": "Snapshot "
+                      },
+                      {
+                        "text": "is not a",
+                        "uui-richTextEditor-code": true
+                      },
+                      {
+                        "text": " test. It should never replace real tests."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "data": {},
+                "type": "list-item",
+                "children": [
+                  {
+                    "data": {},
+                    "type": "list-item-child",
+                    "children": [
+                      {
+                        "text": "It's recommended to add maximum 2 snapshots per component:"
+                      }
+                    ]
+                  },
+                  {
+                    "data": {},
+                    "type": "unordered-list",
+                    "children": [
+                      {
+                        "data": {},
+                        "type": "list-item",
+                        "children": [
+                          {
+                            "data": {},
+                            "type": "list-item-child",
+                            "children": [
+                              {
+                                "text": "snapshot with min amount of props"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "data": {},
+                        "type": "list-item",
+                        "children": [
+                          {
+                            "data": {},
+                            "type": "list-item-child",
+                            "children": [
+                              {
+                                "text": "snapshot with max amount of props."
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "data": {},
+        "type": "list-item",
+        "children": [
+          {
+            "data": {},
+            "type": "list-item-child",
+            "children": [
+              {
+                "text": "Create tests at the same time (or right after) you create code, if possible. Reasons:"
+              }
+            ]
+          },
+          {
+            "data": {},
+            "type": "unordered-list",
+            "children": [
+              {
+                "data": {},
+                "type": "list-item",
+                "children": [
+                  {
+                    "data": {},
+                    "type": "list-item-child",
+                    "children": [
+                      {
+                        "text": "It helps to avoid refactoring of already working code to make this code testable. Which means no risk to make a regression."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "data": {},
+                "type": "list-item",
+                "children": [
+                  {
+                    "data": {},
+                    "type": "list-item-child",
+                    "children": [
+                      {
+                        "text": "The developer is still in context of internal details and corner cases. Which means better quality of tests."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "data": {},
+        "type": "list-item",
+        "children": [
+          {
+            "data": {},
+            "type": "list-item-child",
+            "children": [
+              {
+                "text": "Don't strive to reach certain level of test coverage. It's too easy to reach high coverage with poor quality tests. It should only be used to find places which aren't covered by tests."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "data": {},
+        "type": "list-item",
+        "children": [
+          {
+            "data": {},
+            "type": "list-item-child",
+            "children": [
+              {
+                "text": "Recommended structure of a single test:"
+              }
+            ]
+          },
+          {
+            "data": {},
+            "type": "unordered-list",
+            "children": [
+              {
+                "data": {},
+                "type": "list-item",
+                "children": [
+                  {
+                    "data": {},
+                    "type": "list-item-child",
+                    "children": [
+                      {
+                        "text": "Arrange - setup any prerequisites (prepare test data, render components, prepare mocks)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "data": {},
+                "type": "list-item",
+                "children": [
+                  {
+                    "data": {},
+                    "type": "list-item-child",
+                    "children": [
+                      {
+                        "text": "Act - fire some actions, invoke functions, etc."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "data": {},
+                "type": "list-item",
+                "children": [
+                  {
+                    "data": {},
+                    "type": "list-item-child",
+                    "children": [
+                      {
+                        "text": "Assert - verify the result using "
+                      },
+                      {
+                        "text": "expect",
+                        "uui-richTextEditor-code": true
+                      },
+                      {
+                        "text": " statements."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "data": {},
+        "type": "list-item",
+        "children": [
+          {
+            "data": {},
+            "type": "list-item-child",
+            "children": [
+              {
+                "text": "For complex components, it might be useful to create a simple test plan or test matrix before writing any actual tests. It would help to create better tests with minimum effort."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {},
+    "type": "uui-richTextEditor-header-3",
+    "children": [
+      {
+        "text": ""
+      },
+      {
+        "data": {
+          "url": "https://github.com/epam/UUI/blob/96bab30480c195b008ef502de2796ebc2e261ad7/uui-build/jest/unit-testing-guide.md#writing-testable-code"
+        },
+        "type": "link",
+        "url": "https://github.com/epam/UUI/blob/96bab30480c195b008ef502de2796ebc2e261ad7/uui-build/jest/unit-testing-guide.md#writing-testable-code",
+        "children": [
+          {
+            "text": ""
+          }
+        ]
+      },
+      {
+        "text": "Writing testable code"
+      }
+    ]
+  },
+  {
+    "data": {},
+    "type": "ordered-list",
+    "children": [
+      {
+        "data": {},
+        "type": "list-item",
+        "children": [
+          {
+            "data": {},
+            "type": "list-item-child",
+            "children": [
+              {
+                "text": "Follow software development best practices and avoid anti-patterns. Code which follows best practices isn't only maintainable and reliable, but it's also testable."
+              }
+            ]
+          },
+          {
+            "data": {},
+            "type": "unordered-list",
+            "children": [
+              {
+                "data": {},
+                "type": "list-item",
+                "children": [
+                  {
+                    "data": {},
+                    "type": "list-item-child",
+                    "children": [
+                      {
+                        "text": "Good: Separation of concerns, Single responsibility, etc."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "data": {},
+                "type": "list-item",
+                "children": [
+                  {
+                    "data": {},
+                    "type": "list-item-child",
+                    "children": [
+                      {
+                        "text": "Bad: God object, Spaghetti code, etc."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "data": {},
+        "type": "list-item",
+        "children": [
+          {
+            "data": {},
+            "type": "list-item-child",
+            "children": [
+              {
+                "text": "For React components/hooks"
+              }
+            ]
+          },
+          {
+            "data": {},
+            "type": "unordered-list",
+            "children": [
+              {
+                "data": {},
+                "type": "list-item",
+                "children": [
+                  {
+                    "data": {},
+                    "type": "list-item-child",
+                    "children": [
+                      {
+                        "text": "Extract complex logic (or logic which you need to cover by unit tests) to pure functions/utilities. So that it's possible to test it in isolation (without need to render it, or without need to use complicated/fragile mocks, or without need to depend on any 3rd party libs)."
+                      }
+                    ]
+                  },
+                  {
+                    "data": {},
+                    "type": "unordered-list",
+                    "children": [
+                      {
+                        "data": {},
+                        "type": "list-item",
+                        "children": [
+                          {
+                            "data": {},
+                            "type": "list-item-child",
+                            "children": [
+                              {
+                                "text": "complex state management logic"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "data": {},
+                        "type": "list-item",
+                        "children": [
+                          {
+                            "data": {},
+                            "type": "list-item-child",
+                            "children": [
+                              {
+                                "text": "complex calculations"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "data": {},
+                        "type": "list-item",
+                        "children": [
+                          {
+                            "data": {},
+                            "type": "list-item-child",
+                            "children": [
+                              {
+                                "text": "formatting, etc."
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "data": {},
+                "type": "list-item",
+                "children": [
+                  {
+                    "data": {},
+                    "type": "list-item-child",
+                    "children": [
+                      {
+                        "text": "Create Unit tests for the extracted logic."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "data": {},
+                "type": "list-item",
+                "children": [
+                  {
+                    "data": {},
+                    "type": "list-item-child",
+                    "children": [
+                      {
+                        "text": "Create Integration tests for React component."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "data": {},
+                "type": "list-item",
+                "children": [
+                  {
+                    "data": {},
+                    "type": "list-item-child",
+                    "children": [
+                      {
+                        "text": "Create Integration tests for React hook. But only if this hook is a reusable one (like "
+                      },
+                      {
+                        "text": "useForm",
+                        "uui-richTextEditor-code": true
+                      },
+                      {
+                        "text": "). Otherwise - don't add tests for it."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "data": {},
+        "type": "list-item",
+        "children": [
+          {
+            "data": {},
+            "type": "list-item-child",
+            "children": [
+              {
+                "text": "For utilities/pure functions:"
+              }
+            ]
+          },
+          {
+            "data": {},
+            "type": "unordered-list",
+            "children": [
+              {
+                "data": {},
+                "type": "list-item",
+                "children": [
+                  {
+                    "data": {},
+                    "type": "list-item-child",
+                    "children": [
+                      {
+                        "text": "Organize utilities by purpose, don't put unrelated logic to the same file."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "data": {},
+                "type": "list-item",
+                "children": [
+                  {
+                    "data": {},
+                    "type": "list-item-child",
+                    "children": [
+                      {
+                        "text": "Choose meaningful names for utilities."
+                      },
+                      {
+                        "text": " ",
+                        "uui-richTextEditor-span-mark": true
+                      },
+                      {
+                        "text": "Bad: "
+                      },
+                      {
+                        "text": "'",
+                        "uui-richTextEditor-italic": true,
+                        "uui-richTextEditor-code": true
+                      },
+                      {
+                        "text": "./utils.ts'",
+                        "uui-richTextEditor-code": true
+                      },
+                      {
+                        "text": " ",
+                        "uui-richTextEditor-span-mark": true
+                      },
+                      {
+                        "text": "Good:"
+                      },
+                      {
+                        "text": " ",
+                        "uui-richTextEditor-italic": true
+                      },
+                      {
+                        "text": "'",
+                        "uui-richTextEditor-italic": true,
+                        "uui-richTextEditor-code": true
+                      },
+                      {
+                        "text": "./numberFormattingUtils.ts'",
+                        "uui-richTextEditor-code": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "data": {},
+                "type": "list-item",
+                "children": [
+                  {
+                    "data": {},
+                    "type": "list-item-child",
+                    "children": [
+                      {
+                        "text": "Create Unit tests for utilities."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "data": {},
+        "type": "list-item",
+        "children": [
+          {
+            "data": {},
+            "type": "list-item-child",
+            "children": [
+              {
+                "text": "Make sure that React components render semantic markup ("
+              },
+              {
+                "data": {
+                  "url": "https://web.dev/learn/html/semantic-html/"
+                },
+                "type": "link",
+                "url": "https://web.dev/learn/html/semantic-html/",
+                "children": [
+                  {
+                    "text": "https://web.dev/learn/html/semantic-html/"
+                  }
+                ]
+              },
+              {
+                "text": ")"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,62 @@
+.container {
+    cursor: pointer;
+
+    &:global(.uui-input-box) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        outline: none;
+    }
+
+    :global(.uui-input) {
+        flex: 1 0 0;
+        min-width: 0;
+        border: 0;
+        outline: none;
+        background: none;
+        cursor: pointer;
+        text-overflow: ellipsis;
+
+        &[type='search']::-webkit-search-decoration,
+        &[type='search']::-webkit-search-cancel-button,
+        &[type='search']::-webkit-search-results-button,
+        &[type='search']::-webkit-search-results-decoration {
+            -webkit-appearance: none;
+            display: none;
+            appearance: none;
+        }
+
+
+        &.single-input {
+            flex: 1 1 0;
+        }
+
+        &.cursor-text {
+            cursor: text;
+        }
+    }
+}
+
+.body {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    outline: none;
+    align-items: center;
+
+    &:global(.uui-picker_toggler-multiline) {
+        flex-wrap: wrap;
+    }
+}
+
+:global(.uui-picker_toggler-actions) {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.toggler {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    cursor: pointer;
+}

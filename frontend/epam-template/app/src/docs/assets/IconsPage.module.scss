@@ -1,0 +1,174 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 60px);
+
+    .content-container {
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: 0;
+        overflow-y: auto;
+        min-height: 0;
+
+        >  :first-child {
+            display: flex;
+        }
+
+        .icons-block {
+            padding: 30px 60px;
+            max-width: 522px;
+            min-width: 72px;
+        }
+
+        .import-button {
+            background: none;
+            border: 0 none;
+            line-height: inherit;
+            text-align: left;
+            color: var(--uui-text-primary);
+            cursor: pointer;
+        }
+
+        .title {
+            font-family: var(--uui-font);
+            font-weight: 600;
+            margin-bottom: 24px;
+            font-size: 36px;
+            line-height: 48px;
+        }
+
+        .search {
+            margin-bottom: 21px;
+        }
+
+        .grid {
+            margin: 9px -9px;
+            margin-bottom: 21px;
+            display: flex;
+            flex-wrap: wrap;
+
+            .item {
+                margin: 9px;
+                width: 72px;
+                height: 72px;
+                border: 1px solid var(--uui-divider);
+                background: var(--uui-surface-main);
+                cursor: pointer;
+                box-sizing: border-box;
+
+                .itemIcon {
+                    padding: 11px 0 6px;
+                    align-items: center;
+                    fill: var(--uui-icon);
+
+                    svg {
+                        width: 36px;
+                        height: 36px;
+                    }
+                }
+
+                .itemName {
+                    padding: 0 11px;
+                    text-align: center;
+                    white-space: nowrap;
+                    font-size: 10px;
+                    line-height: 12px;
+                }
+
+                &:hover {
+                    border-color: var(--uui-info-50);
+
+                    .itemIcon {
+                        fill: var(--uui-info-50);
+                    }
+                }
+            }
+
+            .activeItem {
+                border-color: var(--uui-info-50);
+
+                .itemIcon {
+                    fill: var(--uui-info-50);
+                }
+            }
+        }
+
+        .unsuccessful-search {
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+
+            .unsuccessful-search-text {
+                margin-top: 3px;
+                margin-bottom: 12px;
+
+                span {
+                    font-family: var(--uui-font);
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    .sticky-panel {
+        position: sticky;
+        top: 30px;
+        padding-bottom: 30px;
+        padding-right: 30px;
+        height: fit-content;
+
+        .icon-card {
+            box-sizing: border-box;
+            border: 1px solid var(--uui-divider);
+            background-color: var(--uui-surface-main);
+
+            .info-box {
+                padding-bottom: 18px;
+
+                .preview-icon {
+                    margin-right: 12px;
+                    fill: var(--uui-icon);
+                }
+
+                .topMargin {
+                    margin-top: 18px;
+                }
+            }
+
+            .control-size-wrapper {
+                position: relative;
+            }
+
+            .hide-control-size {
+                height: 0;
+                visibility: hidden;
+                transition: all 0.5s linear;
+            }
+
+            .show-control-size {
+                height: 49px;
+                visibility: visible;
+                transition: all 0.5s linear;
+            }
+
+            .controlSizeContent {
+                position: absolute;
+                z-index: 0;
+                width: 100%;
+                bottom: 0;
+            }
+
+            .icon-card-demo {
+                padding-bottom: 12px;
+            }
+
+            .icon-card-import {
+                background-color: var(--uui-surface-low);
+                font-family: var(--font-regular);
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+    }
+}

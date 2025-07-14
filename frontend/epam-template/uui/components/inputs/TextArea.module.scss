@@ -1,0 +1,184 @@
+@use  '../../assets/styles/index' as *;
+
+@mixin control-inline-mode() {
+    background-color: transparent;
+    border-color: transparent;
+    border-style: solid;
+    border-radius: var(--uui-text_area-border-radius);
+
+    &:hover {
+        border-color: var(--uui-text_area-border-hover);
+    }
+
+    &:global(.uui-focus) {
+        border-color: var(--uui-text_area-border-active);
+    }
+}
+
+.root {
+    --uui-text_area-bg: var(--uui-control-bg);
+    --uui-text_area-bg-disabled: var(--uui-control-bg-disabled);
+    --uui-text_area-border: var(--uui-control-border);
+    --uui-text_area-border-hover: var(--uui-control-border-hover);
+    --uui-text_area-border-active: var(--uui-control-border-focus);
+    --uui-text_area-border-error: var(--uui-error-50);
+    --uui-text_area-border-disabled: var(--uui-control-border-disabled);
+    --uui-text_area-placeholder: var(--uui-control-placeholder);
+    --uui-text_area-placeholder-disabled: var(--uui-control-placeholder-disabled);
+    --uui-text_area-placeholder-readonly: var(--uui-control-placeholder-disabled);
+    --uui-text_area-text: var(--uui-control-text);
+    --uui-text_area-text-disabled: var(--uui-control-text-disabled);
+
+    --uui-text_area-border-radius: var(--uui-border-radius);
+
+    --uui-text_area-font: var(--uui-font);
+    --uui-text_area-font-weight: 400;
+
+    --uui-text_area-min-height: var(--uui-size);
+    --uui-text_area-min-width: var(--uui-size);
+    --uui-text_area-border-width: var(--uui-border-width);
+    --uui-text_area-horizontal-padding: var(--uui-horizontal-padding);
+    --uui-text_area-inline-horizontal-padding: 5px;
+    --uui-text_area-vertical-padding: calc((var(--uui-text_area-min-height) - var(--uui-text_area-line-height) - (var(--uui-text_area-border-width) * 2)) / 2);
+    --uui-text_area-icon-height: var(--uui-icon-size);
+    --uui-text_area-line-height: var(--uui-line-height);
+    --uui-text_area-font-size: var(--uui-font-size);
+    //
+    min-width: var(--uui-text_area-min-width);
+    min-height: var(--uui-text_area-min-height);
+
+    :global(.uui-input) {
+        min-height: var(--uui-text_area-min-height);
+        line-height: var(--uui-text_area-line-height);
+        font-size: var(--uui-text_area-font-size);
+        padding-top: var(--uui-text_area-vertical-padding);
+        padding-bottom: var(--uui-text_area-vertical-padding);
+        padding-inline-start: calc(var(--uui-text_area-horizontal-padding) - var(--uui-text_area-border-width));
+        padding-inline-end: calc((var(--uui-text_area-horizontal-padding) * 1.5) - var(--uui-text_area-border-width));
+        color: var(--uui-text_area-text);
+        border-style: solid;
+        border-radius: var(--uui-text_area-border-radius);
+        font-family: var(--uui-text_area-font);
+        font-weight: var(--uui-text_area-font-weight);
+        box-sizing: border-box;
+        overflow-x: hidden;  // Firefox add an extra row in textarea when overflow-x is not hidden
+
+        &::placeholder {
+            color: var(--uui-text_area-placeholder);
+        }
+
+        &:placeholder-shown {
+            text-overflow: ellipsis;
+        }
+
+        &::-moz-placeholder {
+            opacity: 1;
+        }
+
+        &:global(.uui-readonly) {
+            color: var(--uui-text_area-text);
+
+            &::placeholder {
+                color: var(--uui-text_area-placeholder-readonly);
+            }
+        }
+
+        &:global(.uui-disabled) {
+            color: var(--uui-text_area-text-disabled);
+
+            &::placeholder {
+                color: var(--uui-text_area-placeholder-disabled);
+            }
+        }
+    }
+
+    &:global(.uui-control-mode-form) {
+        :global(.uui-input) {
+            background-color: var(--uui-text_area-bg);
+            border-color: var(--uui-text_area-border);
+
+            &:hover {
+                border-color: var(--uui-text_area-border-hover);
+            }
+
+            &:global(.uui-focus) {
+                border-color: var(--uui-text_area-border-active);
+            }
+
+            &:global(.uui-invalid) {
+                border-color: var(--uui-text_area-border-error);
+            }
+
+            &:global(.uui-readonly) {
+                background-color: var(--uui-text_area-bg-disabled);
+                border-color: var(--uui-text_area-border-disabled);
+            }
+
+            &:global(.uui-disabled) {
+                background-color: var(--uui-text_area-bg-disabled);
+                border-color: var(--uui-text_area-border-disabled);
+            }
+        }
+    }
+
+    &:global(.uui-control-mode-cell) {
+        :global(.uui-input) {
+            background-color: transparent;
+            border-color: transparent;
+
+            &:global(.uui-readonly) {
+                background-color: transparent;
+                border-color: transparent;
+            }
+
+            &:global(.uui-disabled) {
+                background-color: transparent;
+                border-color: transparent;
+            }
+        }
+    }
+
+    &:global(.uui-control-mode-inline) {
+        :global(.uui-input) {
+            padding-left: var(--uui-text_area-inline-horizontal-padding);
+            padding-right: var(--uui-text_area-inline-horizontal-padding);
+            @include control-inline-mode();
+
+            &:global(.uui-invalid) {
+                border-color: var(--uui-text_area-border-error);
+            }
+
+            &:global(.uui-readonly) {
+                &:hover {
+                    border-color: transparent;
+                }
+
+                &:global(.uui-focus) {
+                    border-color: transparent;
+                    box-shadow: none;
+                }
+
+                &::placeholder {
+                    color: var(--uui-text_area-placeholder-readonly);
+                }
+            }
+
+            &:global(.uui-disabled) {
+                background-color: transparent;
+                color: var(--uui-text_area-text-disabled);
+                border-color: transparent;
+
+                &:hover, &:active, &:focus {
+                    background-color: transparent;
+                    color: var(--uui-text_area-text-disabled);
+                    border-color: transparent;
+                    box-shadow: none;
+                }
+
+                &::placeholder {
+                    color: var(--uui-text_area-placeholder-disabled);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,177 @@
+{
+  "object": "value",
+  "document": {
+    "object": "document",
+    "data": {},
+    "nodes": [
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "AnalyticsContext provides the solution for sending analytics events to ",
+            "marks": []
+          },
+          {
+            "object": "inline",
+            "type": "link",
+            "data": {
+              "url": "https://developers.google.com/analytics"
+            },
+            "nodes": [
+              {
+                "object": "text",
+                "text": "Google Analytics",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": " or any other analytic system. ",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "Out of the box, we automatically track the following events for GA:",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "unordered-list",
+        "data": {},
+        "nodes": [
+          {
+            "object": "block",
+            "type": "list-item",
+            "data": {},
+            "nodes": [
+              {
+                "object": "block",
+                "type": "list-item-child",
+                "data": {},
+                "nodes": [
+                  {
+                    "object": "block",
+                    "type": "paragraph",
+                    "data": {},
+                    "nodes": [
+                      {
+                        "object": "text",
+                        "text": "Page views (on the first load and on react-router URL change)",
+                        "marks": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "object": "block",
+            "type": "list-item",
+            "data": {},
+            "nodes": [
+              {
+                "object": "block",
+                "type": "list-item-child",
+                "data": {},
+                "nodes": [
+                  {
+                    "object": "block",
+                    "type": "paragraph",
+                    "data": {},
+                    "nodes": [
+                      {
+                        "object": "text",
+                        "text": "API calls timings and errors (you need to use our ",
+                        "marks": []
+                      },
+                      {
+                        "object": "inline",
+                        "type": "link",
+                        "data": {
+                          "url": "https://uui.epam.com/documents?category=contexts&id=apiContext"
+                        },
+                        "nodes": [
+                          {
+                            "object": "text",
+                            "text": "api context",
+                            "marks": []
+                          }
+                        ]
+                      },
+                      {
+                        "object": "text",
+                        "text": ")",
+                        "marks": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "Also, we provide helpers to simplify sending events for user actions like clicks, input changes, etc. You can configure it via corresponding props in components, for example - ",
+            "marks": []
+          },
+          {
+            "object": "text",
+            "text": "clickAnalyticsEvent",
+            "marks": [
+              {
+                "object": "mark",
+                "type": "uui-richTextEditor-code",
+                "data": {}
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": " on the ",
+            "marks": []
+          },
+          {
+            "object": "inline",
+            "type": "link",
+            "data": {
+              "url": "https://uui.epam.com/documents?id=button&mode=doc&skin=UUI4_promo&category=components"
+            },
+            "nodes": [
+              {
+                "object": "text",
+                "text": "Button",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": " component.",
+            "marks": []
+          }
+        ]
+      }
+    ]
+  }
+}

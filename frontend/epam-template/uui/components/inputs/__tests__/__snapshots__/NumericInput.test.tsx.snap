@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NumericInput snapshots should be rendered with maximum props 1`] = `
+<DocumentFragment>
+  <div
+    class="container uui-input-box -clickable root root uui-size-36 uui-control-mode-inline"
+    tabindex="-1"
+  >
+    <input
+      class="uui-input align-left"
+      inputmode="numeric"
+      max="50"
+      min="0"
+      placeholder="0"
+      tabindex="0"
+      type="number"
+      value=""
+    />
+    <div
+      class="uui-numeric-input-button-group"
+    >
+      <div
+        class="container uui-icon uui-enabled -clickable uui-numeric-input-up-button"
+        role="button"
+      >
+        <svg
+          class=""
+        />
+      </div>
+      <div
+        class="container uui-icon uui-enabled -clickable uui-numeric-input-down-button"
+        role="button"
+      >
+        <svg
+          class=""
+        />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`NumericInput snapshots should be rendered with minimum props 1`] = `
+<DocumentFragment>
+  <div
+    class="container uui-input-box -clickable root root uui-size-36 uui-control-mode-form"
+    tabindex="-1"
+  >
+    <input
+      class="uui-input align-left"
+      inputmode="numeric"
+      max="50"
+      min="0"
+      placeholder="0"
+      tabindex="0"
+      type="number"
+      value=""
+    />
+    <div
+      class="uui-numeric-input-button-group"
+    >
+      <div
+        class="container uui-icon uui-enabled -clickable uui-numeric-input-up-button"
+        role="button"
+      >
+        <svg
+          class=""
+        />
+      </div>
+      <div
+        class="container uui-icon uui-enabled -clickable uui-numeric-input-down-button"
+        role="button"
+      >
+        <svg
+          class=""
+        />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

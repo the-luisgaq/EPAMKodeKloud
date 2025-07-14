@@ -1,0 +1,69 @@
+[
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "Notes:"
+      }
+    ]
+  },
+  {
+    "data": {},
+    "type": "unordered-list",
+    "children": [
+      {
+        "data": {},
+        "type": "list-item",
+        "children": [
+          {
+            "data": {},
+            "type": "list-item-child",
+            "children": [
+              {
+                "text": "loadAppContext",
+                "uui-richTextEditor-code": true
+              },
+              {
+                "text": " — use it if you need to load some general data to your application before the application is mounted. For example, to load logging user data or permission settings.\nPlace here an API call that returns your data, and then you can use it globally via "
+              },
+              {
+                "text": "context.uuiApp",
+                "uui-richTextEditor-code": true
+              },
+              {
+                "text": " or "
+              },
+              {
+                "text": "svc.uuiApp",
+                "uui-richTextEditor-code": true
+              },
+              {
+                "text": " in your app. \n"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "data": {},
+        "type": "list-item",
+        "children": [
+          {
+            "data": {},
+            "type": "list-item-child",
+            "children": [
+              {
+                "text": "onInitCompleted",
+                "uui-richTextEditor-code": true
+              },
+              {
+                "text": " — callback, which is called when all services are already inited. We recommend writing our services to the module variable(like svc in this example), then importing it and using services from it. This approach is more convenient and doesn't require extra effort because you don't need to subscribe each component to the react context API. "
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

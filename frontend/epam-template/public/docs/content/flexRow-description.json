@@ -1,0 +1,11 @@
+[
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "FlexRow is a FlexBox container with items arranged along the horizontal axis from left to right. It's a horizontal FlexBox container."
+      }
+    ]
+  }
+]

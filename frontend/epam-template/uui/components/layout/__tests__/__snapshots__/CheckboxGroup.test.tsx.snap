@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CheckboxGroup should be rendered correctly 1`] = `
+<DocumentFragment>
+  <fieldset
+    class="root uui-vertical-direction"
+  >
+    <label
+      class="container uui-checkbox-container root uui-size-18 uui-control-mode-form uui-color-primary -clickable"
+    >
+      <div
+        class="uui-checkbox"
+      >
+        <input
+          aria-checked="false"
+          tabindex="0"
+          type="checkbox"
+        />
+      </div>
+      <div
+        class="uui-input-label"
+      >
+        Test1
+      </div>
+    </label>
+    <label
+      class="container uui-checkbox-container root uui-size-18 uui-control-mode-form uui-color-primary -clickable"
+    >
+      <div
+        class="uui-checkbox"
+      >
+        <input
+          aria-checked="false"
+          tabindex="0"
+          type="checkbox"
+        />
+      </div>
+      <div
+        class="uui-input-label"
+      >
+        Test2
+      </div>
+    </label>
+  </fieldset>
+</DocumentFragment>
+`;
+
+exports[`CheckboxGroup should be rendered correctly with props 1`] = `
+<DocumentFragment>
+  <fieldset
+    class="root uui-horizontal-direction"
+  >
+    <label
+      class="container uui-checkbox-container root uui-size-18 uui-control-mode-form uui-color-primary uui-disabled"
+    >
+      <div
+        class="uui-checkbox"
+      >
+        <input
+          aria-checked="false"
+          aria-disabled="true"
+          disabled=""
+          tabindex="-1"
+          type="checkbox"
+        />
+      </div>
+      <div
+        class="uui-input-label"
+      >
+        Test1
+      </div>
+    </label>
+    <label
+      class="container uui-checkbox-container root uui-size-18 uui-control-mode-form uui-color-primary uui-disabled"
+    >
+      <div
+        class="uui-checkbox"
+      >
+        <input
+          aria-checked="false"
+          aria-disabled="true"
+          disabled=""
+          tabindex="-1"
+          type="checkbox"
+        />
+      </div>
+      <div
+        class="uui-input-label"
+      >
+        Test2
+      </div>
+    </label>
+  </fieldset>
+</DocumentFragment>
+`;

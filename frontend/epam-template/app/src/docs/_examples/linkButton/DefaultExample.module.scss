@@ -1,0 +1,16 @@
+.wrapper {
+    background-color: var(--uui-surface-main);
+    flex: 1 1 100%;
+}
+
+.components {
+    row-gap: 6px;
+    min-width: 120px;
+    overflow: unset;
+}
+
+.link {
+    display: flex;
+    justify-content: flex-end;
+    flex-shrink: 0;
+}

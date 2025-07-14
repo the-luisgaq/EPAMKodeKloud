@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DataPickerRow should be rendered correctly 1`] = `
+<DocumentFragment>
+  <div
+    aria-posinset="2"
+    class="pickerRow uui-picker_input-row uui-size-36 align-widgets-top"
+    role="option"
+  >
+    <div
+      class="flexCell rowContent"
+      style="min-width: 0; flex-grow: 1; flex-basis: 0px;"
+    >
+      <div
+        class="contentWrapper"
+      >
+        <div>
+          test
+        </div>
+        <div
+          class="flexSpacer"
+        />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`DataPickerRow should be rendered correctly 2`] = `
+<DocumentFragment>
+  <div
+    aria-posinset="2"
+    aria-selected="true"
+    class="pickerRow uui-picker_input-row uui-size-48 align-widgets-top uui-focus -clickable"
+    role="option"
+    style="--uui-data_picker-horizontal-padding: 24px;"
+  >
+    <div
+      class="flexCell rowContent"
+      style="min-width: 0; flex-grow: 1; flex-basis: 0px;"
+    >
+      <div
+        class="contentWrapper"
+      >
+        <div>
+          test
+        </div>
+        <div
+          class="flexSpacer"
+        />
+        <div
+          class="iconWrapper uui-picker_input-row-select_icon uui-selected"
+        >
+          <div
+            aria-label="Selected"
+            class="container uui-icon uui-enabled selectedMark"
+          >
+            <svg
+              class=""
+              height="24"
+              width="24"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

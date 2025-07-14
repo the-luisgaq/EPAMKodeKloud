@@ -1,0 +1,50 @@
+{
+    "name": "uui",
+    "version": "1.0.0",
+    "description": "Template for quickly getting started with using UUI component system.",
+    "keywords": [
+        "react",
+        "uui",
+        "uikit"
+    ],
+    "main": "index.tsx",
+    "dependencies": {
+        "@epam/assets": "<UUI_VERSION>",
+        "@epam/loveship": "<UUI_VERSION>",
+        "@epam/promo": "<UUI_VERSION>",
+        "@epam/uui": "<UUI_VERSION>",
+        "@epam/uui-core": "<UUI_VERSION>",
+        "@epam/uui-components": "<UUI_VERSION>",
+        "@epam/uui-timeline": "<UUI_VERSION>",
+        "@epam/uui-editor": "<UUI_VERSION>",
+        "@epam/uui-docs": "<UUI_VERSION>",
+        "react-imask": "6.0.7",
+        "react-measure": "2.5.2",
+        "dayjs": "1.11.12",
+        "deepmerge": "4.3.1",
+        "history": "4.10.1",
+        "react": "19.1.0",
+        "react-dom": "19.1.0",
+        "react-scripts": "5.0.1",
+        "@floating-ui/react": "0.27.5",
+        "tslib": "2.3.1"
+    },
+    "devDependencies": {
+        "@types/react": "19.1.2",
+        "@types/react-dom": "19.1.2",
+        "@types/node": "18.19.31",
+        "typescript": "5.4.2"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test --env=jsdom",
+        "eject": "react-scripts eject"
+    },
+    "browserslist": [
+        ">0.2%",
+        "not dead",
+        "not ie <= 11",
+        "not op_mini all"
+    ]
+}

@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ScrollBars should be rendered correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="root uui-scroll-bars uui-shadow-top uui-shadow-bottom"
+    style="position: relative; overflow: hidden; width: 100%; height: 100%; display: flex;"
+  >
+    <div
+      style="position: relative; top: 0px; left: 0px; right: 0px; bottom: 0px; overflow: scroll; margin-right: 0px; margin-bottom: 0px; flex: 1 1 auto;"
+    >
+      <button
+        class="uui-button-box uui-enabled container root uui-button uui-fill-solid uui-color-primary uui-size-36"
+        tabindex="-1"
+        type="button"
+      />
+    </div>
+    <div
+      class="uui-track-horizontal"
+      style="position: absolute; height: 6px; display: none;"
+    >
+      <div
+        class="uui-thumb-horizontal"
+      />
+    </div>
+    <div
+      class="uui-track-vertical"
+      style="position: absolute; width: 6px; display: none;"
+    >
+      <div
+        class="uui-thumb-vertical"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,11 @@
+[
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "Lets the user enter a number. Includes built-in validation to a reject non-numerical input."
+      }
+    ]
+  }
+]

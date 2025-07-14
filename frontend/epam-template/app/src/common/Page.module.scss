@@ -1,0 +1,17 @@
+@use '~@epam/promo/assets/styles/colors.scss' as *;
+
+.root {
+    background: var(--uui-app-bg);
+    color: var(--uui-text-primary);
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .content {
+        flex: 1 0 auto;
+    }
+
+    .error-block {
+        flex-grow: 1;
+    }
+}

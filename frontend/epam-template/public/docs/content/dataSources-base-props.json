@@ -1,0 +1,47 @@
+[
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "This article contains examples of common "
+      },
+      {
+        "text": "DataSource",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " props usage. "
+      },
+      {
+        "text": "rowOptions",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " and "
+      },
+      {
+        "text": "getRowOptions",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " are overviewed in detail "
+      },
+      {
+        "data": {
+          "url": "/documents?id=dataSources-row-options&mode=doc&skin=UUI4_promo&category=dataSources"
+        },
+        "type": "link",
+        "url": "/documents?id=dataSources-row-options&mode=doc&skin=UUI4_promo&category=dataSources",
+        "children": [
+          {
+            "text": "in the following article"
+          }
+        ]
+      },
+      {
+        "text": "."
+      }
+    ]
+  }
+]

@@ -1,0 +1,119 @@
+[
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "To start a new "
+      },
+      {
+        "data": {
+          "url": "https://nextjs.org/"
+        },
+        "type": "link",
+        "url": "https://nextjs.org/",
+        "children": [
+          {
+            "text": "Next.JS"
+          }
+        ]
+      },
+      {
+        "text": " application, use "
+      },
+      {
+        "data": {
+          "url": "https://nextjs.org/docs/getting-started"
+        },
+        "type": "link",
+        "url": "https://nextjs.org/docs/getting-started",
+        "children": [
+          {
+            "text": "Create Next App"
+          }
+        ]
+      },
+      {
+        "text": " with our template:"
+      }
+    ]
+  },
+  {
+    "data": {},
+    "type": "note-quote",
+    "children": [
+      {
+        "text": "npx ",
+        "box-sizing": "border-box",
+        "": null,
+        "uui-richTextEditor-span-mark": true
+      },
+      {
+        "text": "create-next-app --example ",
+        "box-sizing": "border-box",
+        "": null,
+        "uui-richTextEditor-span-mark": true
+      },
+      {
+        "text": "\"https://github.com/epam/UUI/tree/main/templates/uui-nextjs-template/template\" "
+      },
+      {
+        "text": "my-app\n\n",
+        "box-sizing": "border-box",
+        "": null,
+        "uui-richTextEditor-span-mark": true
+      },
+      {
+        "text": "# or\n\n",
+        "box-sizing": "border-box",
+        "color": "rgb(128, 128, 128)",
+        "": null,
+        "uui-richTextEditor-span-mark": true
+      },
+      {
+        "text": "yarn create next-app --example ",
+        "box-sizing": "border-box",
+        "": null,
+        "uui-richTextEditor-span-mark": true
+      },
+      {
+        "text": "\"https://github.com/epam/UUI/tree/main/templates/uui-nextjs-template/template\""
+      },
+      {
+        "text": " my-app\n\n",
+        "box-sizing": "border-box",
+        "": null,
+        "uui-richTextEditor-span-mark": true
+      },
+      {
+        "text": "## where my-app is the name of ",
+        "box-sizing": "border-box",
+        "color": "rgb(128, 128, 128)",
+        "": null,
+        "uui-richTextEditor-span-mark": true
+      },
+      {
+        "text": "your project.",
+        "box-sizing": "border-box",
+        "color": "rgb(128, 128, 128)",
+        "": null,
+        "uui-richTextEditor-span-mark": true
+      },
+      {
+        "text": " ",
+        "box-sizing": "border-box",
+        "": null,
+        "uui-richTextEditor-span-mark": true
+      }
+    ]
+  },
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "It will create and initialize the environment and dependencies automatically. Also, it will set up a minimal UUI configuration with a simple layout."
+      }
+    ]
+  }
+]

@@ -1,0 +1,122 @@
+{
+  "object": "value",
+  "document": {
+    "object": "document",
+    "data": {},
+    "nodes": [
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "For turn-on analytics, you must wrap your application into UUI ",
+            "marks": []
+          },
+          {
+            "object": "inline",
+            "type": "link",
+            "data": {
+              "url": "https://uui.epam.com/documents?category=contexts&id=contextProvider"
+            },
+            "nodes": [
+              {
+                "object": "text",
+                "text": "",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": "",
+            "marks": []
+          },
+          {
+            "object": "inline",
+            "type": "link",
+            "data": {
+              "url": "https://uui.epam.com/documents?category=contexts&id=contextProvider&mode=doc&skin=UUI4_promo"
+            },
+            "nodes": [
+              {
+                "object": "text",
+                "text": "ContextProvider",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": " and provide ",
+            "marks": []
+          },
+          {
+            "object": "text",
+            "text": "gaCode",
+            "marks": [
+              {
+                "object": "mark",
+                "type": "uui-richTextEditor-code",
+                "data": {}
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": " prop for google analytics support. Or implement your own ",
+            "marks": []
+          },
+          {
+            "object": "text",
+            "text": "IAnalyticsListener",
+            "marks": [
+              {
+                "object": "mark",
+                "type": "uui-richTextEditor-code",
+                "data": {}
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": " and add it to the analytic Context. ",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "object": "block",
+        "type": "paragraph",
+        "data": {},
+        "nodes": [
+          {
+            "object": "text",
+            "text": "In this example, we show how to create a listener for ",
+            "marks": []
+          },
+          {
+            "object": "inline",
+            "type": "link",
+            "data": {
+              "url": "https://amplitude.com/"
+            },
+            "nodes": [
+              {
+                "object": "text",
+                "text": "Amplitude",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "object": "text",
+            "text": ".",
+            "marks": []
+          }
+        ]
+      }
+    ]
+  }
+}

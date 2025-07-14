@@ -1,0 +1,127 @@
+@use  '../../assets/styles/index.scss' as *;
+
+.root {
+    --uui-dtp_body-title-bg: var(--uui-control-bg);
+    --uui-dtp_body-item-bg-selected: var(--uui-primary-50);
+    --uui-dtp_body-item-border-hover: var(--uui-primary-50);
+    --uui-dtp_body-text: var(--uui-control-text);
+    --uui-dtp_body-text-selected: var(--uui-neutral-0);
+
+    --uui-dtp_body-content-font: var(--uui-font);
+    --uui-dtp_body-content-font-weight: 400;
+
+    --uui-dtp_body-min-height: calc(var(--uui-size) * 6);
+    --uui-dtp_body-padding: 12px 18px;
+
+    --uui-dtp-cell-height: var(--uui-size);
+    --uui-dtp-cell-hover-height: calc(var(--uui-dtp-cell-height) - var(--uui-dtp-cell-border-width) * 2);
+    --uui-dtp-cell-border-width: var(--uui-border-width);
+    --uui-dtp-cell-border-radius: calc(var(--uui-dtp-cell-height) / 2);
+
+    --uui-dtp-month-width: 72px;
+    --uui-dtp-month-hover-width: calc(var(--uui-dtp-month-width) - var(--uui-dtp-cell-border-width) * 2);
+    --uui-dtp-month-margin: 6px;
+
+    --uui-dtp-year-width: 63px;
+    --uui-dtp-year-hover-width: calc(var(--uui-dtp-year-width) - var(--uui-dtp-cell-border-width) * 2);
+    --uui-dtp-year-margin: 6px 0;
+
+    --uui-dtp-weeks-height: 24px; // to calc right height of body, align with --uui-calendar-weekday-line-height in 'Calendar' styles
+}
+
+:global(.uui-datepicker-body-wrapper) {
+    min-height: var(--uui-dtp_body-min-height);
+    min-width: calc(var(--uui-size) * 7);
+    padding: var(--uui-dtp_body-padding);
+
+    // DatePickerBase style
+    :global(.uui-datepicker-container) {
+        background-color: var(--uui-dtp_body-title-bg);
+    }
+
+    // Month and Year selection styles
+    :global(.uui-month_selection-content), :global(.uui-year_selection-content) {
+        font-family: var(--uui-dtp_body-content-font);
+        font-weight: var(--uui-dtp_body-content-font-weight, normal);
+    }
+
+    :global(.uui-month_selection-month-container),
+    :global(.uui-year_selection-years-container) {
+        min-height: calc((var(--uui-size) * 6) + var(--uui-dtp-weeks-height));
+    }
+
+    :global(.uui-month_selection-month-container) {
+        display: flex;
+        flex-direction: column;
+
+        & > * {
+            display: flex;
+        }
+    }
+
+    :global(.uui-year_selection-years-container) {
+        display: flex;
+        flex-direction: column;
+
+        & > * {
+            display: flex;
+        }
+    }
+
+    :global(.uui-year_selection-years-row) {
+        justify-content: space-between;
+    }
+
+    :global(.uui-month_selection-months-row) {
+        justify-content: space-between;
+    }
+
+    :global(.uui-month_selection-month) {
+        width: var(--uui-dtp-month-width);
+        height: var(--uui-dtp-cell-height);
+        border-radius: var(--uui-dtp-cell-border-radius);
+        margin: var(--uui-dtp-month-margin);
+        color: var(--uui-dtp_body-text);
+
+        &:hover, &:focus-visible {
+            outline: none;
+            width: var(--uui-dtp-month-hover-width);
+            height: var(--uui-dtp-cell-hover-height);
+            border: var(--uui-dtp-cell-border-width) solid var(--uui-dtp_body-item-border-hover);
+            cursor: pointer;
+        }
+    }
+
+    :global(.uui-year_selection-year) {
+        width: var(--uui-dtp-year-width);
+        height: var(--uui-dtp-cell-height);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: var(--uui-dtp-cell-border-radius);
+        margin: var(--uui-dtp-year-margin);
+        color: var(--uui-dtp_body-text);
+
+        &:hover, &:focus-visible {
+            outline: none;
+            width: var(--uui-dtp-year-hover-width);
+            height: var(--uui-dtp-cell-hover-height);
+            border: var(--uui-dtp-cell-border-width) solid var(--uui-dtp_body-item-border-hover);
+            cursor: pointer;
+        }
+    }
+
+    :global(.uui-month_selection-current-month) {
+        &:global(.uui-month_selection-month) {
+            background-color: var(--uui-dtp_body-item-bg-selected);
+            color: var(--uui-dtp_body-text-selected);
+        }
+    }
+
+    :global(.uui-year_selection-current-year) {
+        &:global(.uui-year_selection-year) {
+            background-color: var(--uui-dtp_body-item-bg-selected);
+            color: var(--uui-dtp_body-text-selected);
+        }
+    }
+}

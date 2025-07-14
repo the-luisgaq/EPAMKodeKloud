@@ -1,0 +1,90 @@
+[
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "DropdownContainer is a wrapper for your content provided as a "
+      },
+      {
+        "text": "children",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": ". "
+      }
+    ]
+  },
+  {
+    "data": {},
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "You can configure vertical and horizontal paddings in the container via "
+      },
+      {
+        "text": "padding",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " and "
+      },
+      {
+        "text": "vPadding",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " props. Also, you can enable the arrow tip by providing "
+      },
+      {
+        "text": "showArrow={ true }",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " prop."
+      }
+    ]
+  },
+  {
+    "data": {},
+    "type": "note-warning",
+    "children": [
+      {
+        "text": "Note:",
+        "uui-richTextEditor-bold": true
+      },
+      {
+        "text": " You can also select a "
+      },
+      {
+        "text": "placement",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " for the arrow and add offset with "
+      },
+      {
+        "text": "modifiers",
+        "uui-richTextEditor-code": true
+      },
+      {
+        "text": " in the "
+      },
+      {
+        "data": {
+          "url": "https://uui.epam.com/documents?id=dropdown&mode=doc&skin=UUI4_promo&category=components"
+        },
+        "type": "link",
+        "url": "https://uui.epam.com/documents?id=dropdown&mode=doc&skin=UUI4_promo&category=components",
+        "children": [
+          {
+            "text": "Dropdown"
+          }
+        ]
+      },
+      {
+        "text": " component."
+      }
+    ]
+  }
+]

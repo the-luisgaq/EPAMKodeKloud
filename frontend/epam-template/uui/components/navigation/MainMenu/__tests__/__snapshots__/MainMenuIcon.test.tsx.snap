@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainMenuIcon should be rendered correctly 1`] = `
+<DocumentFragment>
+  <a
+    class="uui-button-box uui-enabled -clickable uui-anchor container uui-icon_button uui-color-neutral root container"
+    href=""
+    rel="noopener noreferrer"
+    tabindex="0"
+    target="_blank"
+  >
+    <div
+      class="container uui-icon uui-enabled"
+    >
+      <svg
+        class=""
+      />
+    </div>
+  </a>
+</DocumentFragment>
+`;
+
+exports[`MainMenuIcon should be rendered correctly with minimum props 1`] = `
+<DocumentFragment>
+  <button
+    class="uui-button-box uui-enabled container uui-icon_button uui-color-neutral root container"
+    tabindex="-1"
+    type="button"
+  >
+    <div
+      class="container uui-icon uui-enabled"
+    >
+      <svg
+        class=""
+      />
+    </div>
+  </button>
+</DocumentFragment>
+`;

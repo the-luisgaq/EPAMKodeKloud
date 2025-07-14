@@ -1,0 +1,61 @@
+@use '../../../assets/styles/index' as *;
+
+.row-wrapper {
+    --uui-dt-columns_config_modal-row-vertical-padding: 3px;
+    --uui-dt-columns_config_modal-icon-size: var(--uui-icon-size);
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    touch-action: auto;
+    column-gap: var(--uui-horizontal-gap);
+    padding: var(--uui-dt-columns_config_modal-row-vertical-padding) var(--uui-dt-columns_config_modal-padding);
+
+    .pin-icon-button {
+        min-height: auto;
+        column-gap: var(--uui-dt-columns_config_modal-pin_icon_button-column-gap);
+        padding-top: var(--uui-dt-columns_config_modal-row-vertical-padding);
+        padding-bottom: var(--uui-dt-columns_config_modal-row-vertical-padding);
+    }
+
+    &.not-pinned:not(:hover):not(:focus-within) {
+        .pin-icon-button {
+            visibility: hidden;
+        }
+    }
+
+    .checkbox {
+        flex-grow: 1;
+        padding-top: var(--uui-dt-columns_config_modal-row-vertical-padding);
+        padding-bottom: var(--uui-dt-columns_config_modal-row-vertical-padding);
+    }
+
+    &:hover {
+        background-color: var(--uui-surface-highest);
+    }
+
+    .drag-handle {
+        opacity: 1;
+        touch-action: none;
+        padding-top: var(--uui-dt-columns_config_modal-row-vertical-padding);
+        padding-bottom: var(--uui-dt-columns_config_modal-row-vertical-padding);
+
+        &.dnd-disabled {
+            opacity: 0.3;
+            touch-action: auto;
+        }
+
+        :global(.uui-icon) {
+            fill: var(--uui-control-icon);
+
+            svg {
+                width: var(--uui-dt-columns_config_modal-icon-size);
+                height: var(--uui-dt-columns_config_modal-icon-size);
+            }
+        }
+    }
+
+    &:global(.uui-drag-ghost) {
+        @include dnd-ghost-shadow();
+        background-color: var(--uui-surface-main);
+    }
+}

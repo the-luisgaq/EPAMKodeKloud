@@ -1,0 +1,34 @@
+[
+  {
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "This example demonstrates how to validate array data and create custom validators. "
+      }
+    ]
+  },
+  {
+    "type": "paragraph",
+    "children": [
+      {
+        "text": "Custom validators can be valuable in cases where you require more complex validation that what is provided by the default"
+      },
+      {
+        "color": "rgb(55, 65, 81)",
+        "text": " "
+      },
+      {
+        "text": "isRequired",
+        "uui-richTextEditor-code": true,
+        "color": "var(--tw-prose-code)"
+      },
+      {
+        "text": " ",
+        "color": "rgb(55, 65, 81)"
+      },
+      {
+        "text": "option. They also give you the ability to provide custom error messages or perform validations where one field depends on another, as the validator callback receives values from the parent object as a second parameter."
+      }
+    ]
+  }
+]

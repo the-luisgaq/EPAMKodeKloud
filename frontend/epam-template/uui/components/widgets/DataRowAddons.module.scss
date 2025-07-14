@@ -1,0 +1,66 @@
+@use  '../../assets/styles/dnd' as *;
+
+:global(.uui-dr_addons-checkbox) {
+    padding-inline-end: var(--uui-horizontal-gap);
+}
+
+:global(.-draggable) {
+    .drag-handle-wrapper {
+        @include dnd-cursor-style();
+    }
+}
+
+.drag-handle-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding-inline-start: var(--uui-dt-cell-padding-start);
+}
+
+.with-indent {
+    padding-inline-end: 12px;
+}
+
+.drag-handle {
+    position: absolute;
+    left: 2px;
+    width: 6px;
+    top: 3px;
+    bottom: 2px;
+    align-self: stretch;
+    visibility: hidden;
+
+    :global(.-draggable.uui-table-row):not(:global(.uui-drop-accepted)):hover & {
+        visibility: visible;
+    }
+}
+
+:global(.uui-dragging) {
+    :global(.-draggable.uui-table-row):not(:global(.uui-drop-accepted)):hover .drag-handle {
+        visibility: hidden;
+    }
+}
+
+:global(.uui-dr_addons-indent) {
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding-inline-end: 12px;
+    box-sizing: content-box; // to fix reset css like *, *::before, *::after { box-sizing: border-box; }
+    min-height: var(--uui-size);
+}
+
+:global(.uui-folding-arrow) {
+    margin: auto 0;
+
+    &:global(.uui-icon) {
+        position: relative;
+    }
+}
+
+.icon-container {
+    fill: var(--uui-icon);
+}
