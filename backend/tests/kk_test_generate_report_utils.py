@@ -1,5 +1,5 @@
 import pandas as pd
-from app.utils.generate_report import convert_to_hours, merge_activity_data
+from app.utils.kodekloud_generate_report import convert_to_hours, merge_activity_data
 
 
 def test_convert_to_hours():
