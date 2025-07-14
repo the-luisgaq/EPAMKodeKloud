@@ -18,14 +18,13 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install azure-storage-blob requests
+          pip install azure-storage-blob
 
-      - name: Ejecutar lógica de movimiento y trigger
+      - name: Run move and trigger logic
         env:
           STORAGE_CONNECTION_STRING: ${{ secrets.STORAGE_CONNECTION_STRING }}
-          TRIGGER_URL: ${{ secrets.TRIGGER_URL }}
           CONTAINER_SOURCE: cloudkit-inputs
           CONTAINER_INPUTS: cloudkit-inputs
           INPUT_FOLDER: kode_kloud/input
           ARCHIVE_FOLDER: kode_kloud/input/archive
-        run: python scripts/move_and_trigger.py
+        run: python scripts/move_and_trigger_core.py
