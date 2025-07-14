@@ -5,10 +5,10 @@ from azure.storage.blob import BlobServiceClient
 
 # Config desde GitHub Secrets o entorno
 STORAGE_CONNECTION_STRING = os.getenv("STORAGE_CONNECTION_STRING")
-CONTAINER_SOURCE = os.getenv("CONTAINER_SOURCE", "kodekloudfiles")
+CONTAINER_SOURCE = os.getenv("CONTAINER_SOURCE", "cloudkit-inputs")
 CONTAINER_INPUTS = os.getenv("CONTAINER_INPUTS", "cloudkit-inputs")
-INPUT_FOLDER = os.getenv("INPUT_FOLDER", "input")
-ARCHIVE_FOLDER = os.getenv("ARCHIVE_FOLDER", "archive")
+INPUT_FOLDER = os.getenv("INPUT_FOLDER", "kode_kloud/input")
+ARCHIVE_FOLDER = os.getenv("ARCHIVE_FOLDER", "kode_kloud/input/archive")
 TRIGGER_URL = os.getenv("TRIGGER_URL")
 
 blob_service_client = BlobServiceClient.from_connection_string(STORAGE_CONNECTION_STRING)
