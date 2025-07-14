@@ -127,6 +127,7 @@ curl -X POST http://localhost:8000/report
 - Added a new simplified React frontend under `frontend` that uses the
   `uui-theme-eduverse_dark` styles and shows report data in a table.
 - Added a Dockerfile and `nginx.conf` so the frontend can run via Docker Compose.
+- Imported global styles from the UUI Next.js template to enhance fonts and link appearance.
 
 ## 👤 Maintainer
 
