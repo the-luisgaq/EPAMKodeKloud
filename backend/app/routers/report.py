@@ -4,6 +4,7 @@ import json
 from fastapi import APIRouter, HTTPException
 from ..utils.generate_report import generate_report
 from ..external_services import blob
+from ..core import settings
 
 router = APIRouter(prefix="/report", tags=["KodeKloud"])
 
@@ -18,13 +19,13 @@ async def create_report():
 
         try:
             blob.download_blob_to_file(
-                "cloudkit-inputs",
-                "kode_kloud/root/KodeKloud2025Admin.xlsx",
+                settings.CONTAINER_INPUTS,
+                settings.ADMIN_BLOB_PATH,
                 admin_path,
             )
             blob.download_blob_to_file(
-                "cloudkit-inputs",
-                "kode_kloud/root/activity_leaderboard.xlsx",
+                settings.CONTAINER_INPUTS,
+                settings.ACTIVITY_BLOB_PATH,
                 activity_path,
             )
         except Exception as exc:
@@ -42,8 +43,8 @@ async def get_report_data():
         json_path = os.path.join(tmpdir, "kodekloud_data.json")
         try:
             blob.download_blob_to_file(
-                "cloudkit-inputs",
-                "kode_kloud/root/kodekloud_data.json",
+                settings.CONTAINER_INPUTS,
+                settings.JSON_BLOB_PATH,
                 json_path,
             )
         except Exception as exc:

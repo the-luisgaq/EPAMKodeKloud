@@ -8,7 +8,7 @@ This project is a real-time dashboard that tracks the usage of KodeKloud license
 
 ## 🧩 Components
 
-- **Azure Blob Storage**: Stores input Excel files (`kode_kloud/root/KodeKloud2025Admin.xlsx`, `kode_kloud/root/activity_leaderboard.xlsx`) and output JSON (`kodekloud_data.json`).
+- **Azure Blob Storage**: Stores input Excel files (`kode_kloud/root/KodeKloud2025Admin.xlsx`, `kode_kloud/root/activity_leaderboard.xlsx`) and output JSON (`kode_kloud/root/kodekloud_data.json`).
 - **FastAPI Backend**: Triggered via HTTP, processes the Excel files and generates a report in Excel and JSON formats.
 - **GitHub Actions**:
   - One workflow generates the JSON report by calling the FastAPI backend.
