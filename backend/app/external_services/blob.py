@@ -1,6 +1,6 @@
 from datetime import datetime
 from azure.storage.blob import BlobServiceClient
-from ..core import settings
+from core import settings
 
 
 def get_blob_service_client():

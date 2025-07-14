@@ -10,7 +10,7 @@ from openpyxl import load_workbook
 from openpyxl.styles import PatternFill
 
 from ..external_services import blob
-from ..core import settings
+from core import settings
 
 warnings.simplefilter("ignore")
 
