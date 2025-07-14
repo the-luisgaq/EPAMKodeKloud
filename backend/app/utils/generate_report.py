@@ -10,6 +10,7 @@ from openpyxl import load_workbook
 from openpyxl.styles import PatternFill
 
 from ..external_services import blob
+from ..core import settings
 
 warnings.simplefilter("ignore")
 
@@ -126,8 +127,8 @@ def upload_json(local_json_path: str) -> None:
     """Upload the JSON file to Azure Blob Storage."""
 
     blob.upload_file_to_blob(
-        "cloudkit-inputs",
-        local_json_path.split("/")[-1],
+        settings.CONTAINER_INPUTS,
+        settings.JSON_BLOB_PATH,
         local_json_path,
     )
 
