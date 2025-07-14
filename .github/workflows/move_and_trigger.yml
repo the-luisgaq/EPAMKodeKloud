@@ -6,7 +6,7 @@ on:
 jobs:
   move_and_trigger:
     runs-on: ubuntu-latest
-
+    environment: Dev
     steps:
       - name: Checkout
         uses: actions/checkout@v3
