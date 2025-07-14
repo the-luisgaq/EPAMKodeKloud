@@ -3,7 +3,7 @@ import logging
 from azure.storage.blob import BlobServiceClient
 
 # Configuration loaded from GitHub Secrets or the environment
-STORAGE_CONNECTION_STRING = os.getenv("STORAGE_CONNECTION_STRING")
+AZURE_STORAGE_CONNECTION_STRING = os.getenv("AZURE_STORAGE_CONNECTION_STRING")
 CONTAINER_SOURCE = os.getenv("CONTAINER_SOURCE", "cloudkit-inputs")
 CONTAINER_INPUTS = os.getenv("CONTAINER_INPUTS", "cloudkit-inputs")
 INPUT_FOLDER = os.getenv("INPUT_FOLDER", "kode_kloud/input")

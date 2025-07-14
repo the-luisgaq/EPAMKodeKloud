@@ -22,7 +22,7 @@ jobs:
 
       - name: Run move and trigger logic
         env:
-          STORAGE_CONNECTION_STRING: ${{ secrets.STORAGE_CONNECTION_STRING }}
+          STORAGE_CONNECTION_STRING: ${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}
           CONTAINER_SOURCE: cloudkit-inputs
           CONTAINER_INPUTS: cloudkit-inputs
           INPUT_FOLDER: kode_kloud/input
