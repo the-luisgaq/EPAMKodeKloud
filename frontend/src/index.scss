@@ -4,6 +4,8 @@ body {
   margin: 0;
   padding: 1rem;
   font-family: var(--uui-font, sans-serif);
+  background-color: var(--uui-app-bg, #1d1e26);
+  color: var(--uui-text-primary, #fff);
 }
 
 table {
@@ -12,7 +14,11 @@ table {
 }
 
 th, td {
-  border: 1px solid var(--uui-neutral-50, #444);
+  border: 1px solid var(--uui-control-border, #444);
   padding: 0.5rem;
   text-align: left;
+}
+
+th {
+  background-color: var(--uui-surface-higher, #2c3a4f);
 }
