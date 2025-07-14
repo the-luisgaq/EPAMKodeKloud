@@ -128,6 +128,7 @@ curl -X POST http://localhost:8000/report
   `uui-theme-eduverse_dark` styles and shows report data in a table.
 - Added a Dockerfile and `nginx.conf` so the frontend can run via Docker Compose.
 - Frontend converted to TypeScript (.tsx) for stronger type safety.
+- Integrated EPAM UUI packages and a basic ThemeProvider for styling.
 
 ## 👤 Maintainer
 
