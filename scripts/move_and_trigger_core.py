@@ -9,7 +9,7 @@ CONTAINER_INPUTS = os.getenv("CONTAINER_INPUTS", "cloudkit-inputs")
 INPUT_FOLDER = os.getenv("INPUT_FOLDER", "kode_kloud/input")
 ARCHIVE_FOLDER = os.getenv("ARCHIVE_FOLDER", "kode_kloud/input/archive")
 
-blob_service_client = BlobServiceClient.from_connection_string(STORAGE_CONNECTION_STRING)
+blob_service_client = BlobServiceClient.from_connection_string(AZURE_STORAGE_CONNECTION_STRING)
 
 def run_my_logic():
     logging.info("Checking required files in the source container...")
