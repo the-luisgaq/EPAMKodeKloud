@@ -1,0 +1,18 @@
+@import "../epam-template/epam-assets/theme/theme_eduverse_dark.scss";
+
+body {
+  margin: 0;
+  padding: 1rem;
+  font-family: var(--uui-font, sans-serif);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid var(--uui-neutral-50, #444);
+  padding: 0.5rem;
+  text-align: left;
+}

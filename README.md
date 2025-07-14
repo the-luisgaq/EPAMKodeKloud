@@ -124,6 +124,8 @@ curl -X POST http://localhost:8000/report
 - Added a `settings` module powered by `pydantic-settings` for configuration.
 - Introduced unit tests for the report endpoints and helper utilities.
 - API docs tag renamed from `report` to `KodeKloud`.
+- Added a new simplified React frontend under `frontend` that uses the
+  `uui-theme-eduverse_dark` styles and shows report data in a table.
 
 ## 👤 Maintainer
 
