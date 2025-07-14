@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /*theme=loveship
-Disallow: /*theme=
-Disallow: /*mode=propsEditor
-Disallow: /*isSkin=
